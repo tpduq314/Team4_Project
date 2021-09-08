@@ -1,0 +1,237 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+#logo{
+	width="265"; height="30";
+}
+/*여긴 로그인회원가입 그쪽 네비css인데 이거 로고랑 같이놓을라고 width 수정했다가 다깨진적 많음. 
+로고랑 평행으로 같은위치에 놓으려면 높은확률로 퍼센티지 말고 값으로 잡아야됨*/
+#con{
+	width:100%; float:right;
+	background-color:#ffffff;
+}
+#con ul{
+	list-style:none;
+	font-family: Verdana, Geneva, sans-serif; 
+	font-size:18px;
+}
+#con li{
+	float:left; 
+	float:right;
+	margin:0px 5px;
+}
+#con a{
+	display:block; text-decoration:none;
+}
+/*nav 밑으로 제일 큰 div*/
+.main {
+	width:100%;
+	height:110px;
+	background-color:rgba(178,158,135,.9); 
+	display:block;
+}
+/*여기부터 순서대로 가려는 도시, 출국, 출입, person, 검색용버튼이 button까지임.*/
+.city{
+	width:20%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.cout{
+	width:15%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.cin{
+	width:15%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.p{
+	width:15%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.button{
+	width:35%;
+	float:right;
+	height:110px;
+	box-sizing:border-box;
+	text-align:center;
+}
+
+.button #button2{
+	background-color:rgba(178,158,135,.9);
+	border:none;
+    outline:none;
+    cursor:pointer;
+}/* 
+.city2{
+	width:20%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+} */
+ul,li{
+	list-style:none;
+}
+/*nav 가 아닌  a태그 애들 테두리. 대부분 이미지*/
+a{
+	text-decoration:none;
+	color:inherit;
+}
+/* 메뉴버튼
+.menu_wrap .dep1{
+	font-size:0;
+}
+.menu_wrap .dep1 > li{
+	display:inline-block;
+	width:100px;
+	vertical-align:top;
+	background:#ddd;
+	text-align:center;
+	font-size:16px;
+}
+
+.menu_wrap .dep1 > li:hover > .dep2{
+	display:block;
+}
+.menu_wrap .dep1 > li > a{
+	display:block;
+	padding:10px 0;
+}
+.menu_wrap .dep2{
+	display:none;
+}*/
+.cal{
+	width:30%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+.p2{
+	width:15%;
+	float:left;
+	height:55px;
+	box-sizing:border-box;
+	text-align:center;
+}
+/*슬라이드부분*/
+.section input[id*="slide"]{
+	display:none;
+}
+.section .slidewrap{
+	width:100%;
+	height:900px;
+	margin:0 auto;
+}
+.section .slidelist{
+	white-space:nowrap;/*옆으로 연속되게함*/
+	font-size:0;
+	overflow:hidden;/*section을 넘어가는 slidelist부분을 안보이게 처리*/
+	position:relative;/*요소를 static처럼 일반적인 흐름대로 놓지만 static쓰면 아마 화면 안넘어갈듯*/
+}
+.section .slidelist > li{
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	transition:all .5s; /*이걸로 빠르기조절*/
+}
+.section .slidelist > li > a{
+	display:block;
+	position:relative;
+}
+.section .slidelist > li > a img{
+	width:100%;
+}
+.section .slidelist label{/*옆넘김버튼*/
+	position:absolute;
+	z-index:10;
+	top:50%;
+	transform:translateY(-50%);
+	padding:50px;
+	cursor:pointer;
+}
+.section .slidelist .left{
+	left:30px;
+	background:url('./image/left.png')center center / 100% no-repeat;
+}
+.section .slidelist .right{
+	right:30px;
+	background:url('./image/right.png')center center / 100% no-repeat;
+}
+/*밑으로 내려가는 버튼 투명도*/
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li{
+	transform:translateX(0%);
+}
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li{
+	transform:translateX(-100%);
+}
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li{
+	transform:translateX(-200%);
+}
+/*밑으로 내려가는 버튼 테두리처리*/
+.section .slide-control [class*="control"] {
+	display:none;
+}
+.section [id="slide01"]:checked ~ .slidewrap .control01{
+	display:block;
+}
+.section [id="slide02"]:checked ~ .slidewrap .control02{
+	display:block;
+}
+.section [id="slide03"]:checked ~ .slidewrap .control03{
+	display:block;
+}
+/*hr {왜넣은지 기억 안남*/
+/*height:1px; 
+width:100%; 
+border:none; 
+background:white; 
+text-align:center; 
+margin: 0 auto; 
+}*/
+/*내려가는 버튼 제어*/
+.arrow-down span{
+  display: inline-block;
+  width: 1.5em;/*사이즈조절*/
+  height: 1.5em;/*''*/
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;/*ㅡㅣ모양으로 테두리 생성*/
+  transform: rotate(45deg);/*각도 꺾어서 화살표모양 만들어줌*/
+  margin:-15.5px;
+  animation: animate-arrows 2s infinite;/*2s씩 계속반복*/
+}
+@keyframes animate-arrows{/*이걸로 프레임당 투명도 조절해서 깜빡거리는효과 줌*/
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-1.5em, -1.5em);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(1.5em, 1.5em);
+  }
+}/*이건 내려가게하는거*/
+.arrow-down span:nth-child(1){
+  animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(2){
+  animation-delay: -0.4s;
+}
+.arrow-down span:nth-child(3){
+  animation-delay: -0.6s;
+}

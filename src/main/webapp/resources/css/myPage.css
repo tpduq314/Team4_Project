@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+	margin: 0px; /*상하좌우 바깥여백*/
+	padding: 0px; /*상하좌우 안여백*/
+	font-size: 0.7em;
+	line-height: 1.2em;
+	color: #333; /*#333 16진수 색상코드는 #333333을 줄여서 표현*/
+}
+
+#txt_category {
+	font-size: 12px;
+	text-align: right;
+	padding: 7px 10px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.res_description {
+	height: 350px;
+	margin-top: 40px;
+	font-size: 22px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-top: 10px;
+}
+
+#category {
+	height: 30px;
+	width: 200px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+
+#res_top {
+	height: 130px;
+	border-color: #BDBDBD;
+	border-style: solid;
+	border-width: 0px 0px 6px 0px;
+}
+
+#my_page {
+	margin-top: 20px;
+	margin-right: 95px;
+	margin-left: 95px;
+	height: 1100px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+.res_table {
+	font-size: 15px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 300px;
+	width: 1370px;
+	margin-top: 20px;
+	border-top: 3px solid black;
+}
+
+.tb_chk_res {
+	width: 200px;
+	height: 30px;
+	background-color: #D5D5D5;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#ask_res {
+	width: 49%;
+	float: left;
+	height: 330px;
+	padding-top: 10px;
+}
+
+#ask_ser {
+	width: 49%;
+	float: right;
+	height: 330px;
+	padding-top: 10px;
+}
+
+.tb_ask_res {
+	height: 30px;
+	background-color: #D5D5D5;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.ask_ser_td{
+	width: 33%;
+	height:180px;
+
+	
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#res_top {
+	height: 130px;
+	border-color: #BDBDBD;
+	border-style: solid;
+	border-width: 0px 0px 6px 0px;
+}
+
+#reservation {
+	height: 50px;
+	width: 800px;
+	position: relative;
+	top: 70px;
+	left: 20px;
+}
+
+#txt_reservation {
+	font-size: 30px;
+	position: relative;
+	top: 17px;
+	left: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#customer_service {
+	margin-top: 20px;
+	margin-right: 95px;
+	margin-left: 95px;
+	height: 1300px;
+	background-color: white;
+}
+
+.cs_tb_1 {
+	width: 150px;
+	height: 80px;
+	background-color: #BDBDBD;
+	padding-left: 15px;
+	font-size: 16px;
+}
+
+.cs_tb_2 {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.cs_tb_2_input {
+	height: 20px;
+	width: 200px;
+	padding: 3px;
+	font-size: 15px;
+}
