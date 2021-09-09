@@ -124,7 +124,7 @@ h1 {
 			</div>
 
 			<div class='txtb' style="height: 15px;">
-				<span id="idcheck" ></span>
+				<span id="idcheck" style="size: 12px;"></span>
 			</div>
 			<div class="txtb">
 				<input name="mem_pwd" id="mem_pwd" type="password"
