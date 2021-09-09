@@ -27,9 +27,9 @@ body {
 }
 /* 아이디,비밀번호,이메일,이름,핸드폰번호 위치css*/
 .signup_form {
-	width: 400px;
+	width: 600px;
 	background-color: #f1f1f1;
-	height: 600px;
+	height: 750px;
 	padding: 80px 40px;
 	border-radius: 10px;
 	position: absolute;
@@ -38,47 +38,48 @@ body {
 	transform: translate(-50%, -50%)
 }
 /*헤드 위치 css */
-.signup_form h1 {
-	text-align: center;
-	margin-bottom: 60px;
-	color: none;
-}
 
 /*중복확인 css*/
 .overlap {
-	display: block;
-	width: 100%;
 	height: 20px;
 	border: none;
 	background: linear-gradient(120deg, #E2E2E2, #4F4F4F); D 0%, #B721FF
 	100%);
 	border-radius: 10px;
-	background-size: 200%;
-	outline: none;
+	
 }
 
 /*아이디,비밀번호,이메일,이름,핸드폰번호 경계 css*/
 .txtb {
-	border-bottom: 2px solid #adadad;
-	position: relative;
-	margin: 30px 0;
+	width: 400px;
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 60px;
+
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 /*아이디,비밀번호,이메일,이름,핸드폰번호 dox css*/
 .txtb input {
 	font-size: 15px;
 	color: #333;
-	width: 100%;
 	border: none;
-	padding: 0 5px;
 	height: 40px;
+	width:400px;
 	outline: none;
+	padding-left: 5px;
+	border: black solid 1px;
 }
 
 /* sign up 버튼  css*/
 .signup_btn {
 	display: block;
-	width: 100%;
+	width: 400px;
 	height: 60px;
 	border: none;
 	background-color: #08AEEA;
@@ -91,6 +92,8 @@ body {
 	outline: none;
 	cusor: pointer;
 	transition: .5s;
+	margin-left: 60px;
+	margin-top: 20px;
 }
 
 .signup_btn: hover {
@@ -115,12 +118,14 @@ body {
 			<h1>SIGN UP</h1>
 			<div class='txtb'>
 				<input name="mem_id" id="mem_id" type="text"
-					placeholder='아이디를 입력해주세요.'>
+					placeholder='아이디를 입력해주세요.' style="float: left; width: 70%;">
+				<input type='button' class='overlap' value='중복확인'
+					onclick="id_check();" style="float: right; width: 25%; border: none;">
 			</div>
 
-			<input type='button' class='overlap' value='중복확인'
-				onclick="id_check();"> <br /> <span id="idcheck"></span>
-
+			<div class='txtb' style="height: 15px;">
+				<span id="idcheck" ></span>
+			</div>
 			<div class="txtb">
 				<input name="mem_pwd" id="mem_pwd" type="password"
 					placeholder='비밀번호를 입력해주세요.'>
@@ -132,11 +137,8 @@ body {
 			</div>
 
 			<div class="txtb">
-				<input type="email" placeholder='이메일을 입력해주세요.'>
-			</div>
-
-			<div class="txtb">
-				<input type="text" placeholder='핸드폰 번호를 입력해주세요. '>
+				<input name="mail_id" id="mail_id" placeholder='이메일을 입력해주세요.'style="width: 45%;"> @
+				<input name="mail_domain" id="mail_domain" placeholder='도메인을 입력해주세요.' style="width: 45%;">
 			</div>
 
 			<div class="txtb">
@@ -145,9 +147,8 @@ body {
 			</div>
 
 			<div class="txtb">
-				<input name="mem_phone02" id="mem_phone02" size="4" maxlength="4"
-						/>-<input name="mem_phone03" id="mem_phone03"
-						size="4" maxlength="4"  />
+			<input name="mem_phone01" id="mem_phone01" size="4" maxlength="4" style="width:28%; margin-right: 3px;"/> - <input name="mem_phone02" id="mem_phone02" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/> - <input
+					name="mem_phone03" id="mem_phone03" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/>
 			</div>
 
 			<input type='submit' class='signup_btn' value='SIGN UP'>
