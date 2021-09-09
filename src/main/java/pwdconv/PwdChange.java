@@ -2,6 +2,10 @@ package pwdconv;
 
 import java.security.MessageDigest;
 
+
+
+import java.security.MessageDigest;
+
 public class PwdChange
 {
 	/************ 비밀번호 암호화 *******************/
@@ -45,3 +49,4 @@ public class PwdChange
    return temp;   
   }
 }
+>>>>>>> branch 'master' of https://github.com/tpduq314/Team4_Project.git

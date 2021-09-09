@@ -85,22 +85,25 @@ D 0%, #B721FF 100%);
 
 
 <body>
- <form action = 'index.html'>
-<div class="Login_Form" >
-  <h1>LOGIN</h1>
-  <div class='txtb'><input type="text" placeholder='아이디를 입력해주세요.'>
- <span data-placeholder='Username'></span>
-</div>
-  
-  <div class="txtb">
-  <input type="password" placeholder='비밀번호를 입력해주세요.' >
-  <span data-placeholder='Password'></span>
-  </div>
-  
-<input type='submit' class='loginbt' value='Login'>
- <div class="bottom-text"> 아이디가 없으세요? <a href="/Project/login_mem"> 회원가입하기</a>
-  </div>
-  </div>
-</form>
+	<form method="post" action="mem_login_ok" onsubmit="return login_check();">
+		<div class="Login_Form">
+			<h1>LOGIN</h1>
+			<div class='txtb'>
+				<input id="login_id" name="login_id" type="text" placeholder='아이디를 입력해주세요.'> 
+			</div>
+
+			<div class="txtb">
+				<input id="login_pwd" name="login_pwd" type="password" placeholder='비밀번호를 입력해주세요.'>
+			</div>
+
+			<input type='submit' class='loginbt' value='Login'>
+			<div class="bottom-text">
+				아이디가 없으세요?
+				 <input type="button" value="회원가입하기"
+					onclick="location='login_mem';"
+					style="color: #F15F79; border: none; font-size: 15px; background-color: white; font-weight: bold;" />
+			</div>
+		</div>
+	</form>
 </body>
 </html>

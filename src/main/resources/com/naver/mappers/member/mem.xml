@@ -18,5 +18,9 @@
      #{mail_id},#{mail_domain},#{mem_addr},#{mem_phone01},#{mem_phone02},#{mem_phone03},sysdate)
     </insert>
     
+    <select id="login_ck" resultType="mem">
+    select * from mem where mem_id=#{login_id}
+    </select>
+    
   </mapper>
  

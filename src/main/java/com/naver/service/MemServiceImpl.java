@@ -27,4 +27,9 @@ public class MemServiceImpl implements MemService {
 		
 	}
 
+	@Override
+	public MemVO loginCheck(String login_id) {
+		return this.memDAO.loginCheck(login_id);
+	}
+
 }

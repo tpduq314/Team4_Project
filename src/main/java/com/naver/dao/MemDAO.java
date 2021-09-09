@@ -8,4 +8,6 @@ public interface MemDAO {
 
 	void insertMember(MemVO mem);
 
+	MemVO loginCheck(String login_id);
+
 }

@@ -3,6 +3,7 @@ package com.naver.controller;
 import java.io.PrintWriter;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -45,6 +46,36 @@ public class MemberController {
 		
 		return null;
 	}//mem_idcheck()
+	
+	//로그인 인증
+		@RequestMapping("/mem_login_ok")
+		public String mem_login_ok(String login_id,String login_pwd,HttpSession session,HttpServletResponse response)
+		throws Exception{
+			response.setContentType("text/html;charset=UTF-8");
+			PrintWriter out=response.getWriter();
+			
+			MemVO dm=this.memService.loginCheck(login_id);
+			//가입 회원 1인 경우만 로그인 인증 처리
+			
+			if(dm==null) {
+				out.println("<script>");
+				out.println("alert('가입 안된 회원입니다!');");
+				out.println("history.back();");
+				out.println("</script>");
+			}else {
+				if(!dm.getMem_pwd().equals(PwdChange.getPassWordToXEMD5String(login_pwd))) {
+					out.println("<script>");
+					out.println("alert('비번이 다릅니다!');");
+					out.println("history.go(-1);");
+					out.println("</script>");
+				}else {
+					session.setAttribute("id",login_id);//세션 아이디 저장
+					return "redirect:/login_mem";
+				}
+			}
+			return null;
+		}//mem_login_ok()
+	
 	
 	
 	  //회원가입 폼
