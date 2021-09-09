@@ -17,4 +17,9 @@ public class MemDAOImpl implements MemDAO {
 		return this.sqlSession.selectOne("mem_check",id);
 	}
 
+	@Override
+	public MemVO loginCheck(String login_id) {
+		return this.sqlSession.selectOne("login_ck",login_id);
+	}
+
 }

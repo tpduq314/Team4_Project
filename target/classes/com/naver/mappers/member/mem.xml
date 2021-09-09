@@ -11,5 +11,9 @@
      select * from mem where mem_id=#{id}
     </select>
     
+    <select id="login_ck" resultType="mem">
+    select * from mem where mem_id=#{login_id}
+    </select>
+    
   </mapper>
  

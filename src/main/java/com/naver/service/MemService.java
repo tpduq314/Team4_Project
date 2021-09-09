@@ -6,4 +6,6 @@ public interface MemService {
 
 	MemVO idCheck(String id);
 
+	MemVO loginCheck(String login_id);
+
 }
