@@ -8,47 +8,18 @@
 		$("#mem_id").val("").focus();
 		return false;
 	}
-	$mem_pwd=$.trim($("#mem_pwd").val());
-	$mem_pwd2=$.trim($("#mem_pwd2").val());
-	if($mem_pwd == ""){
-		alert("비번을 입력하세요!");
-		$("#mem_pwd").val("").focus();
-		return false;
-	}
-	if($mem_pwd2 == ""){
-		alert("비번확인을 입력하세요!");
-		$("#mem_pwd2").val("").focus();
-		return false;
-	}
-	if($mem_pwd != $mem_pwd2){
-		alert("비번이 다릅니다!");
-		$("#mem_pwd").val("");//비번 입력박스를 초기화
-		$("#mem_pwd2").val("");
-		$("#mem_pwd").focus();
-		return false;
-	}
+
 	if($.trim($("#mem_name").val())==""){
 		alert("회원이름을 입력하세요!");
 		$("#mem_name").val("").focus();
 		return false;
 	}
-	if($.trim($("#mem_zip").val())==""){
-		alert("우편번호를 입력하세요!");		
-		return false;
-	}
-	if($.trim($("#mem_zip2").val())==""){
-		alert("우편번호를 입력하세요!");		
-		return false;
-	}
+	
 	if($.trim($("#mem_addr").val())==""){
 		alert("주소를 입력하세요!");		
 		return false;
 	}
-	if($.trim($("#mem_addr2").val())==""){
-		alert("나머지 주소를 입력하세요!");
-		$("#mem_addr2").val("").focus();
-		return false;
-	}
+	
 	if($.trim($("#mem_phone02").val())==""){
 		alert("폰번호를 입력하세요!");
 		$("#mem_phone02").val("").focus();

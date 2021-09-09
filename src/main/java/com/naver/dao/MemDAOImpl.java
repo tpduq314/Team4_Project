@@ -17,4 +17,10 @@ public class MemDAOImpl implements MemDAO {
 		return this.sqlSession.selectOne("mem_check",id);
 	}
 
+	@Override
+	public void insertMember(MemVO mem) {
+		this.sqlSession.insert("mem_in",mem);
+		
+	}
+
 }

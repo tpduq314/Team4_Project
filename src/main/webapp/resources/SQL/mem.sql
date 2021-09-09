@@ -10,3 +10,4 @@ create table mem(
   ,mail_domain varchar2(100) --메일 도메인
   ,mem_date date --가입날짜
 );
+select * from mem;

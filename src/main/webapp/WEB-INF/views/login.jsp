@@ -98,7 +98,7 @@ D 0%, #B721FF 100%);
   </div>
   
 <input type='submit' class='loginbt' value='Login'>
- <div class="bottom-text"> 아이디가 없으세요? <a herf='#'> 회원가입하기</a>
+ <div class="bottom-text"> 아이디가 없으세요? <a href="/Project/login_mem"> 회원가입하기</a>
   </div>
   </div>
 </form>
