@@ -7,12 +7,12 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.naver.service.MemService;
 import com.naver.vo.MemVO;
-
 
 import pwdconv.PwdChange;
 
@@ -26,11 +26,6 @@ public class MemberController {
 	public String login() {
 		
 		return "/login";
-	}
-	@RequestMapping(value="/login_mem")
-	public String login_mem() {
-		
-		return "/login_mem";
 	}
 	
 	
@@ -82,5 +77,23 @@ public class MemberController {
 			return null;
 		}//mem_login_ok()
 	
-
+	
+	
+	  //회원가입 폼
+	  
+	  @RequestMapping("/login_mem") public String login_mem(Model mem) { String[]
+	  phone= {"010","011","019"};
+	  
+	  mem.addAttribute("phone",phone); 
+	  
+	  return "/login_mem"; }
+	 
+	//회원 저장
+	@RequestMapping("/login_mem_ok")
+	public String login_mem_ok(MemVO mem) {//MemVO변수가 login_mem에서 받은 값 이름과 일치하면 mem에 저장
+		mem.setMem_pwd(PwdChange.getPassWordToXEMD5String(mem.getMem_pwd()));//비번 암호화
+		this.memService.insertMember(mem);
+		
+		return "redirect:/login";//완료 시 login으로 보냄
+	}	
 }

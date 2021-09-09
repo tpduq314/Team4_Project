@@ -6,6 +6,8 @@ public interface MemDAO {
 
 	MemVO idCheck(String id);
 
+	void insertMember(MemVO mem);
+
 	MemVO loginCheck(String login_id);
 
 }

@@ -18,6 +18,12 @@ public class MemDAOImpl implements MemDAO {
 	}
 
 	@Override
+	public void insertMember(MemVO mem) {
+		this.sqlSession.insert("mem_in",mem);
+		
+	}
+
+	@Override
 	public MemVO loginCheck(String login_id) {
 		return this.sqlSession.selectOne("login_ck",login_id);
 	}

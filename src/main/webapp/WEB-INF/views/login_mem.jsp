@@ -108,10 +108,16 @@ h1 {
 .bottom-text a {
 	color: #F15F79;
 }
+
+select {
+	height:42px; width:28%;margin-left: 3px; margin-right: 3px;
+}
+
 </style>
 
+
 <body>
-	<form name="m" method="post" action="member_join_ok"
+	<form name="mem" method="post" action="login_mem_ok"
 		onsubmit="return join_check();">
 
 		<div class="signup_form">
@@ -147,13 +153,17 @@ h1 {
 			</div>
 
 			<div class="txtb">
-			<input name="mem_phone01" id="mem_phone01" size="4" maxlength="4" style="width:28%; margin-right: 3px;"/> - <input name="mem_phone02" id="mem_phone02" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/> - <input
-					name="mem_phone03" id="mem_phone03" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/>
+			<select name="mem_phone01" id="mem_phone01">
+							<c:forEach var="p" items="${phone}">
+								<option value="${p}">${p}</option>
+							</c:forEach></select>
+			- <input name="mem_phone02" id="mem_phone02" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/> 
+			- <input name="mem_phone03" id="mem_phone03" size="4" maxlength="4" style="width:28%;margin-left: 3px; margin-right: 3px;"/>
 			</div>
 
 			<input type='submit' class='signup_btn' value='SIGN UP'>
 			<div class="bottom-text">
-				<a herf='#'> 로그인으로 돌아가기 
+				<a href="/Project/login"> 로그인으로 돌아가기 </a>
 			</div>
 		</div>
 	</form>

@@ -2,102 +2,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>login</title>
-<script src="./resources/js/jquery.js"></script>
-<script>
- function login_check(){
-	 if($.trim($("#login_id").val())==""){
-		 alert("로그인 아이디를 입력하세요!");
-		 $("#login_id").val("").focus();
-		 return false;
-	 }
-	 if($.trim($("#login_pwd").val())==""){
-		 alert("로그인 비번을 입력하세요!");
-		 $("#login_pwd").val("").focus();
-		 return false;
-	 }
- }//로그인 인증 유효성 검증
- 
- </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>login</title>
 </head>
 <style>
-/*헤드 css*/
-* {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	box-sizing: border-box;
+  /*헤드 css*/
+  *{
+   margin: 0;
+  padding : 0; 
+  text-decoration:none; 
+  box-sizing : border-box;
 }
-
-body {
-	min-height: 100vh;
-	background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
-	background: white;
+body{
+ min-height:100vh;
+background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+background: white;
 }
 /*아이디, 비밀번호 위치 css*/
-.Login_Form {
-	width: 400px;
-	background-color: #0000;
-	height: 500px;
-	padding: 80px 40px;
-	border-radius: 10px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%)
+.Login_Form{
+  width : 400px;
+  background-color : #0000;
+  height : 500px;
+  padding : 80px 40px;
+   border-radius: 10px;
+  position : absolute;
+  left : 50%;
+  top:50%;
+  transform : translate(-50%,-50%)
 }
 /* 헤드 위치 css*/
-.Login_Form h1 {
-	text-align: center;
-	margin-bottom: 60px;
+.Login_Form h1{
+text-align:center;
+  margin-bottom : 60px;
 }
 /* 아이디,비밀번호 경계 css*/
-.txtb {
-	border-bottom: 2px solid #adadad;
-	position: relative;
-	margin: 30px 0;
-}
+.txtb{
+  border-bottom: 2px solid #adadad;
+  position : relative; 
+  margin : 30px 0;   
+  }
 /*아이디 , 비밀번호 text css*/
-.txtb input {
-	font-size: 15px;
-	color: #333;
-	width: 100%;
-	border: none;
-	padding: 0 5px;
-	height: 40px;
-	outline: none;
+.txtb input{
+  font-size : 15px; 
+  color : #333; 
+  width : 100%;
+  border : none; 
+  padding : 0 5px; 
+  height : 40px; 
+  outline : none;   
 }
 /*아이디,비밀번호 색상 위치 모양 css*/
-.loginbt {
-	display: block;
-	width: 100%;
-	height: 50px;
-	border: none;
-	background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
-	background: linear-gradient(120deg, #ff9068, #fd746c); D 0%, #B721FF
-	100%);
-	border-radius: 10px;
-	background-size: 200%;
-	border-color: white;
-	color: #fff;
-	outline: none;
-	cusor: pointer;
-	transition: .5s;
+.loginbt{
+  display : block; 
+  width :100%;
+  height : 50px; 
+  border : none; 
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+background: linear-gradient(120deg, #ff9068, #fd746c);
+D 0%, #B721FF 100%);
+ border-radius : 10px;
+ background-size : 200%;
+  border-color: white;
+  color : #fff; 
+  outline : none ;
+  cusor : pointer;
+  transition :.5s;   
 }
 
-.loginbt: hover {
-	background-position: right;
+.loginbt: hover{
+  background-position : right; 
 }
 
-.bottom-text {
-	margin-top: 30px;
-	text-align: center;
+.bottom-text{
+ margin-top: 30px;
+  text-align : center;
 } /* 회원가입하기 text 색상*/
-.bottom-text button {
-	color: #F15F79;
-	border: none;
-	size: 14px;
+.bottom-text a {
+  color : #F15F79;
 }
 </style>
 

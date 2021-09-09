@@ -20,6 +20,13 @@ public class MemServiceImpl implements MemService {
 		
 	}
 
+
+	@Override
+	public void insertMember(MemVO mem) {
+		this.memDAO.insertMember(mem);
+		
+	}
+
 	@Override
 	public MemVO loginCheck(String login_id) {
 		return this.memDAO.loginCheck(login_id);
