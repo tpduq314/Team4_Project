@@ -28,6 +28,12 @@ public class MemberController {
 		return "/login";
 	}
 	
+	@RequestMapping(value="/list")
+	public String list() {
+		
+		return "/list";
+	}
+	
 	
 	//아이디 중복 검색
 	@PostMapping("/mem_idcheck") //post로 접근하는 매핑주소를 처리
@@ -71,7 +77,7 @@ public class MemberController {
 					out.println("</script>");
 				}else {
 					session.setAttribute("id",login_id);//세션 아이디 저장
-					return "redirect:/login_mem";
+					return "redirect:/list";
 				}
 			}
 			return null;

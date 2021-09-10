@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>list</title>
-<link rel="stylesheet" href="../resources/css/list.css?">
+<link rel="stylesheet" href="./resources/css/list.css?">
 </head>
 <body>
     <section class="header">
