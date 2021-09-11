@@ -43,7 +43,7 @@
 				<c:forEach var="p" items="${plist}">
 				<div class="box">
 					<div class="img">
-						<img src="" alt="">
+						<img src="${p.pack_pic01}" alt="">
 					</div>
 					<div class="text">
 						<h2>${p.pack_name}</h2>
