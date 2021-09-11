@@ -15,8 +15,11 @@
     <section class="list">
         <div class="container">
             <div class="list_left">
+            <form method="post" action="index">
                 <h2>어디로 떠나고싶으세요?</h2>
                 <p>네?</p>
+                <p>{$login_id}님 로그인을 환영합니다</p>
+                </form>
             </div>
         </div>
     </section>

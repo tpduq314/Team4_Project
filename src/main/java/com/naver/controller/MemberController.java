@@ -27,13 +27,11 @@ public class MemberController {
 		
 		return "/login";
 	}
-	
 	@RequestMapping(value="/list")
 	public String list() {
 		
 		return "/list";
 	}
-	
 	
 	//아이디 중복 검색
 	@PostMapping("/mem_idcheck") //post로 접근하는 매핑주소를 처리
@@ -95,11 +93,29 @@ public class MemberController {
 	  return "/login_mem"; }
 	 
 	//회원 저장
-	@RequestMapping("/login_mem_ok")
-	public String login_mem_ok(MemVO mem) {//MemVO변수가 login_mem에서 받은 값 이름과 일치하면 mem에 저장
+	@RequestMapping("/mem_join_ok")
+	public String mem_join_ok(MemVO mem) {//MemVO변수가 login_mem에서 받은 값 이름과 일치하면 mem에 저장
 		mem.setMem_pwd(PwdChange.getPassWordToXEMD5String(mem.getMem_pwd()));//비번 암호화
 		this.memService.insertMember(mem);
 		
 		return "redirect:/login";//완료 시 login으로 보냄
 	}	
+	
+	//세션으로 아이디 값 받아오기
+	@RequestMapping("/index")
+	public String index(HttpServletResponse response,HttpSession session)throws Exception {
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out=response.getWriter();
+		String login_id=(String)session.getAttribute("login_id");
+		
+		if(login_id == null) {
+			  out.println("<script>");
+			  out.println("alert('다시 로그인 하세요!');");
+			  out.println("location='login';");
+			  out.println("</script>");
+			}else {
+	          return "/list";	
+			}
+	return "null";
+	}
 }

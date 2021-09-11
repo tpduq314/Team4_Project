@@ -6,7 +6,7 @@
 <title>Group Project</title>
 
 <link rel="stylesheet" type="text/css"
-	href="../resources/css/travelDescription.css" />
+	href="./resources/css/travelDescription.css" />
 
 
 <script type="text/javascript"
@@ -119,15 +119,15 @@
 			<!-- 슬라이드 이미지 -->
 			<div class="slideshow-container">
 				<div class="mySlides fade">
-					<img src="../resources/image/img1.jpg" height="400"
+					<img src="./resources/image/img1.jpg" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 				<div class="mySlides fade">
-					<img src="../resources/image/img2.jpg" height="400"
+					<img src="./resources/image/img2.jpg" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 				<div class="mySlides fade">
-					<img src="../resources/image/img3.jpg" height="400"
+					<img src="./resources/image/img3.jpg" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 
@@ -246,7 +246,7 @@
 						<button class="btn_class" onclick="schedule_btn('hm02')">신라호텔</button>
 					</div>
 					<div class="hi_middle" id="hm01">
-						괌 PIC <br> <img src="../resources/image/img1.jpg" width="800px"
+						괌 PIC <br> <img src="./resources/image/img1.jpg" width="800px"
 							height="400px" style="margin-top: 30px;" />
 					</div>
 
@@ -266,7 +266,7 @@
 						</tr>
 					</table>
 					<div class="hi_middle" id="hm02">
-						신라호텔 <br> <img src="../resources/image/img1.jpg" width="800px"
+						신라호텔 <br> <img src="./resources/image/img1.jpg" width="800px"
 							height="400px" style="margin-top: 30px;" />
 					</div>
 
@@ -300,11 +300,11 @@
 					<div class="ld_detail">
 						<div class="ld_detail_top" id="lt01">자연과 함께 호흡하는 곳, 루스키섬 트레킹</div>
 						<div class="ld_detail_bottom">
-							<img src="../resources/image/img1.jpg" width="27%" height="200"
+							<img src="./resources/image/img1.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <img
-								src="../resources/image/img2.jpg" width="27%" height="200"
+								src="./resources/image/img2.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <img
-								src="../resources/image/img3.jpg" width="27%" height="200"
+								src="./resources/image/img3.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <br>루스키섬은
 							블라디보스톡에서 몇 km 떨어진 곳에 위치한 섬으로 동해 연안에 위치하고 있습니다. <br> 섬의 이름은
 							동시베리아를 통치한 니콜라이 아무르 스키의 이름을 따서 붙여졌다고 합니다. <br>더불어 이 섬은 소련
@@ -315,11 +315,11 @@
 
 						<div class="ld_detail_top" id="lt02">산정호수</div>
 						<div class="ld_detail_bottom">
-							<img src="../resources/image/img1.jpg" width="27%" height="200"
+							<img src="./resources/image/img1.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <img
-								src="../resources/image/img2.jpg" width="27%" height="200"
+								src="./resources/image/img2.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <img
-								src="../resources/image/img3.jpg" width="27%" height="200"
+								src="./resources/image/img3.jpg" width="27%" height="200"
 								style="border-radius: 5px; margin: 15px;"> <br>루스키섬은
 							블라디보스톡에서 몇 km 떨어진 곳에 위치한 섬으로 동해 연안에 위치하고 있습니다. <br> 섬의 이름은
 							동시베리아를 통치한 니콜라이 아무르 스키의 이름을 따서 붙여졌다고 합니다. <br>더불어 이 섬은 소련

@@ -4,12 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Group Project</title>
-<link rel="stylesheet" type="text/css" href="../resources/css/footer.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/footer.css" />
 <body>
 
 <div id="footer">
 	<div id="footer_left">
-		<img src="../resources/image/logo.jpg" width=100%; height="100%" />
+		<img src="./resources/image/logo.jpg" width=100%; height="100%" />
 	</div>
 	<div id="footer_right">
 		<p>
@@ -32,12 +32,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Group Project</title>
-<link rel="stylesheet" type="text/css" href="../resources/css/header.css" />
-<link rel="stylesheet" type="text/css" href="../resources/css/travelDescription.css" />
-<link rel="stylesheet" type="text/css" href="../resources/css/travelReservation.css" />
-<link rel="stylesheet" type="text/css" href="../resources/css/myPage.css" />
-<link rel="stylesheet" type="text/css" href="../resources/css/editPersonalInfo.css" />
-<link rel="stylesheet" type="text/css" href="../resources/css/customerService.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/header.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/travelDescription.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/travelReservation.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/myPage.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/editPersonalInfo.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/customerService.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <body>
 
@@ -54,7 +54,7 @@
 		</div>
 		
 		<div id="logo">
-			<img src="../resources/image/yellowballon.jpg" width="70" height="50" alt="logo"/>
+			<img src="./resources/image/yellowballon.jpg" width="70" height="50" alt="logo"/>
 	 	</div>
 	 
 	</div> 

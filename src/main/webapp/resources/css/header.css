@@ -88,7 +88,7 @@ a {
 }
 
 .dep1>li>a:hover { /*마우스 오버시 css효과*/
-	background-image: url(../resources/image/blue.gif);
+	background-image: url(./resources/image/blue.gif);
 	background-repeat: repeat-x; /*x축 수평으로 반복*/
 	background-position: bottom;
 	color: black;

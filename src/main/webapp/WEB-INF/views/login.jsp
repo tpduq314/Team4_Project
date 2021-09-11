@@ -102,6 +102,7 @@ D 0%, #B721FF 100%);
 				 <input type="button" value="회원가입하기"
 					onclick="location='login_mem';"
 					style="color: #F15F79; border: none; font-size: 15px; background-color: white; font-weight: bold;" />
+			
 			</div>
 		</div>
 	</form>

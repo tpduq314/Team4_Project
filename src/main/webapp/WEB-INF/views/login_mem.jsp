@@ -114,10 +114,13 @@ select {
 }
 
 </style>
+<%
 
+
+%>
 
 <body>
-	<form name="mem" method="post" action="login_mem_ok"
+	<form name="mem" method="post" action="mem_join_ok"
 		onsubmit="return join_check();">
 
 		<div class="signup_form">

@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>패키지</title>
-<link rel="stylesheet" href="../resources/css/index.css?"/>
+<link rel="stylesheet" href="./resources/css/index.css?"/>
 </head>
 <body>
 <section>
@@ -77,17 +77,17 @@
    <ul class="slidelist">
     <li>
      <a>
-      <img src="../resources/image/m4.jpg">
+      <img src="./resources/image/m4.jpg">
      </a>
     </li>
     <li>
      <a>
-      <img src="../resources/image/m5.jpg">
+      <img src="./resources/image/m5.jpg">
      </a>
     </li>
     <li>
      <a>
-      <img src="../resources/image/m6.jpg">
+      <img src="./resources/image/m6.jpg">
      </a>
     </li>
    
@@ -114,7 +114,7 @@
 </div>
 <div>
  <a> 
- <img src="../resources/image/m7.jpg">
+ <img src="./resources/image/m7.jpg">
  </a>
 </div>
 	</div>
