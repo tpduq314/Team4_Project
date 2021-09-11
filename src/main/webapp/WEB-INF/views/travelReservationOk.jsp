@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" type="text/css"
-	href="../resources/css/travelReservation.css" />
+	href="./resources/css/travelReservation.css" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
 		<div class="res_description"
 			style="background-color: #D5D5D5; text-align: center; height: 400px;">
-			<img src="../resources/image/logo.jpg" width=150px height=150px
+			<img src="./resources/image/logo.jpg" width=150px height=150px
 				style="margin-top: 50px;">
 			<p class="travel_reservation_ok_p" style="margin-top: 20px;">웹
 				투어를 이용해주셔서 감사합니다.</p>

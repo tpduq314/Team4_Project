@@ -6,7 +6,7 @@
 <title>Group Project</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href="../resources/css/myPage.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/myPage.css" />
 
 <body>
 
@@ -70,11 +70,11 @@
 			<table class="res_table"
 				style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5; width: 100%;">
 				<tr align="center">
-					<td class="ask_ser_td" style="border-left:2px solid #EAEAEA; border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="../resources/image/home.jpg"
+					<td class="ask_ser_td" style="border-left:2px solid #EAEAEA; border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="./resources/image/home.jpg"
 						width="90%;" height="90%"></td>
-					<td class="ask_ser_td" style="border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="../resources/image/coupon.png"
+					<td class="ask_ser_td" style="border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="./resources/image/coupon.png"
 						width="55%;" height="55%"></td>
-					<td class="ask_ser_td" style="; border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="../resources/image/shoppingCart.png"
+					<td class="ask_ser_td" style="; border-right: 2px solid #EAEAEA;padding-top: 10px;"><img src="./resources/image/shoppingCart.png"
 						width="70%;" height="70%"></td>
 
 				</tr>

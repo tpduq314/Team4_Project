@@ -7,7 +7,7 @@
 <title>Group Project</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href="../resources/css/customerService.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/customerService.css" />
 
 <script type="text/javascript">
 	//유효성 검사

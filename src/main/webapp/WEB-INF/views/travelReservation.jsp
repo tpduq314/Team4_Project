@@ -6,7 +6,7 @@
 <title>Group Project</title>
 </head>
 <link rel="stylesheet" type="text/css"
-	href="../resources/css/travelReservation.css" />
+	href="./resources/css/travelReservation.css" />
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-latest.js"></script>
 
