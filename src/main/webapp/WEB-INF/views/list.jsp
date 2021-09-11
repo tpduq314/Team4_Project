@@ -1,123 +1,61 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
 <title>list</title>
 <link rel="stylesheet" href="./resources/css/list.css?">
+<script src="./resources/js/jquery.js"></script>
 </head>
 <body>
-    <section class="header">
-        <div>
-            <h1>리스트페이지</h1>
-        </div>
-    </section>
+	<section class="header">
+		<div>
+			<h1>리스트페이지</h1>
+		</div>
+	</section>
 
-    <section class="list">
-        <div class="container">
-            <div class="list_left">
-            <form method="post" action="index">
-                <h2>어디로 떠나고싶으세요?</h2>
-                <p>네?</p>
-                <p>{$login_id}님 로그인을 환영합니다</p>
-                </form>
-            </div>
-        </div>
-    </section>
+	<section class="list">
+		<div class="container">
+			<div class="list_left">
+				<form method="post" >
+					<h2>어디로 떠나고싶으세요?</h2>
+					<p>네?</p>
+					<p>${id}님로그인을 환영합니다</p>
+				</form>
+			</div>
+		</div>
+	</section>
 
-    <section class="serv_list">
-        <div class="container">
-            <div class="title">
-                <h1>북미</h1>
-                <ul>
-                    <li><a href="">미국</a></li>
-                    <li><a href="">캐나다</a></li>
-                </ul>
-            </div>
-            
-            <div class="box_list">
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>캐나다</h2>
-                        <p>지금 캐나다에서 류현진의 야구경기를..!</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>미국</h2>
-                        <p>la는</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-             
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>미국1</h2>
-                        <p>미국p1</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>미국2</h2>
-                        <p>미p2</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>미3</h2>
-                        <p>미p3</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>캐나다1</h2>
-                        <p>캐나다p1</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>캐2</h2>
-                        <p>캐2</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <h2>캐3</h2>
-                        <p>캐p3</p>
-                        <button>예약하기</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="serv_list">
+		<div class="container">
+		
+			<div class="title">
+				<h1>북미</h1>
+			</div>
+			
+			<div class="box_list">
+			
+			<c:if test="${empty plist}">
+				<h1>목록이 없습니다.</h1>
+			</c:if>
+			
+			<c:if test="${!empty plist}">
+				<c:forEach var="p" items="${plist}">
+				<div class="box">
+					<div class="img">
+						<img src="" alt="">
+					</div>
+					<div class="text">
+						<h2>${p.pack_name}</h2>
+						<p>${p.pack_desc}</p>
+						<button>예약하기</button>
+					</div>
+				</div>
+				</c:forEach>
+			</c:if>
+			
+			</div>
+		</div>
+	</section>
 </body>
 </html>

@@ -29,6 +29,17 @@ create table package(
 	,pack_date varchar2(20) not null --출국 날짜 
 );
 
+insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a123','캐나다 여행','캐나다 여행은 즐거워','북미','캐나다','7777','7777','7777','7777','10000','20210324');
+
+insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a124','미국 여행','미국 여행은 즐거워','북미','미국','7777','7777','7777','7777','10000','20210324');
+
+insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a125','한국 여행','한국 여행은 즐거워','아시아','한국','7777','7777','7777','7777','10000','20210324');
+
+select * from package;
+
 create table hotel(
 	hotel_name varchar2(100) primary key --호텔 이름
 	,hotel_pic varchar2(100) not null --호텔 사진

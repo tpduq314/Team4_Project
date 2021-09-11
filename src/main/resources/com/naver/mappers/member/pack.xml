@@ -6,4 +6,9 @@
  
  <mapper namespace="Pack">
  	
+ 	<!-- 패키지 목록 -->
+    <select id="package_li" resultType="pack" >
+     select * from package    
+    </select>
+ 	
  </mapper>
