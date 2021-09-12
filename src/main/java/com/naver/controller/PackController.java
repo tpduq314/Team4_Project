@@ -37,11 +37,15 @@ public class PackController {
 				return listM;
 				//return "redirect:/login";
 			}else {
+				int totalCount=this.packService.getListCount(p);
+				
+				listM.addObject("totalCount",totalCount);
+				
 				List<PackVO> plist=this.packService.getPackageList(p);
 				listM.addObject("plist",plist);
 				listM.setViewName("/list");
+				//return "/list";
 				return listM;
-				//return "/list";	
 			}
 		}
 }

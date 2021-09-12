@@ -10,5 +10,9 @@
     <select id="package_li" resultType="pack" >
      select * from package    
     </select>
- 	
+    
+    <!-- 리스트의 패키지 개수 -->
+	<select id="package_li_count" resultType="int">
+		select count(*) from package 
+	</select> 	
  </mapper>

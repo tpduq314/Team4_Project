@@ -46,6 +46,8 @@ insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,
 values('a128','중국 여행','중국 여행은 즐거워','아시아','중국','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncARM8nat04KiH-tZxUCuWKxsMxxzSIn5nA&usqp=CAU','7777','7777','7777','10000','20210324');
 
 drop table package;
+drop table landmark;
+drop table hotel;
 
 select * from package;
 
@@ -64,7 +66,6 @@ create table landmark(
 	,land_pack_code varchar2(20) not null
 	,foreign key(land_pack_code) references package(pack_code)
 );
-
 
 
 

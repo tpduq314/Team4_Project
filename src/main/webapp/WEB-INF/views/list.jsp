@@ -25,10 +25,10 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<section class="serv_list">
+	<div class="bList_count">글개수:${totalCount}</div>
 		<div class="container">
-		
 			<div class="title">
 				<h1>북미</h1>
 			</div>

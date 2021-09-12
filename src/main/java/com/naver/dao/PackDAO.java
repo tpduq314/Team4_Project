@@ -8,4 +8,6 @@ public interface PackDAO {
 
 	List<PackVO> getPackageList(PackVO p);
 
+	int getTotalCount(PackVO p);
+
 }

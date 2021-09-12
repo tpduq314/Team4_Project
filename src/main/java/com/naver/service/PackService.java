@@ -7,5 +7,5 @@ import com.naver.vo.PackVO;
 public interface PackService {
 
 	List<PackVO> getPackageList(PackVO p);
-
+	int getListCount(PackVO p);
 }

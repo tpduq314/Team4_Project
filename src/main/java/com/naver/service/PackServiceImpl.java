@@ -18,4 +18,9 @@ public class PackServiceImpl implements PackService {
 	public List<PackVO> getPackageList(PackVO p) {
 		return this.packDAO.getPackageList(p);
 	}
+
+	@Override
+	public int getListCount(PackVO p) {
+		return this.packDAO.getTotalCount(p);
+	}
 }
