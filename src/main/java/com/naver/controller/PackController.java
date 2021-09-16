@@ -48,4 +48,11 @@ public class PackController {
 				return listM;
 			}
 		}
+		
+		//지역 검색
+		@RequestMapping("/search_city")
+		public String zip_find() {
+			return "search_city";
+		}//search_city
+		
 }

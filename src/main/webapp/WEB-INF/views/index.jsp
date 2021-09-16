@@ -6,8 +6,10 @@
 <title></title>
 <link rel="stylesheet" href="./resources/css/index.css?">
 <script src="test2.js"></script>
+<script src="./resources/js/index.js"></script>
 </head>
 <body>
+		
 	<div id="wrapper">
 		<div id="wrap">
 		
@@ -303,7 +305,7 @@
 			</div>
 				</ul>
 			<!-- 슬라이드 이미지 부분 끝 -->
-			
+			<form name="i" method="post">
 			<div class="search_area">
 				<div class="search_box">
 				<p class="search_box_title">어디로 떠나고 싶으세요?</p>
@@ -311,8 +313,8 @@
 						<div class="item">
                             <div class="in">
                             	<span class="item_title">여행지</span>
-                                <input type="text" class="search_city" placeholder="여행지를 입력해 주세요.">
-                                <button type="button" class="btn_city">지역검색</button>
+                                <input id="city" name="city" type="text" class="search_city" placeholder="여행지를 입력해 주세요.">
+                                <button type="button" class="btn_city" onclick="search_city();">지역검색</button>
                         	</div>
                         </div>
 						<div class="item2">
@@ -328,7 +330,7 @@
 					</div>
 				</div>
 			</div>
-			
+			</form>
 				<!-- wrap -->
 			</div>
 		</div>
