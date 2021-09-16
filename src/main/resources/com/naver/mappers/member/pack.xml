@@ -3,16 +3,23 @@
 <!DOCTYPE mapper
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
- 
- <mapper namespace="Pack">
- 	
- 	<!-- 패키지 목록 -->
-    <select id="package_li" resultType="pack" >
-     select * from package    
-    </select>
-    
-    <!-- 리스트의 패키지 개수 -->
+
+<mapper namespace="Pack">
+
+	<!-- 패키지 목록 -->
+	<select id="package_li" resultType="pack">
+		select * from package
+	</select>
+
+	<!-- 리스트의 패키지 개수 -->
 	<select id="package_li_count" resultType="int">
-		select count(*) from package 
-	</select> 	
- </mapper>
+		select count(*) from package
+	</select>
+
+	<!-- 패키지 내용 -->
+	<select id="package_cont" resultType="pack">
+		select * from package where pack_code=#{pack_code}
+	</select>
+
+
+</mapper>

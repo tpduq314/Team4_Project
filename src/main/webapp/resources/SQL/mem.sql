@@ -52,12 +52,19 @@ drop table hotel;
 select * from package;
 
 create table hotel(
-	hotel_name varchar2(100) primary key --호텔 이름
-	,hotel_pic varchar2(100) not null --호텔 사진
+	hotel_code varchar2(50) primary key,
+	hotel_name varchar2(100) not null --호텔 이름
+	,hotel_pic varchar2(500) not null --호텔 사진
 	,hotel_desc varchar2(300) not null --호텔 상세내용 
 	,hotel_pack_code varchar2(20) not null
 	,foreign key(hotel_pack_code) references package(pack_code)
 ); 
+
+select * from hotel;
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_pack_code) values ('h1','호텔A','https://dimgcdn.ybtour.co.kr/TN/7b/7b01e6f6ba59c7f94e48ee5e9ef646d8.tn.410x280.jpg','호텔 A 설명','a128');
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_pack_code) values ('h2','호텔B','https://dimgcdn.ybtour.co.kr/TN/38/38c48b72ad20f8d290151204a3fb6ac0.tn.410x280.jpg','호텔 B 설명','a128');
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_pack_code) values ('h3','호텔C','https://dimgcdn.ybtour.co.kr/TN/38/38c48b72ad20f8d290151204a3fb6ac0.tn.410x280.jpg','호텔 C 설명','a128');
 
 create table landmark(
 	land_name varchar2(100) primary key --여행지 이름

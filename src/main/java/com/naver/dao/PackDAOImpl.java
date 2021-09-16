@@ -23,4 +23,9 @@ public class PackDAOImpl implements PackDAO {
 	public int getTotalCount(PackVO p) {
 		return this.sqlSession.selectOne("package_li_count",p);
 	}
+
+	@Override
+	public PackVO getPackageCont(String pack_code) {
+		return this.sqlSession.selectOne("package_cont",pack_code);
+	}
 }

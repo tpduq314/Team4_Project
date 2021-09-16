@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +27,8 @@
 
 	$(document).ready(function() {
 		showSlides(slideIndex);
-		schedule_btn('hm01');
-		schedule_btn2('lt01');
+		//schedule_btn('hm01');
+		//schedule_btn2('lt01');
 
 	}); //시작하면 바로 보이게 하는 슬라이드 
 
@@ -102,14 +104,14 @@
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 		<div id="des_top">
 			<div id="category">
-				<h1 id="txt_category">홈>해외패키지>동남아>괌</h1>
+				<h1 id="txt_category">홈>해외패키지>${p.pack_main_cate}>${p.pack_sub_cate}</h1>
 			</div>
 			<div id="product_name">
-				<h1 id="txt_product_name">두짓타니 호텔 3박</h1>
+				<h1 id="txt_product_name">${p.pack_name}</h1>
 			</div>
 			<div id="product_code">
 				<div id="span_product_code">상품코드</div>
-				<div id="txt_product_code">NXAFT0GU0166</div>
+				<div id="txt_product_code">${p.pack_code}</div>
 			</div>
 		</div>
 
@@ -119,15 +121,15 @@
 			<!-- 슬라이드 이미지 -->
 			<div class="slideshow-container">
 				<div class="mySlides fade">
-					<img src="./resources/image/img1.jpg" height="400"
+					<img src="${p.pack_pic02}" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 				<div class="mySlides fade">
-					<img src="./resources/image/img2.jpg" height="400"
+					<img src="${p.pack_pic03}" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 				<div class="mySlides fade">
-					<img src="./resources/image/img3.jpg" height="400"
+					<img src="${p.pack_pic04}" height="400"
 						style="border-radius: 10px; width: 100%;">
 				</div>
 
@@ -198,9 +200,9 @@
 					</tr>
 					<tr>
 						<td style="border-right: 2px solid #F6F6F6;">기본상품</td>
-						<td style="border-right: 2px solid #F6F6F6;">1,999,900원</td>
-						<td style="border-right: 2px solid #F6F6F6;">999,950원</td>
-						<td>150,000원</td>
+						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price}</td>
+						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price}</td>
+						<td>${p.pack_price}</td>
 					</tr>
 
 				</table>
@@ -236,56 +238,63 @@
 			<!-- 여행 상세 정보 -->
 			<div class="main_schedule" style="height: 1500px;" id="div3">
 				여행 상세 정보
-				
+
 				<!-- 호텔 정보 -->
 				<h2 style="font-size: 16px; margin: 20px 0px 0px 10px;">01 호텔정보</h2>
 				<div id="hotel_information">
-					<div class="hi_top">
-						<button class="btn_class" onclick="schedule_btn('hm01')">괌
-							PIC</button>
-						<button class="btn_class" onclick="schedule_btn('hm02')">신라호텔</button>
-					</div>
-					<div class="hi_middle" id="hm01">
-						괌 PIC <br> <img src="./resources/image/img1.jpg" width="800px"
-							height="400px" style="margin-top: 30px;" />
-					</div>
 
-					<table class="hi_bottom" id="hb01">
-						<tr>
-							<td class="hi_bottom_detail">주소:</td>
-							<td class="hi_bottom_detail_2">210 Pale San Vitores Road,
-								Tumon Bay, Guam 96913</td>
-							<td class="hi_bottom_detail">전화번호:</td>
-							<td class="hi_bottom_detail_2">+1-671-646-9171</td>
-						</tr>
-						<tr>
-							<td class="hi_bottom_detail">팩스:</td>
-							<td class="hi_bottom_detail_2">+1-671-648-2474</td>
-							<td class="hi_bottom_detail">홈페이지:</td>
-							<td class="hi_bottom_detail_2">http://www.pic.co.kr</td>
-						</tr>
-					</table>
-					<div class="hi_middle" id="hm02">
-						신라호텔 <br> <img src="./resources/image/img1.jpg" width="800px"
-							height="400px" style="margin-top: 30px;" />
-					</div>
+					<c:if test="${!empty hlist}">
+						
+						<div class="hi_top">
+							<c:forEach var="h" items="${hlist}">
+								<button class="btn_class"
+									onclick="schedule_btn('${h.hotel_code}')">${h.hotel_name}</button>
+							</c:forEach>
+							<!--  <button class="btn_class" onclick="schedule_btn('hm02')">신라호텔</button>-->
+						</div>
+						<c:forEach var="h" items="${hlist}">
+							<div class="hi_middle" id="${h.hotel_code}">
+								${h.hotel_name} <br> <img src="${h.hotel_pic}"
+									width="800px" height="400px" style="margin-top: 30px;" />
+							</div>
 
-					<table class="hi_bottom" id="hb02">
-						<tr>
-							<td class="hi_bottom_detail">주소:</td>
-							<td class="hi_bottom_detail_2">210 Pale San Vitores Road,
-								Tumon Bay, Guam 96913</td>
-							<td class="hi_bottom_detail">전화번호:</td>
-							<td class="hi_bottom_detail_2">+1-671-646-9171</td>
-						</tr>
-						<tr>
-							<td class="hi_bottom_detail">팩스:</td>
-							<td class="hi_bottom_detail_2">+1-671-648-2474</td>
-							<td class="hi_bottom_detail">홈페이지:</td>
-							<td class="hi_bottom_detail_2">http://www.pic.co.kr</td>
-						</tr>
-					</table>
+							<table class="hi_bottom" id="hb01">
+								<tr>
+									<td class="hi_bottom_detail">주소:</td>
+									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail">전화번호:</td>
+									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+								</tr>
+								<tr>
+									<td class="hi_bottom_detail">팩스:</td>
+									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail">홈페이지:</td>
+									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+								</tr>
+							</table>
+						</c:forEach>
+						<!--  <div class="hi_middle" id="hm02">
+								신라호텔 <br> <img src="./resources/image/img1.jpg"
+									width="800px" height="400px" style="margin-top: 30px;" />
+							</div>
 
+							<table class="hi_bottom" id="hb02">
+								<tr>
+									<td class="hi_bottom_detail">주소:</td>
+									<td class="hi_bottom_detail_2">210 Pale San Vitores Road,
+										Tumon Bay, Guam 96913</td>
+									<td class="hi_bottom_detail">전화번호:</td>
+									<td class="hi_bottom_detail_2">+1-671-646-9171</td>
+								</tr>
+								<tr>
+									<td class="hi_bottom_detail">팩스:</td>
+									<td class="hi_bottom_detail_2">+1-671-648-2474</td>
+									<td class="hi_bottom_detail">홈페이지:</td>
+									<td class="hi_bottom_detail_2">http://www.pic.co.kr</td>
+								</tr>
+							</table>-->
+
+					</c:if>
 				</div>
 
 				<!-- 여행지 정보 -->
@@ -335,7 +344,7 @@
 
 
 			</div>
-			
+
 			<!-- 기타 정보 -->
 			<div class="main_schedule" style="height: 700px;" id="div4">
 				기타 정보
@@ -368,7 +377,7 @@
 
 				</ul>
 			</div>
-			
+
 			<!-- 고객 후기 -->
 			<div class="main_schedule" style="height: 200px; border: none;"
 				id="div5">
@@ -377,7 +386,8 @@
 					후기가 없습니다.</h1>
 			</div>
 
-		</div><!-- 화면 왼쪽 끝 -->
+		</div>
+		<!-- 화면 왼쪽 끝 -->
 
 
 		<!-- 예약 폼 -->
@@ -449,7 +459,8 @@
 				</table>
 			</div>
 			<div class="rf" style="border-bottom: solid 3px;">
-				<table style="width: 300px; height: 50px; margin-top: 0px;margin-left: 10px;">
+				<table
+					style="width: 300px; height: 50px; margin-top: 0px; margin-left: 10px;">
 					<tr>
 						<td style="font-size: 16px;">총 금액</td>
 						<td

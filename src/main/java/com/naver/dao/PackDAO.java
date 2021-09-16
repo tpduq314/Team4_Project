@@ -10,4 +10,6 @@ public interface PackDAO {
 
 	int getTotalCount(PackVO p);
 
+	PackVO getPackageCont(String pack_code);
+
 }

@@ -8,4 +8,5 @@ public interface PackService {
 
 	List<PackVO> getPackageList(PackVO p);
 	int getListCount(PackVO p);
+	PackVO getPackageCont(String pack_code);
 }

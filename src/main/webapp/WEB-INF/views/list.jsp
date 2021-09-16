@@ -48,7 +48,7 @@
 					<div class="text">
 						<h2>${p.pack_name}</h2>
 						<p>${p.pack_desc}</p>
-						<button>예약하기</button>
+						<button onclick="location='travel_description?main_category=${p.pack_main_cate}&sub_category=${p.pack_sub_cate}&pack_code=${p.pack_code}';">예약하기</button>
 					</div>
 				</div>
 				</c:forEach>
