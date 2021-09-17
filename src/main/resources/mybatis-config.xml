@@ -12,6 +12,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias type="com.naver.vo.PackVO" alias="pack" />
 
 		<typeAlias type="com.naver.vo.HotelVO" alias="hotel" />
+		
+		<typeAlias type="com.naver.vo.LandVO" alias="land" />
 
 
 	</typeAliases>

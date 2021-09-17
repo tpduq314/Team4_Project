@@ -244,7 +244,7 @@
 				<div id="hotel_information">
 
 					<c:if test="${!empty hlist}">
-						
+
 						<div class="hi_top">
 							<c:forEach var="h" items="${hlist}">
 								<button class="btn_class"
@@ -300,48 +300,38 @@
 				<!-- 여행지 정보 -->
 				<h2 style="font-size: 16px; margin: 20px 0px 0px 10px;">02
 					여행지정보</h2>
-				<div class="landmark_des">
-					<div class="hi_top">
-						<button class="btn_class" onclick="schedule_btn2('lt01')">루스키섬
-							트레킹</button>
-						<button class="btn_class" onclick="schedule_btn2('lt02')">신라호텔</button>
-					</div>
-					<div class="ld_detail">
-						<div class="ld_detail_top" id="lt01">자연과 함께 호흡하는 곳, 루스키섬 트레킹</div>
-						<div class="ld_detail_bottom">
-							<img src="./resources/image/img1.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <img
-								src="./resources/image/img2.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <img
-								src="./resources/image/img3.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <br>루스키섬은
-							블라디보스톡에서 몇 km 떨어진 곳에 위치한 섬으로 동해 연안에 위치하고 있습니다. <br> 섬의 이름은
-							동시베리아를 통치한 니콜라이 아무르 스키의 이름을 따서 붙여졌다고 합니다. <br>더불어 이 섬은 소련
-							시절, 군사기지로서 이용되었다는 점에서 상트페테르부르크의 크론슈타트에 비교되어 극동의 크론슈타트라고도 불리고
-							있습니다. <br>이곳은 지역 특성상 안개가 자주 끼기 때문에, 겨울에는 안개가 너무 심해 섬이 잘 보이지
-							않을 수도 있습니다.
+				<c:if test="${!empty llist}">
+					<div class="landmark_des">
+						<div class="hi_top">
+							<c:forEach var="l" items="${llist}">
+								<button class="btn_class"
+									onclick="schedule_btn2('${l.land_code}')">${l.land_name}</button>
+								<!-- <button class="btn_class" onclick="schedule_btn2('lt02')">신라호텔</button> -->
+							</c:forEach>
+						</div>
+						<div class="ld_detail">
+							<c:forEach var="l" items="${llist}">
+								<div class="ld_detail_top" id="${l.land_code}">${l.land_name}</div>
+
+								<div class="ld_detail_bottom">
+									<div class="ld_bottom_middle" id="${l.land_code}">
+										<br>
+										<img src="${l.land_pic01 }" width="27%" height="200"
+											style="border-radius: 5px; margin: 15px;" /> <img
+											src="${l.land_pic02 }" width="27%" height="200"
+											style="border-radius: 5px; margin: 15px;" /> <img
+											src="${l.land_pic03 }" width="27%" height="200"
+											style="border-radius: 5px; margin: 15px;" /> <br>
+										${l.land_desc}
+									</div>
+								</div>
+							</c:forEach>
 						</div>
 
-						<div class="ld_detail_top" id="lt02">산정호수</div>
-						<div class="ld_detail_bottom">
-							<img src="./resources/image/img1.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <img
-								src="./resources/image/img2.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <img
-								src="./resources/image/img3.jpg" width="27%" height="200"
-								style="border-radius: 5px; margin: 15px;"> <br>루스키섬은
-							블라디보스톡에서 몇 km 떨어진 곳에 위치한 섬으로 동해 연안에 위치하고 있습니다. <br> 섬의 이름은
-							동시베리아를 통치한 니콜라이 아무르 스키의 이름을 따서 붙여졌다고 합니다. <br>더불어 이 섬은 소련
-							시절, 군사기지로서 이용되었다는 점에서 상트페테르부르크의 크론슈타트에 비교되어 극동의 크론슈타트라고도 불리고
-							있습니다. <br>이곳은 지역 특성상 안개가 자주 끼기 때문에, 겨울에는 안개가 너무 심해 섬이 잘 보이지
-							않을 수도 있습니다.
-						</div>
+
+
 					</div>
-
-
-
-				</div>
-
+				</c:if>
 
 			</div>
 

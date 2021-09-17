@@ -67,14 +67,18 @@ insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_pack_code) va
 insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_pack_code) values ('h3','호텔C','https://dimgcdn.ybtour.co.kr/TN/38/38c48b72ad20f8d290151204a3fb6ac0.tn.410x280.jpg','호텔 C 설명','a128');
 
 create table landmark(
-	land_name varchar2(100) primary key --여행지 이름
-	,land_pic varchar2(100) not null --여행지 사진
-	,land_desc varchar2(300) not null --호텔 상세내용
+	land_code varchar2(50) primary key
+	,land_name varchar2(100) not null --여행지 이름
+	,land_pic01 varchar2(100) not null --여행지 사진
+	,land_pic02 varchar2(100) not null
+	,land_pic03 varchar2(100) not null
+	,land_desc varchar2(300) not null --여행지 상세내용
 	,land_pack_code varchar2(20) not null
 	,foreign key(land_pack_code) references package(pack_code)
 );
 
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l1','루스키섬','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크A 설명','a128');
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l2','원마운트','https://www.onemount.co.kr/web/images/clip/offi_1_1_img01.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크B 설명','a128');
 
 
-
-select *from mem;
+select *from landmark;

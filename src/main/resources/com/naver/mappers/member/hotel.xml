@@ -10,5 +10,5 @@
 	<select id="hotel_li" resultType="hotel">
 		select * from hotel where hotel_pack_code=#{pack_code}
 	</select>
-	
+		
 </mapper>

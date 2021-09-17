@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.naver.service.HotelService;
+import com.naver.service.LandService;
 import com.naver.service.PackService;
 import com.naver.vo.HotelVO;
+import com.naver.vo.LandVO;
 import com.naver.vo.PackVO;
 
 @Controller
@@ -27,6 +29,9 @@ public class PackController {
 	
 	@Autowired
 	private HotelService hotelService;
+	
+	@Autowired
+	private LandService landService;
 
 	//패키지 여행 리스트
 	@RequestMapping("/list")
@@ -65,12 +70,16 @@ public class PackController {
 	
 	@RequestMapping("/travel_description")
 	public String travel_description(@RequestParam("pack_code") String pack_code,HttpServletRequest request,
-			Model m,@ModelAttribute PackVO p,@ModelAttribute HotelVO h)throws Exception {
+			Model m,@ModelAttribute PackVO p,@ModelAttribute HotelVO h,@ModelAttribute LandVO l)throws Exception {
 		
 		p=this.packService.getPackageCont(pack_code);
 		List<HotelVO> hlist=this.hotelService.getHotelList(h,pack_code);
+		List<LandVO> llist=this.landService.getLandList(l,pack_code);
+		
 		m.addAttribute("p",p);
 		m.addAttribute("hlist",hlist);
+		m.addAttribute("llist",llist);
+
 		
 		return "/travelDescription";
 	}
