@@ -69,6 +69,7 @@ public class PackController {
 		
 		p=this.packService.getPackageCont(pack_code);
 		List<HotelVO> hlist=this.hotelService.getHotelList(h,pack_code);
+		
 		m.addAttribute("p",p);
 		m.addAttribute("hlist",hlist);
 		

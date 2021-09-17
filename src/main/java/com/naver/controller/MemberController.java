@@ -37,6 +37,18 @@ public class MemberController {
 
 		return "/index";
 	}
+	
+	@RequestMapping(value="/mypage")
+	public String mypage() {
+
+		return "/myPage";
+	}
+	
+	@RequestMapping(value="/customer_service")
+	public String customer_service() {
+
+		return "/customerService";
+	}
 	//아이디 중복 검색
 	@PostMapping("/mem_idcheck") //post로 접근하는 매핑주소를 처리
 	public String mem_idcheck(String id,HttpServletResponse response) throws Exception{
