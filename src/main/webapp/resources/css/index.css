@@ -314,3 +314,17 @@ input[type=text]{
     border-top: 1px solid #ddd;
     top:265px;
 }
+.cal_cont{
+	padding: 0 100px 0 20px;
+	position:absolute;
+	top:32px;
+}
+.cal_button{
+	position:absolute;
+	top:35px;
+	left:533px;
+	background: transparent;
+    font-size: 14px;
+    width:60px;
+    line-height: 35px;
+}

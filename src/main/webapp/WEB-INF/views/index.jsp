@@ -5,8 +5,33 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="./resources/css/index.css?">
-<script src="test2.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
 <script src="./resources/js/index.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    $("#date1").datepicker();
+});
+$(function(){
+    $("#date2").datepicker({
+        showOn: "both",
+        buttonImage: "images/calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+    });
+    $(function(){
+        $("#date3").datepicker({
+            onSelect:function(dateText, inst) {
+                console.log(dateText);}
+		});
+    });
+});
+
+</script>
+
 </head>
 <body>
 		
@@ -320,7 +345,8 @@
 						<div class="item2">
 							<div class="in2">
 								<span class="cal_title">출발 예정일</span>
-								<input type="text" class="cal_select" placeholder="달력넣을자리">
+								<input type="text" class="cal_cont" name="date" id="date3" size="12" />
+								<input type="button" class="cal_button" value="달력" onclick="$('#date3').datepicker('show');" />
 							</div>
 						</div>
 						<div class="item_bottom_cont">
