@@ -74,10 +74,8 @@ public class PackController {
 		
 		p=this.packService.getPackageCont(pack_code);
 		List<HotelVO> hlist=this.hotelService.getHotelList(h,pack_code);
-<<<<<<< HEAD
 		List<LandVO> llist=this.landService.getLandList(l,pack_code);
-=======
->>>>>>> branch 'master' of https://github.com/tpduq314/Team4_Project.git
+
 		
 		m.addAttribute("p",p);
 		m.addAttribute("hlist",hlist);
