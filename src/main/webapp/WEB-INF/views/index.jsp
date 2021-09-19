@@ -97,77 +97,76 @@
 				<ul class="dep1">
 					<li><a href="#">괌/사이판</a>
 						<ul>
-							<li><a href="#">괌</a></li>
-							<li><a href="#">사이판</a></li>
-							<li><a href="#">팔라우</a></li>
+							<li><a href="/Project/list?main_category=괌/사이판&sub_category=괌">괌</a></li>
+							<li><a href="/Project/list?main_category=괌/사이판&sub_category=사이판">사이판</a></li>
+							<li><a href="/Project/list?main_category=괌/사이판&sub_category=팔라우">팔라우</a></li>
 						</ul></li>
 					<li><a href="#">하와이/미국/캐나다</a>
 						<ul>
-							<li><a href="#">하와이</a></li>
-							<li><a href="#">미동부</a></li>
-							<li><a href="#">중남미</a></li>
-							<li><a href="#">하와이</a></li>
-							<li><a href="#">미서부</a></li>
-							<li><a href="#">캐나다</a></li>
+							<li><a href="/Project/list?main_category=하와이/미국/캐나다&sub_category=하와이">하와이</a></li>
+							<li><a href="/Project/list?main_category=하와이/미국/캐나다&sub_category=미동부">미동부</a></li>
+							<li><a href="/Project/list?main_category=하와이/미국/캐나다&sub_category=중남미">중남미</a></li>
+							<li><a href="/Project/list?main_category=하와이/미국/캐나다&sub_category=미서부">미서부</a></li>
+							<li><a href="/Project/list?main_category=하와이/미국/캐나다&sub_category=캐나다">캐나다</a></li>
 
 						</ul></li>
 					<li><a href="#">유럽</a>
 						<ul>
-							<li><a href="#">서유럽</a></li>
-							<li><a href="#">동유럽</a></li>
-							<li><a href="#">그리스</a></li>
-							<li><a href="#">스페인</a></li>
-							<li><a href="#">독일</a></li>
-							<li><a href="#">영국</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=유럽">서유럽</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=동유럽">동유럽</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=그리스">그리스</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=스페인">스페인</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=독일">독일</a></li>
+							<li><a href="/Project/list?main_category=유럽&sub_category=영국">영국</a></li>
 
 						</ul></li>
 					<li><a href="#">동남아</a>
 						<ul>
-							<li><a href="#">방콕</a></li>
-							<li><a href="#">베트남</a></li>
-							<li><a href="#">치앙마이</a></li>
-							<li><a href="#">파타야</a></li>
-							<li><a href="#">세부</a></li>
-							<li><a href="#">마닐라</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=방콕">방콕</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=베트남">베트남</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=치앙마이">치앙마이</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=파타야">파타야</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=세부">세부</a></li>
+							<li><a href="/Project/list?main_category=동남아&sub_category=마닐라">마닐라</a></li>
 
 						</ul></li>
 					<li><a href="#">홍콩/마카오/대만</a>
 						<ul>
-							<li><a href="#">홍콩</a></li>
-							<li><a href="#">마카오</a></li>
-							<li><a href="#">대만</a></li>
+							<li><a href="/Project/list?main_category=홍콩/마카오/대만&sub_category=홍콩">홍콩</a></li>
+							<li><a href="/Project/list?main_category=홍콩/마카오/대만&sub_category=마카오">마카오</a></li>
+							<li><a href="/Project/list?main_category=홍콩/마카오/대만&sub_category=대만">대만</a></li>
 						</ul></li>
 
 					<li><a href="#">호주/뉴질랜드</a>
 						<ul>
-							<li><a href="#">호주</a></li>
-							<li><a href="#">뉴질랜드</a></li>
+							<li><a href="/Project/list?main_category=호주/뉴질랜드&sub_category=호주">호주</a></li>
+							<li><a href="/Project/list?main_category=호주/뉴질랜드&sub_category=뉴질랜드">뉴질랜드</a></li>
 
 						</ul></li>
 					<li><a href="#">중앙아시아/몽골</a>
 						<ul>
-							<li><a href="#">중앙아시아</a></li>
-							<li><a href="#">몽골</a></li>
+							<li><a href="/Project/list?main_category=중앙아시아/몽골&sub_category=중앙아시아">중앙아시아</a></li>
+							<li><a href="/Project/list?main_category=중앙아시아/몽골&sub_category=몽골">몽골</a></li>
 
 						</ul></li>
 					<li><a href="#">중국</a>
 						<ul>
-							<li><a href="#">북경</a></li>
-							<li><a href="#">상해</a></li>
-							<li><a href="#">심천</a></li>
-							<li><a href="#">장춘</a></li>
-							<li><a href="#">내몽골</a></li>
-							<li><a href="#">하이난</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=북경">북경</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=상해">상해</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=심천">심천</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=장춘">장춘</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=내몽골">내몽골</a></li>
+							<li><a href="/Project/list?main_category=중국&sub_category=하이난">하이난</a></li>
 
 						</ul></li>
 					<li><a href="#">국내</a>
 						<ul>
-							<li><a href="#">강원</a></li>
-							<li><a href="#">충북</a></li>
-							<li><a href="#">제주도</a></li>
-							<li><a href="#">경북</a></li>
-							<li><a href="#">전북</a></li>
-							<li><a href="#">대전</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=강원">강원</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=충북">충북</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=제주도">제주도</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=경북">경북</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=전북">전북</a></li>
+							<li><a href="/Project/list?main_category=국내&sub_category=대전">대전</a></li>
 
 						</ul></li>
 				</ul>
