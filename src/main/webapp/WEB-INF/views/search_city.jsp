@@ -11,9 +11,11 @@
 <SCRIPT>
 	function selectnow() {
 		
-		opener.document.getElementById("city").value = document.getElementById("city").value;
+	/* 	opener.document.getElementById("city").value = document.getElementById("city").value;
 		parent.window.close();
-		
+		 */
+		 $("#city", opener.document).val($("#city_sel").val());
+		 parent.window.close();
 	}
 
 
@@ -33,8 +35,8 @@
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
 				
 						<li>
-						<a href="#"onclick="selectnow();" id="city" >&nbsp;서유럽&nbsp;</a></li>
-						<li onclick="selectnow();" id="city" value="파리">&nbsp;파리&nbsp;</li>
+						<a href="#"onclick="selectnow();" id="city_sel" >&nbsp;서유럽&nbsp;</a></li>
+						<li onclick="selectnow();" id="city_sel" value="파리">&nbsp;파리&nbsp;</li>
 						<li>&nbsp;로마&nbsp;</li>
 						<li>&nbsp;베니스&nbsp;</li>
 						<li>&nbsp;루체른&nbsp;</li>
