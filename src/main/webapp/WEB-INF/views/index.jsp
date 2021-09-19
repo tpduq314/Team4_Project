@@ -5,8 +5,7 @@
 <meta charset="UTF-8">
 <title></title>
 <link rel="stylesheet" href="./resources/css/index.css?">
-<link rel="stylesheet"
-	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./jquery-ui-1.12.1/datepicker-ko.js"></script>
@@ -55,8 +54,11 @@
 
 	<div id="wrapper">
 		<div id="wrap">
-
-			<!-- 로그인 회원가입 고객센터 -->
+		<div id="header">
+			<jsp:include page="header.jsp"/>
+		</div>
+<!-- 
+			로그인 회원가입 고객센터
 			<div id="member">
 				<div class="mem">
 					<ul class="mem_ul">
@@ -66,9 +68,9 @@
 					</ul>
 				</div>
 			</div>
-			<!-- 로그인 회원가입 고객센터 끝-->
+			로그인 회원가입 고객센터 끝
 
-			<!-- 상단 로고 및 메뉴 부분 -->
+			상단 로고 및 메뉴 부분
 			<div class="menu_wrap" style="clear: both;">
 				<div class="menu_bar">
 					<h1 class="logo">
@@ -84,7 +86,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- 로고 및 메뉴부분 끝 -->
 
 
@@ -204,6 +206,7 @@
 			</div>
 			</ul>
 			<!-- 슬라이드 이미지 부분 끝 -->
+			<div class="middle" >
 			 <form name="i" method="post">
 				<div class="search_area">
 					<div class="search_box">
@@ -233,7 +236,13 @@
 					</div>
 				</div>
 			</form>
+			</div>
 			<!--   wrap -->
+		</div>
+	</div>
+	<div class="footer_box">
+		<div id="footer">
+		<jsp:include page="footer.jsp"/>
 		</div>
 	</div>
 </body>

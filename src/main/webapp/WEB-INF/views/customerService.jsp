@@ -35,7 +35,9 @@
 	}
 </script>
 <div id="customer_service">
-
+	<div id="header">
+			<jsp:include page="header2.jsp"/>
+	</div>
 	<div id="res_top">
 		<div id="reservation">
 			<h1 id="txt_reservation">1대1 문의</h1>
@@ -89,7 +91,11 @@
 			style="width: 150px; height: 60px; margin-top: 30px; margin-left: 630px; font-size: 16px; font-weight: bold; border: none; background-color: gray; color: white;">문의하기</button>
 	</div>
 </div>
-
+	<div class="footer_box">
+		<div id="footer">
+		<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
 
 </body>
 </html>

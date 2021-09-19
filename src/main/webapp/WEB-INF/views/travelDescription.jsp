@@ -100,7 +100,9 @@
 </script>
 <body>
 	<div id="travel_description">
-
+		<div id="header">
+			<jsp:include page="header2.jsp"/>
+		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 		<div id="des_top">
 			<div id="category">
@@ -463,6 +465,10 @@
 
 		</div>
 	</div>
-
+	<div class="footer_box">
+		<div id="footer">
+		<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
 </body>
 </html>

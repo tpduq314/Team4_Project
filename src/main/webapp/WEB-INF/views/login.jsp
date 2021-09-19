@@ -24,7 +24,7 @@ background: white;
   width : 400px;
   background-color : #0000;
   height : 500px;
-  padding : 80px 40px;
+  padding : 40px 40px;
    border-radius: 10px;
   position : absolute;
   left : 50%;
@@ -81,10 +81,21 @@ D 0%, #B721FF 100%);
 .bottom-text a {
   color : #F15F79;
 }
+.footer_box{
+	position:relative;
+	width:100%;
+	height:400px;
+}
 </style>
 
 
 <body>
+	<div id="header_box" style="clear:both; position:relative; width:100%; height:120px; 
+	top:0; background-color:white; padding-left:250px; padding-right:250px;">
+		<div id="header">
+			<jsp:include page="header2.jsp"/>
+		</div>
+	</div>
 	<form method="post" action="mem_login_ok" onsubmit="return login_check();">
 		<div class="Login_Form">
 			<h1>LOGIN</h1>
@@ -102,9 +113,13 @@ D 0%, #B721FF 100%);
 				 <input type="button" value="회원가입하기"
 					onclick="location='login_mem';"
 					style="color: #F15F79; border: none; font-size: 15px; background-color: white; font-weight: bold;" />
-			
 			</div>
 		</div>
 	</form>
+<%-- 	<div class="footer box">
+		<div id="footer">
+		<jsp:include page="footer.jsp"/>
+		</div>
+		</div> --%>
 </body>
 </html>

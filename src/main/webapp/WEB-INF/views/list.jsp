@@ -8,11 +8,11 @@
 <script src="./resources/js/jquery.js"></script>
 </head>
 <body>
-	<section class="header">
-		<div>
-			<h1>리스트페이지</h1>
+		<div class="top">
+			<div id="header">
+			<jsp:include page="header2.jsp"/>
+			</div>
 		</div>
-	</section>
 
 	<section class="list">
 		<div class="container">
@@ -57,4 +57,9 @@
 			</div>
 		</div>
 	</section>
+	<div class="footer_box">
+		<div id="footer">
+		<jsp:include page="footer.jsp"/>
+		</div>
+	</div>
 </body>

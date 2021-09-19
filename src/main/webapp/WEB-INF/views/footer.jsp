@@ -2,6 +2,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+#footer {
+	width: 88%;
+	height: 300px;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid #BDBDBD;
+	position:absolute;
+	bottom:0;
+}
+
+#footer_left {
+	width: 120px;
+	height: 120px;
+	font-size: 18px;
+	float: left;
+	margin-top: 60px;
+	margin-left: 100px;
+}
+
+#footer_right {
+	width: 80%;;
+	height: 200px;
+	font-size: 18px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	line-height: 30px;
+	font-size: 12px;
+	padding-top: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #BDBDBD;
+}
+</style>
 <meta charset="UTF-8">
 <title>Group Project</title>
 <link rel="stylesheet" type="text/css" href="./resources/css/footer.css" />
