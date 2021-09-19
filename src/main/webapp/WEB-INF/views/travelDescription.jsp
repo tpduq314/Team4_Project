@@ -30,6 +30,15 @@
 		//schedule_btn('hm01');
 		//schedule_btn2('lt01');
 
+		//시작할 때 모든 가격에 콤마 붙임
+		document.getElementById("price01").innerHTML=document.getElementById("price01").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("price02").innerHTML=document.getElementById("price02").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("price03").innerHTML=document.getElementById("price03").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+		document.getElementById("pack_price01").innerHTML=document.getElementById("pack_price01").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pack_price02").innerHTML=document.getElementById("pack_price02").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		document.getElementById("pack_price03").innerHTML=document.getElementById("pack_price03").innerHTML.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
 	}); //시작하면 바로 보이게 하는 슬라이드 
 
 	function plusSlides(n) {
@@ -97,6 +106,34 @@
 		}
 	}
 
+	function calc(){
+		
+		var cnt01=document.getElementById("cnt01").value;
+		var cnt02=document.getElementById("cnt02").value;
+		var cnt03=document.getElementById("cnt03").value;
+		
+		//콤마 제거
+		var pack_price01=document.getElementById("pack_price01").innerHTML.toString().replace(/[^\d]+/g, "");
+		var pack_price02=document.getElementById("pack_price02").innerHTML.toString().replace(/[^\d]+/g, "");
+		var pack_price03=document.getElementById("pack_price03").innerHTML.toString().replace(/[^\d]+/g, "");
+		
+		//정수 전환
+		cnt01=parseInt(cnt01);
+		cnt02=parseInt(cnt02);
+		cnt03=parseInt(cnt03);
+		
+		pack_price01=parseInt(pack_price01);
+		pack_price02=parseInt(pack_price02);
+		pack_price03=parseInt(pack_price03);
+		
+		//총 가격에 콤마 붙임
+		var totalPrice=cnt01*pack_price01+cnt02*pack_price02+cnt03*pack_price03;
+		totalPrice=totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		
+		document.getElementById("totalPrice").innerHTML=totalPrice;
+	}
+	
+	
 </script>
 <body>
 	<div id="travel_description">
@@ -202,9 +239,9 @@
 					</tr>
 					<tr>
 						<td style="border-right: 2px solid #F6F6F6;">기본상품</td>
-						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price01}원</td>
-						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price02}원</td>
-						<td>${p.pack_price03}원</td>
+						<td style="border-right: 2px solid #F6F6F6;" id="price01">${p.pack_price01}원</td>
+						<td style="border-right: 2px solid #F6F6F6;" id="price02">${p.pack_price02}원</td>
+						<td id="price03">${p.pack_price03}원</td>
 					</tr>
 
 				</table>
@@ -457,12 +494,12 @@
 						<td style="font-size: 16px;">총 금액</td>
 						<td
 							style="font-size: 26px; color: red; text-align: right; width: 100px;"
-							id="totalPrice"></td>
+							id="totalPrice">0</td>
 						<td style="font-size: 16px;">원</td>
 					</tr>
 				</table>
 			</div>
-			<input type="button" id="btn_reservation" value="예약하기" />
+			<input type="button" id="btn_reservation" value="예약하기" onclick="location='travel_reservation'"/>
 
 		</div>
 	</div>
