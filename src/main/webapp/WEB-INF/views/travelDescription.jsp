@@ -96,7 +96,7 @@
 
 		}
 	}
-	//여행지 이름을 클릭하면 여행지에 대한 설명이 나타남.
+
 </script>
 <body>
 	<div id="travel_description">
@@ -413,9 +413,9 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">성인</td>
 						<td class="age">(만 12세 이상)</td>
-						<td class="price">${p.pack_price01}</td>
+						<td class="price" id="pack_price01">${p.pack_price01}</td>
 						<td>원</td>
-						<td><select class="select_cp">
+						<td><select class="select_cp" id="cnt01" onchange="calc();">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
@@ -425,9 +425,9 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">소아</td>
 						<td class="age">(만 12세 미만)</td>
-						<td class="price">${p.pack_price02}</td>
+						<td class="price" id="pack_price02">${p.pack_price02}</td>
 						<td>원</td>
-						<td><select class="select_cp">
+						<td><select class="select_cp" id="cnt02" onchange="calc();">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
@@ -437,15 +437,17 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">유아</td>
 						<td class="age">(만 2세 미만)</td>
-						<td class="price">${p.pack_price03}</td>
+						<td class="price" id="pack_price03">${p.pack_price03}</td>
 						<td>원</td>
-						<td><select class="select_cp">
+						<td><select class="select_cp" id="cnt03" onchange="calc();">
 								<option>0</option>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
 						</select></td>
 					</tr>
+
+
 				</table>
 			</div>
 			<div class="rf" style="border-bottom: solid 3px;">
@@ -454,7 +456,8 @@
 					<tr>
 						<td style="font-size: 16px;">총 금액</td>
 						<td
-							style="font-size: 26px; color: red; text-align: right; width: 100px;">1,999,900</td>
+							style="font-size: 26px; color: red; text-align: right; width: 100px;"
+							id="totalPrice"></td>
 						<td style="font-size: 16px;">원</td>
 					</tr>
 				</table>
