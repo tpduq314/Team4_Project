@@ -81,7 +81,7 @@ a:active { color:black; text-decoration: none;}
 					<div class="mem">
 						<ul class="mem_ul">
 							<li><a href="/Project/login">로그인</a></li>
-							<li><a href="/Project/login_mem">회원가입</a></li>
+							<li><a href="#">회원가입</a></li>
 							<li><a href="#">고객센터</a></li>
 						</ul>
 					</div>

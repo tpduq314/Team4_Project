@@ -101,7 +101,7 @@
 <body>
 	<div id="travel_description">
 		<div id="header">
-			<jsp:include page="header2.jsp"/>
+			<jsp:include page="header2.jsp" />
 		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 		<div id="des_top">
@@ -202,9 +202,9 @@
 					</tr>
 					<tr>
 						<td style="border-right: 2px solid #F6F6F6;">기본상품</td>
-						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price}</td>
-						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price}</td>
-						<td>${p.pack_price}</td>
+						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price01}원</td>
+						<td style="border-right: 2px solid #F6F6F6;">${p.pack_price02}원</td>
+						<td>${p.pack_price03}원</td>
 					</tr>
 
 				</table>
@@ -222,17 +222,13 @@
 					포함 내역
 					<div
 						style="font-size: 14px; text-align: left; color: black; margin-top: 18px; line-height: 23px; font-style: normal;">
-						- 괌 두짓타니 호텔 / 디럭스 오션프론트 객실 3박 (성인2인1실 기준) <br>- 조식 포함 <br>-
-						1억원 여행자보험
-					</div>
+						${p.pack_detail}</div>
 				</div>
 				<div class="option_2" style="color: #CC3D3D; margin-top: 20px;">
 					불포함내역
 					<div
 						style="font-size: 14px; text-align: left; color: black; margin-top: 18px; line-height: 23px; font-style: normal;">
-						- 왕복 항공권<br> - 개인비용 및 선택관광 비용<br> - 공항↔호텔 왕복 픽업서비스 신청시
-						추가요금 (성인$20/아동$10)
-					</div>
+						${p.pack_none_detail}</div>
 				</div>
 			</div>
 
@@ -263,15 +259,15 @@
 							<table class="hi_bottom" id="hb01">
 								<tr>
 									<td class="hi_bottom_detail">주소:</td>
-									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail_2">${h.hotel_address}</td>
 									<td class="hi_bottom_detail">전화번호:</td>
-									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail_2">${h.hotel_phone}</td>
 								</tr>
 								<tr>
 									<td class="hi_bottom_detail">팩스:</td>
-									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail_2">${h.hotel_fax}</td>
 									<td class="hi_bottom_detail">홈페이지:</td>
-									<td class="hi_bottom_detail_2">${h.hotel_name}</td>
+									<td class="hi_bottom_detail_2">${h.hotel_homepage}</td>
 								</tr>
 							</table>
 						</c:forEach>
@@ -317,8 +313,7 @@
 
 								<div class="ld_detail_bottom">
 									<div class="ld_bottom_middle" id="${l.land_code}">
-										<br>
-										<img src="${l.land_pic01 }" width="27%" height="200"
+										<br> <img src="${l.land_pic01 }" width="27%" height="200"
 											style="border-radius: 5px; margin: 15px;" /> <img
 											src="${l.land_pic02 }" width="27%" height="200"
 											style="border-radius: 5px; margin: 15px;" /> <img
@@ -418,9 +413,10 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">성인</td>
 						<td class="age">(만 12세 이상)</td>
-						<td class="price">1,999,900</td>
+						<td class="price">${p.pack_price01}</td>
 						<td>원</td>
 						<td><select class="select_cp">
+								<option>0</option>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -429,9 +425,10 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">소아</td>
 						<td class="age">(만 12세 미만)</td>
-						<td class="price">999,950</td>
+						<td class="price">${p.pack_price02}</td>
 						<td>원</td>
 						<td><select class="select_cp">
+								<option>0</option>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -440,9 +437,10 @@
 					<tr style="height: 30px;">
 						<td style="font-weight: bold;">유아</td>
 						<td class="age">(만 2세 미만)</td>
-						<td class="price">150,000</td>
+						<td class="price">${p.pack_price03}</td>
 						<td>원</td>
 						<td><select class="select_cp">
+								<option>0</option>
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
@@ -467,7 +465,7 @@
 	</div>
 	<div class="footer_box">
 		<div id="footer">
-		<jsp:include page="footer.jsp"/>
+			<jsp:include page="footer.jsp" />
 		</div>
 	</div>
 </body>
