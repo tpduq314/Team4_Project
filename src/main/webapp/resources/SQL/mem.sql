@@ -95,3 +95,21 @@ insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_d
 
 
 select *from landmark;
+
+create table res(
+	res_code varchar2(50) primary key --예약 코드
+	,res_count01 varchar2(10) not null --성인 수
+	,res_count02 varchar2(10) not null --소아 수
+	,res_count03 varchar2(10) not null --유아 수
+	,res_start_date varchar2(50) not null --출발일
+	,res_total_price varchar2(100) not null --총 가격
+	,res_date date --예약 날짜
+	,mem_id varchar2(100) not null --예약 멤버 아이디
+	,pack_code varchar2(20) not null  --패키지 코드
+	,foreign key(pack_code) references package(pack_code)
+	,foreign key(mem_id) references mem(mem_id)
+);
+
+select * from res;
+
+drop table res;

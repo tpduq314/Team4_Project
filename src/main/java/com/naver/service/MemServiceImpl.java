@@ -20,7 +20,6 @@ public class MemServiceImpl implements MemService {
 		
 	}
 
-
 	@Override
 	public void insertMember(MemVO mem) {
 		this.memDAO.insertMember(mem);

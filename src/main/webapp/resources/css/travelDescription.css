@@ -53,7 +53,7 @@
 	color: gray;
 }
 
-#txt_product_code {
+#pack_code {
 	margin-top: 3px;
 	padding-top: 1px;
 	padding-left: 2px;
@@ -416,7 +416,7 @@
 	height: 45px;
 }
 
-#select_option {
+.select_option {
 	margin-top: 20px;
 	width: 250px;
 	height: 42px;
