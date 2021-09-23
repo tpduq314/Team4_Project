@@ -12,10 +12,9 @@ public class ResServiceImpl implements ResService {
 	@Autowired
 	private ResDAO resDAO;
 
-
 	@Override
-	public void insertRes(ResVO res, String mem_id) {
-		this.resDAO.insertRes(res,mem_id);
+	public void insertRes(ResVO res) {
+		this.resDAO.insertRes(res);
 		
 	}
 }

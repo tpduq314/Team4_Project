@@ -13,10 +13,10 @@ public class ResDAOImpl implements ResDAO {
 	private SqlSession sqlSession;//mybatis 쿼리문 수행 sqlSession
 
 
+
 	@Override
-	public void insertRes(ResVO res, String mem_id) {
+	public void insertRes(ResVO res) {
 		this.sqlSession.insert("res_in",res);
-		
 	}
 	
 

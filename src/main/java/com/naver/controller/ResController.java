@@ -21,11 +21,23 @@ public class ResController {
 	public String res(ResVO res,HttpSession session) {
 		Random random=new Random();
 		int bound=10000;
+		String res_code=String.valueOf(random.nextInt(bound));
+		res.setRes_code(res_code);
 		
-		res.setRes_code(String.valueOf(random.nextInt(bound)));
+		
 		String mem_id=(String)session.getAttribute("id");
+		res.setMem_id(mem_id);
 		
-		this.resService.insertRes(res,mem_id);
+		System.out.println("res_code ="+res.getRes_code());
+		System.out.println("mem_id ="+res.getMem_id());
+		
+		System.out.println("res_count01 ="+res.getRes_count01());
+		System.out.println("res_count02 ="+res.getRes_count02());
+		System.out.println("res_count03 ="+res.getRes_count03());
+		System.out.println("res_total_price ="+res.getRes_total_price());
+		
+		this.resService.insertRes(res);
 		return "redirect:/travel_reservation";
+		//return null;
 	}
 }

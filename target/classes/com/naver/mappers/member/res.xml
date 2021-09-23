@@ -6,11 +6,11 @@
 
 <mapper namespace="Res">
 
-	<insert id="res_in">
-		insert into res (res_code, res_count01, res_count02, res_count03, res_start_date,
-		res_total_price,res_date, mem_id, pack_code )
+	 <insert id="res_in">
+		insert into res (res_code, res_count01, res_count02, res_count03,
+		res_total_price,res_date, mem_id)
 		values(#{res_code},#{res_count01},#{res_count02},
-		#{res_count03},#{res_start_date},#{res_total_price},sysdate,#{mem_id},#{pack_code})
+		#{res_count03},#{res_total_price},sysdate,#{mem_id})
 	</insert>
 
 </mapper>

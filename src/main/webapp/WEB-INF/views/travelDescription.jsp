@@ -152,10 +152,11 @@
 	}
 </script>
 <body>
+	<div id="header">
+		<jsp:include page="header2.jsp" />
+	</div>
 	<div id="travel_description">
-		<div id="header">
-			<jsp:include page="header2.jsp" />
-		</div>
+
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 
 		<form name="res" method="post" action="res">
@@ -223,8 +224,8 @@
 								5일</td>
 						</tr>
 						<tr>
-							<td class="sc_opt" height="20px" id="res_start_date">출발 :
-								2021.09.18(토) 10:50 2021.09.18(토) 16:00 KE9643총 06시간 10분 소요</td>
+							<td class="sc_opt" height="20px">출발 : 2021.09.18(토) 10:50
+								2021.09.18(토) 16:00 KE9643총 06시간 10분 소요</td>
 						</tr>
 						<tr>
 							<td class="sc_opt" height="20px">도착 : 2021.09.22(수) 10:30
@@ -435,14 +436,14 @@
 
 
 			<!-- 예약 폼 -->
-
-			<div id="reservation_form">
+			<div id="reservation_form" >
 				<div class="rf" style="margin-top: 40px;">
 					1. 출발-도착 일자
 					<table style="margin-top: 20px; margin-left: 30px;">
 						<tr>
 							<td class="td_date">출발</td>
-							<td class="td_date_des">2021.08.04 (수) 10:35</td>
+							<td class="td_date_des" id="res_start_date">2021.08.04 (수)
+								10:35</td>
 
 						</tr>
 						<tr>
@@ -475,10 +476,10 @@
 							<td>원</td>
 							<td><select class="select_cp" name="res_count01"
 								id="res_count01" onchange="calc();">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
 							</select></td>
 						</tr>
 						<tr style="height: 30px;">
@@ -488,10 +489,10 @@
 							<td>원</td>
 							<td><select class="select_cp" name="res_count02"
 								id="res_count02" onchange="calc();">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
 							</select></td>
 						</tr>
 						<tr style="height: 30px;">
@@ -501,10 +502,10 @@
 							<td>원</td>
 							<td><select class="select_cp" name="res_count03"
 								id="res_count03" onchange="calc();">
-									<option>0</option>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
 							</select></td>
 						</tr>
 
@@ -518,7 +519,7 @@
 							<td style="font-size: 16px;">총 금액</td>
 							<td
 								style="font-size: 26px; color: red; text-align: right; width: 100px;"
-								id="res_total_price">0</td>
+								><input type="text" id="res_total_price" name="res_total_price" />0</td>
 							<td style="font-size: 16px;">원</td>
 						</tr>
 					</table>
