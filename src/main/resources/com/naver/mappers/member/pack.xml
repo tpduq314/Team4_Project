@@ -13,7 +13,7 @@
 
 	<!-- 리스트의 패키지 개수 -->
 	<select id="package_li_count" resultType="int">
-		select count(*) from package
+		select count(*) from package 
 	</select>
 
 	<!-- 패키지 내용 -->
