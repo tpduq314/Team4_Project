@@ -45,6 +45,17 @@ values('a126','일본 여행','일본 여행은 즐거워','아시아','일본',
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
 values('a128','중국 여행','중국 여행은 즐거워','아시아','중국','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncARM8nat04KiH-tZxUCuWKxsMxxzSIn5nA&usqp=CAU','7777','7777','7777','10000','20210324');
 
+insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a129','프랑스 여행','파리 도심 투어','프랑스','파리','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
+
+insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a130','프랑스 여행','파리 외곽 투어','프랑스','파리','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
+
+insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a131','프랑스 여행','와인 투어','프랑스','와인농장','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
+
+insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
+values('a132','프랑스 여행','해안 투어','프랑스','노르망디','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
 drop table package;
 drop table landmark;
 drop table hotel;
