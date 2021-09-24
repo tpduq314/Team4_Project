@@ -17,4 +17,9 @@ public class ResServiceImpl implements ResService {
 		this.resDAO.insertRes(res);
 		
 	}
+
+	@Override
+	public ResVO getResCont(String res_code) {
+		return this.resDAO.getResCont(res_code);
+	}
 }

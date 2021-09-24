@@ -112,12 +112,15 @@ create table res(
 	,res_count01 varchar2(10) not null --성인 수
 	,res_count02 varchar2(10) not null --소아 수
 	,res_count03 varchar2(10) not null --유아 수
-	--,res_start_date varchar2(50) not null --출발일
+	,res_start_date varchar2(50) not null --출발일
+	,res_end_date varchar2(50) not null --도착일
+	,res_airport varchar2(50) not null --항공
+	,res_hotel varchar2(50) not null --호텔
 	,res_total_price varchar2(100) not null --총 가격
 	,res_date date --예약 날짜
 	,mem_id varchar2(100) not null --예약 멤버 아이디
-	--,pack_code varchar2(20) not null  --패키지 코드
-	--,foreign key(pack_code) references package(pack_code)
+	,pack_code varchar2(20) not null  --패키지 코드
+	,foreign key(pack_code) references package(pack_code)
 	,foreign key(mem_id) references mem(mem_id)
 );
 

@@ -18,6 +18,13 @@ public class ResDAOImpl implements ResDAO {
 	public void insertRes(ResVO res) {
 		this.sqlSession.insert("res_in",res);
 	}
+
+
+
+	@Override
+	public ResVO getResCont(String res_code) {
+		return this.sqlSession.selectOne("res_cont",res_code);
+	}
 	
 
 }
