@@ -206,7 +206,7 @@
 			</ul>
 			<!-- 슬라이드 이미지 부분 끝 -->
 			<div class="middle" >
-			 <form name="i" method="post">
+			 <form name="i" method="post" action="/Project/list">
 				<div class="search_area">
 					<div class="search_box">
 						<p class="search_box_title">어디로 떠나고 싶으세요?</p>
@@ -228,7 +228,7 @@
 								</div>
 							</div>
 							<div class="item_bottom_cont">
-								<button type="button" class="btn_search">검색하기</button>
+								<button type="submit" class="btn_search">검색하기</button>
 							</div>
 							<div class="search_box_bottom"></div>
 						</div>
@@ -236,6 +236,7 @@
 				</div>
 			</form>
 			</div>
+
 			<!--   wrap -->
 		</div>
 	</div>

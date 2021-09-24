@@ -20,6 +20,5 @@
 	<select id="package_cont" resultType="pack">
 		select * from package where pack_code=#{pack_code}
 	</select>
-
-
+	
 </mapper>

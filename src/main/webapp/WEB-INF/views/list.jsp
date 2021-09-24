@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="./resources/css/list.css?">
 <script src="./resources/js/jquery.js"></script>
 </head>
+<%
+	String city=request.getParameter("city");
+	String date=request.getParameter("date");
+	
+%>
 <body>
 		<div class="top">
 			<div id="header">
@@ -21,6 +26,7 @@
 					<h2>어디로 떠나고싶으세요?</h2>
 					<p>네?</p>
 					<p>${id}님로그인을 환영합니다</p>
+					<p><%=city%>로<%=date%>에 떠날까요?</p>
 				</form>
 			</div>
 		</div>
@@ -30,7 +36,11 @@
 	<div class="bList_count">글개수:${totalCount}</div>
 		<div class="container">
 			<div class="title">
-				<h1>북미</h1>
+			<%if(city != null) {%>
+			<h1><%=city%></h1>
+			<%}else{ %>	
+			<p>여행지를 선택해주세요</p>
+			<%} %>
 			</div>
 			
 			<div class="box_list">
@@ -38,6 +48,8 @@
 			<c:if test="${empty plist}">
 				<h1>목록이 없습니다.</h1>
 			</c:if>
+			
+			<%-- <% city=request.getParameter("p.pack_main_cate"); %> --%>
 			
 			<c:if test="${!empty plist}">
 				<c:forEach var="p" items="${plist}">

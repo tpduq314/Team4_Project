@@ -32,17 +32,16 @@ public class PackController {
 	
 	@Autowired
 	private LandService landService;
-
+	
 	//패키지 여행 리스트
 	@RequestMapping("/list")
 	public ModelAndView list(HttpServletResponse response,HttpSession session,HttpServletRequest request,@ModelAttribute PackVO p)throws Exception {
 		response.setContentType("text/html;charset=UTF-8");
-
 		//세션으로 아이디 값 받아오기
 		String login_id=(String)session.getAttribute("id");
-
+		
 		ModelAndView listM=new ModelAndView();
-
+		
 		if(login_id == null) {
 			//script 형식 적용 안됨		
 			listM.setViewName("/login");

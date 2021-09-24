@@ -24,7 +24,7 @@
 }
 
 #footer_right {
-	width: 80%;;
+	width: 80%;
 	height: 200px;
 	font-size: 18px;
 	float: right;

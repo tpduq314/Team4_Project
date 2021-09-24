@@ -67,6 +67,8 @@ a:active { color:black; text-decoration: none;}
 	font-size: 12px;
     letter-spacing: -.3px;
 }
+
+
 </style>
 </head>
 <body>
@@ -96,6 +98,7 @@ a:active { color:black; text-decoration: none;}
 					</div>
 			</div>
 			<!-- 로그인 회원가입 고객센터 끝-->
+		
 
 </body>
 </html>

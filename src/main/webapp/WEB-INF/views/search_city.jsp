@@ -11,15 +11,24 @@
 <SCRIPT>
 	function selectnow() {
 		
-	/* 	opener.document.getElementById("city").value = document.getElementById("city").value;
+		opener.document.getElementById("city").value = document.getElementById("city").value;
 		parent.window.close();
-		 */
-		 $("#city", opener.document).val($("#city_sel").val());
-		 parent.window.close();
+		 
+	
 	}
 
 
 </SCRIPT>
+<!-- <style>
+input[type=button]{
+	background-color:white;
+	border:0;
+	outline:0;
+}
+input[type=button]:hover{
+	border-bottom:1px solid black;
+}
+</style> -->
 </head>
 <body>
 
@@ -27,13 +36,13 @@
 		<h2 style="padding: 3px;">주요 지역 선택</h2>
 	</div>
 	<div>
+	<input type="button" name="city" id="city" value="로마" onclick="selectnow();"/>
 		<table id="table_city" style="overflow: auto;">
 		
-		
+			
 			<tr>
 				<td class="country" >유럽</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-				
 						<li>
 						<a href="#"onclick="selectnow();" id="city_sel" >&nbsp;서유럽&nbsp;</a></li>
 						<li onclick="selectnow();" id="city_sel" value="파리">&nbsp;파리&nbsp;</li>
