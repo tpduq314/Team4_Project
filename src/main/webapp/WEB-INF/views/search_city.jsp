@@ -12,7 +12,7 @@
 	function selectnow(city) {
 
 	
-		opener.document.getElementById("city").value = city;
+		opener.document.getElementById("pack_sub_cate").value = city;
 		parent.window.close();
 		/* 	
 		 $("#city", opener.document).val($("#city_sel").val());

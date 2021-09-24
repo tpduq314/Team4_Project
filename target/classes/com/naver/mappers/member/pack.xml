@@ -8,12 +8,12 @@
 
 	<!-- 패키지 목록 -->
 	<select id="package_li" resultType="pack">
-		select * from package
+		select * from package where pack_sub_cate=#{pack_sub_cate}
 	</select>
 
 	<!-- 리스트의 패키지 개수 -->
 	<select id="package_li_count" resultType="int">
-		select count(*) from package 
+		select count(*) from package where pack_sub_cate=#{pack_sub_cate}
 	</select>
 
 	<!-- 패키지 내용 -->

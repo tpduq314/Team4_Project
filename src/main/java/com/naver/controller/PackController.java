@@ -35,7 +35,7 @@ public class PackController {
 
 	//패키지 여행 리스트
 	@RequestMapping("/list")
-	public ModelAndView list(HttpServletResponse response,HttpSession session,HttpServletRequest request,@ModelAttribute PackVO p)throws Exception {
+	public ModelAndView list(@RequestParam("pack_sub_cate") String pack_sub_cate,HttpServletResponse response,HttpSession session,HttpServletRequest request,@ModelAttribute PackVO p)throws Exception {
 		response.setContentType("text/html;charset=UTF-8");
 
 		//세션으로 아이디 값 받아오기

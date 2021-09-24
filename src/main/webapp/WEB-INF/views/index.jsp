@@ -206,15 +206,15 @@
 			</ul>
 			<!-- 슬라이드 이미지 부분 끝 -->
 			<div class="middle" >
-			 <form name="i" method="post">
+			 <form  method="get" action="list">
 				<div class="search_area">
 					<div class="search_box">
 						<p class="search_box_title">어디로 떠나고 싶으세요?</p>
 						<div class="search_box_cont">
 							<div class="item">
 								<div class="in">
-									<span class="item_title">여행지</span> <input id="city"
-										name="city" type="text" class="search_city"
+									<span class="item_title">여행지</span> <input id="pack_sub_cate"
+										name="pack_sub_cate" type="text" class="search_city"
 										placeholder="여행지를 입력해 주세요.">
 									<button type="button" class="btn_city" onclick="search_city();">지역검색</button>
 								</div>
@@ -228,7 +228,7 @@
 								</div>
 							</div>
 							<div class="item_bottom_cont">
-								<button type="button" class="btn_search">검색하기</button>
+								<button type="submit" class="btn_search">검색하기</button>
 							</div>
 							<div class="search_box_bottom"></div>
 						</div>
