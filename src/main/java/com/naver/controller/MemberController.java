@@ -37,13 +37,13 @@ public class MemberController {
 
 		return "/index";
 	}
-	
+
 	@RequestMapping(value="/mypage")
 	public String mypage() {
 
 		return "/myPage";
 	}
-	
+
 	@RequestMapping(value="/customer_service")
 	public String customer_service() {
 
@@ -91,7 +91,7 @@ public class MemberController {
 				out.println("</script>");
 			}else {
 				session.setAttribute("id",login_id);//세션 아이디 저장
-				return "redirect:/list";
+				return "redirect:/index";
 			}
 		}
 		return null;
@@ -100,7 +100,6 @@ public class MemberController {
 
 
 	//회원가입 폼
-
 	@RequestMapping("/login_mem") public String login_mem(Model mem) { String[]
 			phone= {"010","011","019"};
 
@@ -117,5 +116,5 @@ public class MemberController {
 		return "redirect:/login";//완료 시 login으로 보냄
 	}	
 
-	
+
 }

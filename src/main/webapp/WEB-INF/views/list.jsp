@@ -7,49 +7,47 @@
 <link rel="stylesheet" href="./resources/css/list.css?">
 <script src="./resources/js/jquery.js"></script>
 </head>
+
 <%
-	String city=request.getParameter("city");
-	String date=request.getParameter("date");
-	
+	// request 객체로부터 파라미터를 가져옴.
+String pack_sub_cate = request.getParameter("pack_sub_cate");
+String date = request.getParameter("date");
+System.out.println(pack_sub_cate);
+System.out.println(date);
 %>
 <body>
-		<div class="top">
-			<div id="header">
-			<jsp:include page="header2.jsp"/>
-			</div>
+	<div class="top">
+		<div id="header">
+			<jsp:include page="header2.jsp" />
 		</div>
+	</div>
 
 	<section class="list">
 		<div class="container">
 			<div class="list_left">
-				<form method="post" >
+				<form method="post">
 					<h2>어디로 떠나고싶으세요?</h2>
 					<p>네?</p>
-					<p>${id}님로그인을 환영합니다</p>
-					<p><%=city%>로<%=date%>에 떠날까요?</p>
+					<p>${id}님로그인을환영합니다</p>
 				</form>
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="serv_list">
-	<div class="bList_count">글개수:${totalCount}</div>
+		<div class="bList_count">글개수:${totalCount}</div>
 		<div class="container">
 			<div class="title">
-			<%if(city != null) {%>
-			<h1><%=city%></h1>
-			<%}else{ %>	
-			<p>여행지를 선택해주세요</p>
-			<%} %>
+				<h1>북미</h1>
 			</div>
-			
+
 			<div class="box_list">
 			
 			<c:if test="${empty plist}">
 				<h1>목록이 없습니다.</h1>
 			</c:if>
 			
-			<%-- <% city=request.getParameter("p.pack_main_cate"); %> --%>
+			
 			
 			<c:if test="${!empty plist}">
 				<c:forEach var="p" items="${plist}">
@@ -71,7 +69,7 @@
 	</section>
 	<div class="footer_box">
 		<div id="footer">
-		<jsp:include page="footer.jsp"/>
+			<jsp:include page="footer.jsp" />
 		</div>
 	</div>
 </body>
