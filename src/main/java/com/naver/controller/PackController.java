@@ -67,13 +67,6 @@ public class PackController {
 	}//search_city
 
 	
-	@RequestMapping("/travel_reservation")
-	public String travel_reservation() {
-		return "travelReservation";
-	}//travel_reservation
-
-
-	
 	@RequestMapping("/travel_description")
 	public String travel_description(@RequestParam("pack_code") String pack_code,HttpServletRequest request,
 			Model m,@ModelAttribute PackVO p,@ModelAttribute HotelVO h,@ModelAttribute LandVO l)throws Exception {

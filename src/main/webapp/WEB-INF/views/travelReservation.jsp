@@ -115,27 +115,25 @@ function check(){
 			<table class="res_table">
 				<tr>
 					<td class="res_table_td_1">상품명</td>
-					<td colspan="3" class="res_table_td_2">[다시, 여행] 다낭#하루는 자유로운
-						패키지#빈펄 리버프론트 5일</td>
+					<td colspan="3" class="res_table_td_2">${r.res_code}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">여행기간</td>
 					<td class="res_table_td_2">3박 4일</td>
 					<td class="res_table_td_1"
-						style="width: 200px; border-left: 2px solid #EAEAEA;">이용교통</td>
+						style="width: 200px; border-left: 2px solid #EAEAEA;">${r.res_airport}</td>
 					<td class="res_table_td_2">대한항공</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">출발일</td>
-					<td colspan="3" class="res_table_td_2">2021년 10월 01일 (금)
-						07:00-VJ879</td>
+					<td colspan="3" class="res_table_td_2">${r.res_start_date}
+						</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1"
 						style="border-bottom: 1.5px solid black;">도착일</td>
 					<td colspan="3" class="res_table_td_2"
-						style="border-bottom: 1.5px solid black;">2021년 10월 05일 (화)
-						06:00-VJ878</td>
+						style="border-bottom: 1.5px solid black;">${r.res_end_date}</td>
 				</tr>
 			</table>
 
@@ -192,7 +190,7 @@ function check(){
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 이름</td>
-					<td class="res_table_td_2">홍길동</td>
+					<td class="res_table_td_2">${r.mem_id}</td>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 생년월일</td>
 					<td class="res_table_td_2"><input class="input_table"
