@@ -123,7 +123,7 @@ select {
 	<div id="header_box" style="clear:both; position:relative; width:100%; height:120px; 
 	top:0; background-color:white; padding-left:250px; padding-right:250px;">
 		<div id="header">
-			<jsp:include page="header2.jsp"/>
+			<jsp:include page="header.jsp"/>
 		</div>
 	</div>
 	<form name="mem" method="post" action="mem_join_ok"

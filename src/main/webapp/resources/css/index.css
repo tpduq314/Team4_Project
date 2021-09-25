@@ -55,57 +55,9 @@
 .dep1 ul a { color: black; }
 .dep1 ul ul { left: 100%; top: 0; }
 
-.title{/*gray*/
-	position: absolute;
-    left: 0;
-    width: 100%;
-    padding-left:30px;
-    padding-top:25px;
-    background-color:gray;
-    height:400px;
-    z-index:1;
-}
-.title_box_left{/*blue*/
-	position:absolute;
-	width: 236px;
-    line-height: 1;
-    font-size: 26px;
-    color: black;
-    letter-spacing: -0.05em;
-    height:371px;
-}
-
-/*green*/
-.area{
-	position:relative;
-}
-/*yellow*/
-.area_double{
-	position:absolute;
-	left:236px;
-	width:367px;
-	height:371px;
-}
-
-.area_triple{
-	position:absolute;
-	left:602px;
-	width:367px;
-	height:371px;
-}
 .menu_button .dep1 > li{
 	background:white;
 	font-size:15px;
-}
-
-.menu_button .dep1 a:hover ~.title {
-	transition-delay:0s;
-	visibility:visible;
-}
-
-.menu_button .dep1 .dep1_sub .title{
-	transition:all 0s ease 1s;
-	visibility:hidden;
 }
 
 /*슬라이드부분*/
@@ -305,4 +257,8 @@ input[type=text]{
 	position:relative;
 	width:100%;
 	height:400px;
+}
+.header{
+	margin-left:95px;
+	margin-right:95px;
 }

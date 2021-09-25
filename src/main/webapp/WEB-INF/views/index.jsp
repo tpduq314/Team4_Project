@@ -32,7 +32,7 @@
 	});
 	
 	//상단바
-	$(function(){
+/* 	$(function(){
 		  $(".dep1 li").hover(function(){
 		    $('ul:first',this).show();
 		  }, function(){
@@ -44,7 +44,7 @@
 		  $(".dep1 ul li:has(ul)")
 		    .find("a:first")
 		    .append("<p style='float:right;margin:-3px'>&#9656;</p>");
-		});
+		}); */
 </script>
 
 
@@ -54,9 +54,11 @@
 
 	<div id="wrapper">
 		<div id="wrap">
-		<div id="header">
-			<jsp:include page="header.jsp"/>
+	
+		<div class="header">
+			<jsp:include page="header2.jsp"/>
 		</div>
+
 <!-- 
 			로그인 회원가입 고객센터
 			<div id="member">
@@ -93,7 +95,7 @@
 
 
 			<!-- 상단 메뉴버튼부분 -->
-			<div class="menu_button" style="clear: both;">
+			<!-- <div class="menu_button" style="clear: both;">
 				<ul class="dep1">
 					<li><a href="#">괌/사이판</a>
 						<ul>
@@ -170,7 +172,7 @@
 
 						</ul></li>
 				</ul>
-			</div>
+			</div> -->
 			<!-- 상단 메뉴버튼부
 				분 끝 -->
 

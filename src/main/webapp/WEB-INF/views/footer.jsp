@@ -4,7 +4,7 @@
 <head>
 <style>
 #footer {
-	width: 88%;
+	width: 100%;
 	height: 300px;
 	font-size: 18px;
 	margin-left: auto;
@@ -15,19 +15,19 @@
 }
 
 #footer_left {
-	width: 120px;
-	height: 120px;
+	width: 250px;
+	height: 200px;
 	font-size: 18px;
 	float: left;
 	margin-top: 60px;
-	margin-left: 100px;
+	margin-left: 60px;
+	background-color:white;
 }
 
 #footer_right {
-	width: 500px;
+	position:absolute;
 	height: 200px;
 	font-size: 18px;
-	float: right;
 	margin-top: 20px;
 	margin-right: 20px;
 	line-height: 30px;
@@ -35,17 +35,19 @@
 	padding-top: 20px;
 	padding-left: 20px;
 	border-left: 1px solid #BDBDBD;
+	left:255px;
 }
 </style>
 <meta charset="UTF-8">
 <title>Group Project</title>
-<link rel="stylesheet" type="text/css" href="./resources/css/footer.css" />
 <body>
 
 <div id="footer">
+  <div id="footer_left_box">
 	<div id="footer_left">
-		<img src="./resources/image/logo.jpg" width=100%; height="100%" />
+		<img src="./resources/image/logo.jpg" width=120px; height=120px; />
 	</div>
+  </div>
 	<div id="footer_right">
 		<p>
 			회사소개 | 보도자료 | 개인정보처리방침 | 이용약관 | 여행약관 | 웹투어여행상품권 | 고객센터 <br>

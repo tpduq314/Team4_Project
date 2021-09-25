@@ -152,11 +152,10 @@
 	}
 </script>
 <body>
-	<div id="header">
-		<jsp:include page="header2.jsp" />
-	</div>
 	<div id="travel_description">
-
+		<div id="header">
+			<jsp:include page="header2.jsp" />
+		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 
 

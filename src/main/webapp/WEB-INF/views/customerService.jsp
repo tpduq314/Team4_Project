@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Group Project</title>
+<script src="./resources/js/jquery.js"></script>
 </head>
 
 <link rel="stylesheet" type="text/css" href="./resources/css/customerService.css" />
@@ -31,12 +32,15 @@
 			phone.focus();
 			return false;
 		}
-
+	
 	}
+	
 </script>
 <div id="customer_service">
+	<div id="header_box">
 	<div id="header">
 			<jsp:include page="header2.jsp"/>
+	</div>
 	</div>
 	<div id="res_top">
 		<div id="reservation">

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #res_top {
-	height: 130px;
+	height: 110px;
 	border-color: #BDBDBD;
 	border-style: solid;
 	border-width: 0px 0px 6px 0px;
@@ -11,7 +11,7 @@
 	height: 50px;
 	width: 800px;
 	position: relative;
-	top: 70px;
+	top: 50px;
 	left: 20px;
 }
 
@@ -21,6 +21,7 @@
 	top: 17px;
 	left: 10px;
 	font-family: Arial, Helvetica, sans-serif;
+	margin:0 0 0 0;
 }
 
 #customer_service {

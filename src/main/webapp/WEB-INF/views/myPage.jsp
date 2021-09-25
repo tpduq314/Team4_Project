@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Group Project</title>
+<script src="./resources/js/jquery.js"></script>
 </head>
 
 <link rel="stylesheet" type="text/css" href="./resources/css/myPage.css" />
@@ -11,9 +12,9 @@
 <body>
 
 <div id="my_page">
-	<div id="header_box" style="clear:both; position:relative; width:100%; height:120px; top:0; background-color:white;">
+	<div id="header_box" style="clear:both; position:relative; width:100%; height:160px; top:0; background-color:white;">
 		<div id="header">
-			<jsp:include page="header2.jsp"/>
+			<jsp:include page="header2.jsp" />
 		</div>
 	</div>
 	<div id="res_top" style="border: none; height: 200px; background-color: #6E85B2;">
