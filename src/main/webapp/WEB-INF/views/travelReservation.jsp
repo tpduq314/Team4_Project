@@ -195,11 +195,11 @@ function check(){
 						style="color: red;">*</span> 생년월일</td>
 					<td class="res_table_td_2"><input class="input_table"
 						type="text" name="birth" placeholder="예)20180101" id="res_birth" /></td>
-					<td class="res_table_td_1" style="width: 200px;"><span
+					<td class="res_table_td_1" style="width: 150px;"><span
 						style="color: red;">*</span> 성별</td>
-					<td class="res_table_td_2"><input type="radio" name="gender"
-						value="남자" checked>남 <input type="radio" name="gender"
-						value="여자">여</td>
+					<td class="res_table_td_2" width="200px;"><input  type="radio" name="gender"
+						value="남자" style="display:inline-block;"checked>남 <input type="radio" name="gender"
+						value="여자"  style="display:inline-block;">여</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;"><span
@@ -274,8 +274,7 @@ function check(){
 						style="color: red;">*</span>이름(한글)&nbsp;&nbsp;<input
 						class="input_table" type="text" name="korean_name" id="de_name" />&nbsp;
 						&nbsp;영문&nbsp;&nbsp; <input class="input_table" type="text"
-						name="english_first_name" />&nbsp;&nbsp;<input
-						class="input_table" type="text" name="english_last_name" />
+						name="english_first_name" />
 					<td class="res_table_td_1" width="150px">휴대폰 번호</td>
 					<td class="res_table_td_2"><input class="input_table"
 						type="text" name="phone_num" placeholder="'-' 제외 숫자만 입력" /></td>
@@ -284,9 +283,9 @@ function check(){
 					<td class="res_table_td_2" colspan="3"><span
 						style="color: red;">*</span>생년월일&nbsp;&nbsp;<input
 						class="input_table" type="text" name="birth" id="de_birth" />&nbsp;&nbsp;&nbsp;&nbsp;<span
-						style="color: red;">*</span>성별&nbsp;&nbsp;&nbsp;&nbsp;<input
-						type="radio" name="gender" value="남자" checked>남
-						&nbsp;&nbsp; <input type="radio" name="gender" value="여자">여
+						style="color: red;">*</span>&nbsp;성별&nbsp;&nbsp;<input
+						type="radio" name="gender" value="남자" style="display:inline-block;" checked>남
+						&nbsp;&nbsp; <input type="radio" name="gender" value="여자" style="display:inline-block;" >여
 					</td>
 				</tr>
 			</table>
