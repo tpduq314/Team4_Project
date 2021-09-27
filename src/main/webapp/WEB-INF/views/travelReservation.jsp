@@ -10,7 +10,59 @@
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-latest.js"></script>
 
+
 <script>
+
+
+$(document).ready(
+		function() {
+			//시작할 때 모든 가격에 콤마 붙임
+			document.getElementById("pack_price01").innerHTML = document
+					.getElementById("pack_price01").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("pack_price02").innerHTML = document
+					.getElementById("pack_price02").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("pack_price03").innerHTML = document
+					.getElementById("pack_price03").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			
+			document.getElementById("price01").innerHTML = document
+					.getElementById("price01").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("price02").innerHTML = document
+					.getElementById("price02").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("price03").innerHTML = document
+					.getElementById("price03").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+			document.getElementById("pack_price01_01").innerHTML = document
+					.getElementById("pack_price01_01").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("pack_price02_01").innerHTML = document
+					.getElementById("pack_price02_01").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			document.getElementById("pack_price03_01").innerHTML = document
+					.getElementById("pack_price03_01").innerHTML.toString()
+					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			
+			
+		});			
+			
+ //시작하면 바로 보이게 하는 슬라이드 		
+
+/*function calc() {
+	var cnt01 = document.getElementById("res_count01").value;
+	var cnt02 = document.getElementById("res_count02").value;
+	var cnt03 = document.getElementById("res_count03").value;
+	var sum=cnt01+cnt02+cnt03;
+	for(var i=1;i<sum;i++){
+		var table=document.createElement('table');
+		table.innerHTML=document.getElementById("res_table01").innerHTML;
+		document.getElementById("res_description01").appendChild(table);
+	}
+}*/
 //전체 약관 동의	
 //만약 모든 체크 박스가 체크되면 전체 동의도 함께 체크됨.
 function selectAll(selectAll)  {
@@ -90,7 +142,44 @@ function check(){
 		return false;
 	}
 	
-}	  
+}	
+
+function calc() {
+
+	var cnt01 = document.getElementById("res_count01").value;
+	var cnt02 = document.getElementById("res_count02").value;
+	var cnt03 = document.getElementById("res_count03").value;
+
+	//콤마 제거
+	var pack_price01 = document.getElementById("pack_price01").innerHTML
+			.toString().replace(/[^\d]+/g, "");
+	var pack_price02 = document.getElementById("pack_price02").innerHTML
+			.toString().replace(/[^\d]+/g, "");
+	var pack_price03 = document.getElementById("pack_price03").innerHTML
+			.toString().replace(/[^\d]+/g, "");
+
+	//정수 전환
+	cnt01 = parseInt(cnt01);
+	cnt02 = parseInt(cnt02);
+	cnt03 = parseInt(cnt03);
+
+	pack_price01 = parseInt(pack_price01);
+	pack_price02 = parseInt(pack_price02);
+	pack_price03 = parseInt(pack_price03);
+
+	//총 가격에 콤마 붙임
+	var totalPrice = cnt01 * pack_price01 + cnt02 * pack_price02 + cnt03
+			* pack_price03;
+	totalPrice = totalPrice.toString()
+			.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+	document.getElementById("res_total_price").value = totalPrice;
+	document.getElementById("count01").value=cnt01;
+	document.getElementById("count02").value=cnt02;
+	document.getElementById("count03").value=cnt03;
+	
+
+}
 </script>
 
 <body>
@@ -115,19 +204,18 @@ function check(){
 			<table class="res_table">
 				<tr>
 					<td class="res_table_td_1">상품명</td>
-					<td colspan="3" class="res_table_td_2">${r.res_code}</td>
+					<td colspan="3" class="res_table_td_2">${p.pack_name}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">여행기간</td>
 					<td class="res_table_td_2">3박 4일</td>
 					<td class="res_table_td_1"
-						style="width: 200px; border-left: 2px solid #EAEAEA;">항공편</td>
+						style="width: 200px; border-left: 2px solid #EAEAEA;">이용교통</td>
 					<td class="res_table_td_2">${r.res_airport}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">출발일</td>
-					<td colspan="3" class="res_table_td_2">${r.res_start_date}
-						</td>
+					<td colspan="3" class="res_table_td_2">${r.res_start_date}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1"
@@ -153,27 +241,36 @@ function check(){
 				</tr>
 				<tr>
 					<td class="res_table_td_2" style="text-align: center;">성인</td>
-					<td class="res_table_td_2" style="text-align: right;">3,952,000원</td>
-					<td class="res_table_td_2" style="text-align: right;">47,000원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price01_01">${p.pack_price01}원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price01_02">0원</td>
 					<td class="res_table_td_2" style="text-align: right;">0원</td>
 					<td class="res_table_td_2"
-						style="text-align: right; font-size: 16px; color: red; font-weight: bold;">3,999,000원</td>
+						style="text-align: right; font-size: 16px; color: red; font-weight: bold;"
+						id="pack_price01">${p.pack_price01}원</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_2" style="text-align: center;">아동</td>
-					<td class="res_table_td_2" style="text-align: right;">3,556,800원</td>
-					<td class="res_table_td_2" style="text-align: right;">47,000원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price02_01">${p.pack_price02}원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price02_02">0원</td>
 					<td class="res_table_td_2" style="text-align: right;">0원</td>
 					<td class="res_table_td_2"
-						style="text-align: right; font-size: 16px; color: red; font-weight: bold;">3,603,800원</td>
+						style="text-align: right; font-size: 16px; color: red; font-weight: bold;"
+						id="pack_price02">${p.pack_price02}원</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_2" style="text-align: center;">유아</td>
-					<td class="res_table_td_2" style="text-align: right;">790,400원</td>
-					<td class="res_table_td_2" style="text-align: right;">47,000원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price03_01">${p.pack_price03}원</td>
+					<td class="res_table_td_2" style="text-align: right;"
+						id="pack_price03_02">0원</td>
 					<td class="res_table_td_2" style="text-align: right;">0원</td>
 					<td class="res_table_td_2"
-						style="text-align: right; font-size: 16px; color: red; font-weight: bold;">790,400원</td>
+						style="text-align: right; font-size: 16px; color: red; font-weight: bold;"
+						id="pack_price03">${p.pack_price03}원</td>
 				</tr>
 			</table>
 
@@ -190,27 +287,30 @@ function check(){
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 이름</td>
-					<td class="res_table_td_2">${r.mem_id}</td>
+					<td class="res_table_td_2"><input class="input_table"
+						type="text" name="birth" placeholder="이름" id="res_birth" /></td>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 생년월일</td>
 					<td class="res_table_td_2"><input class="input_table"
 						type="text" name="birth" placeholder="예)20180101" id="res_birth" /></td>
 					<td class="res_table_td_1" style="width: 150px;"><span
 						style="color: red;">*</span> 성별</td>
-					<td class="res_table_td_2" width="200px;"><input  type="radio" name="gender"
-						value="남자" style="display:inline-block;"checked>남 <input type="radio" name="gender"
-						value="여자"  style="display:inline-block;">여</td>
+					<td class="res_table_td_2" width="200px;"><input type="radio"
+						name="gender" value="남자" style="display: inline-block;" checked>남
+						<input type="radio" name="gender" value="여자"
+						style="display: inline-block;">여</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 이메일</td>
 					<td colspan="5" class="res_table_td_2"><input
 						class="input_table" type="text" name="email_id" placeholder="이메일 "
-						id="res_email" style="width: 250px;" "/></td>
+						id="res_email" style="width: 250px;" /></td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">* 휴대폰 번호</td>
-					<td class="res_table_td_2">0102343223</td>
+					<td class="res_table_td_2"><input class="input_table"
+						type="text" name="birth" id="res_birth" /></td>
 					<td class="res_table_td_1" style="width: 200px;">전화 번호</td>
 					<td class="res_table_td_2" colspan="3"><input
 						class="input_table" type="text" name="call_num"
@@ -227,47 +327,47 @@ function check(){
 				<tr>
 					<td class="res_table_td_1" style="width: 250px;">성인 (만 12세 이상)</td>
 					<td class="res_table_td_2" width="100px;"><select
-						style="width: 60px; height: 40px; font-size: 14px;"><option>1명</option>
-							<option>2명</option>
-							<option>3명</option>
-							<option>4명</option>
-							<option>5명</option>
-							<option>6명</option>
-							<option>7명</option>
-					</select></td>
+						style="width: 40px; height: 30px; font-size: 14px;"
+						id="res_count01" name="res_count01" onchange="calc();">
+							<option value="${r.res_count01}">${r.res_count01}</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+					</select>명</td>
 					<td class="res_table_td_1" style="width: 250px;">유아 (만 2세 이상~만
 						12세 미만)</td>
 					<td class="res_table_td_2" width="100px;"><select
-						style="width: 60px; height: 40px; font-size: 14px;"><option>1명</option>
-							<option>2명</option>
-							<option>3명</option>
-							<option>4명</option>
-							<option>5명</option>
-							<option>6명</option>
-							<option>7명</option>
-					</select></td>
+						style="width: 40px; height: 30px; font-size: 14px;"
+						id="res_count02" name="res_count02" onchange="calc();">
+							<option value="${r.res_count03}">${r.res_count03}</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+					</select>명</td>
 					<td class="res_table_td_1" style="width: 250px;">아동 (만 2세 미만)</td>
 					<td class="res_table_td_2" width="100px;"><select
-						style="width: 60px; height: 40px; font-size: 14px;"><option>1명</option>
-							<option>2명</option>
-							<option>3명</option>
-							<option>4명</option>
-							<option>5명</option>
-							<option>6명</option>
-							<option>7명</option>
-					</select></td>
+						style="width: 40px; height: 30px; font-size: 14px;"
+						id="res_count03" name="res_count03" onchange="calc();">
+							<option value="${r.res_count03}">${r.res_count03}</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+					</select>명</td>
 				</tr>
 			</table>
 		</div>
 
 		<!-- 인원 상세 정보 -->
-		<div class="res_description" style="margin-top: 60px; height: 220px;">
+		<div id="res_description01" style="margin-top: 60px; height: 220px;">
 			인원 상세 정보
 			<div
 				style="float: right; margin-top: 10px; margin-right: 10px; font-size: 12px;">
 				<span style="color: red;">*</span>는 필수 입력 항목입니다.
 			</div>
-			<table class="res_table" style="height: 180px;">
+			<table id="res_table01" style="height: 180px;">
 				<tr>
 					<td class="res_table_td_1" rowspan="2" width="100px">성인1</td>
 					<td class="res_table_td_2" width="700px"><span
@@ -284,9 +384,10 @@ function check(){
 						style="color: red;">*</span>생년월일&nbsp;&nbsp;<input
 						class="input_table" type="text" name="birth" id="de_birth" />&nbsp;&nbsp;&nbsp;&nbsp;<span
 						style="color: red;">*</span>&nbsp;성별&nbsp;&nbsp;<input
-						type="radio" name="gender" value="남자" style="display:inline-block;" checked>남
-						&nbsp;&nbsp; <input type="radio" name="gender" value="여자" style="display:inline-block;" >여
-					</td>
+						type="radio" name="gender" value="남자"
+						style="display: inline-block;" checked>남 &nbsp;&nbsp; <input
+						type="radio" name="gender" value="여자"
+						style="display: inline-block;">여</td>
 				</tr>
 			</table>
 		</div>
@@ -379,28 +480,37 @@ function check(){
 				</tr>
 				<tr>
 					<td class="tp_table_td">성인</td>
-					<td style="text-align: right;" class="tp_table_td">789,000원</td>
+					<td style="text-align: right;" class="tp_table_td" id="price01">${p.pack_price01}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						1명</td>
+						<input readonly type="text" value="0" id="count01"
+						style="border: none; text-align: right; width: 10px; pointer-events: none;" />명
+					</td>
 					<td rowspan="3" class="tp_table_td" style="text-align: center;">쿠폰
 						할인</td>
 					<td rowspan="3" class="tp_table_td"
 						style="border-right: 1.5px solid #EAEAEA;">-원</td>
 					<td rowspan="3"
-						style="color: red; font-size: 16px; text-align: center; font-weight: bold;">789,000원</td>
+						style="color: red; font-size: 16px; text-align: center; font-weight: bold;"><input
+						readonly type="text" id="res_total_price" name="res_total_price"
+						value="0"
+						style="border: none; color: red; font-size: 18px; text-align: right; width: 150px; border-color: #F6F6F6; pointer-events: none;" />원</td>
 				</tr>
 				<tr>
 					<td class="tp_table_td">아동</td>
-					<td style="text-align: right;" class="tp_table_td">789,000원</td>
+					<td style="text-align: right;" class="tp_table_td" id="price02">${p.pack_price02}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						0명</td>
+						<input readonly type="text" value="0" id="count02"
+						style="border: none; text-align: right; width: 10px; pointer-events: none;" />명
+					</td>
 
 				</tr>
 				<tr>
 					<td class="tp_table_td">유아</td>
-					<td class="tp_table_td" style="text-align: right;">150,0000원</td>
+					<td class="tp_table_td" style="text-align: right;" id="price03">${p.pack_price03}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						0명</td>
+						<input readonly type="text" value="0" id="count03"
+						style="border: none; text-align: right; width: 10px; pointer-events: none;" />명
+					</td>
 
 				</tr>
 			</table>
@@ -412,7 +522,7 @@ function check(){
 				</ul>
 			</div>
 		</div>
-		
+
 		<!-- 예약 버튼 -->
 		<div id="reservation_btn">
 			<input type="button" id="r_ok" value="예약하기" onclick="check()" />

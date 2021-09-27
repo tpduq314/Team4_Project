@@ -65,7 +65,29 @@
 	padding-top: 10px;
 }
 
+#res_description01 {
+	height: 350px;
+	margin-top: 40px;
+	font-size: 22px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-top: 10px;
+}
+
 .res_table {
+	font-size: 15px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 300px;
+	width: 1370px;
+	margin-top: 20px;
+	border-top: 3px solid black;
+}
+
+#res_table01 {
 	font-size: 15px;
 	font-weight: normal;
 	font-family: Arial, Helvetica, sans-serif;
