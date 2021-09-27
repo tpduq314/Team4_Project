@@ -2,7 +2,6 @@ package com.naver.controller;
 
 import java.util.Random;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.naver.service.PackService;
 import com.naver.service.ResService;
+import com.naver.vo.PackVO;
 import com.naver.vo.ResVO;
 
 @Controller
@@ -20,6 +21,9 @@ public class ResController {
 
 	@Autowired
 	private ResService resService;
+	
+	@Autowired
+	private PackService packService;
 	
 	@RequestMapping("/res")
 	public String res(ResVO res,HttpSession session) {
@@ -40,16 +44,18 @@ public class ResController {
 		//System.out.println("res_total_price ="+res.getRes_total_price());
 		
 		this.resService.insertRes(res);
-		return "redirect:/travel_reservation?res_code="+res_code+"&mem_id="+mem_id;
+		return "redirect:/travel_reservation?res_code="+res_code+"&mem_id="+mem_id+"&pack_code="+res.getPack_code();
 		//return null;
 	}
 	
 	@RequestMapping("/travel_reservation")
-	public String travel_reservation(@RequestParam("res_code") String res_code,@RequestParam("mem_id") String mem_id,Model m,@ModelAttribute ResVO r)throws Exception {
+	public String travel_reservation(@RequestParam("res_code") String res_code,@RequestParam("mem_id") String mem_id,@RequestParam("pack_code") String pack_code,Model m,@ModelAttribute ResVO r,@ModelAttribute PackVO p)throws Exception {
 		
 		r=this.resService.getResCont(res_code);
+		p=this.packService.getPackageCont(pack_code);
 		
 		m.addAttribute("r",r);
+		m.addAttribute("p",p);
 		
 		return "/travelReservation";
 	}//travel_reservation
