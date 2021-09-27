@@ -1,8 +1,8 @@
 package com.naver.controller;
 
+import java.io.IOException;
 import java.io.PrintWriter;
-
-
+import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.naver.service.MemService;
 import com.naver.vo.MemVO;
-
+import com.naver.vo.PackVO;
 
 import pwdconv.PwdChange;
 
@@ -39,15 +39,36 @@ public class MemberController {
 	}
 
 	@RequestMapping(value="/mypage")
-	public String mypage() {
+	public String mypage(HttpSession session,HttpServletResponse response) throws Exception{
 
+		//response.setContentType("text/html;charset=UTF-8");
+		//PrintWriter out=response.getWriter();
+		String login_id=(String)session.getAttribute("id");
+		
+		if(login_id == null) {
+		
+			return "redirect:/login";
+		}else {
 		return "/myPage";
+		}
 	}
 
 	@RequestMapping(value="/customer_service")
-	public String customer_service() {
-
-		return "/customerService";
+	public String customer_service(HttpSession session,HttpServletResponse response) throws Exception {
+		//response.setContentType("text/html;charset=UTF-8");
+		//PrintWriter out=response.getWriter();
+		String login_id=(String)session.getAttribute("id");
+		
+		if(login_id == null) {
+			//out.println("<script>");
+			//out.println("alert('로그인 해주시기 바랍니다!');");
+			//out.println("</script>");
+			
+			return "redirect:/login";
+		}else {
+			return "/customerService";
+		}
+		
 	}
 	//아이디 중복 검색
 	@PostMapping("/mem_idcheck") //post로 접근하는 매핑주소를 처리
