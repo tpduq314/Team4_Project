@@ -22,5 +22,7 @@ public class PackVO {
 	private String pack_date;//출국 날짜
 	private String pack_detail;//포함 내역
 	private String pack_none_detail;//불포함 내역
-	
+
 }
+
+

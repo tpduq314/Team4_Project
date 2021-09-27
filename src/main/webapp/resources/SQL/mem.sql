@@ -83,6 +83,7 @@ create table hotel(
 	,hotel_pack_code varchar2(20) not null 
 	,foreign key(hotel_pack_code) references package(pack_code)
 ); 
+drop table hotel;
 
 select * from hotel;
 
@@ -127,3 +128,6 @@ create table res(
 select * from res;
 
 drop table res;
+
+select * from package, res where package.pack_code = res.pack_code;
+select * from mem, res where mem.mem_id = res.mem_id;
