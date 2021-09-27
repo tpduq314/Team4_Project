@@ -13,12 +13,10 @@
 
 <script>
 
+
 $(document).ready(
 		function() {
-
 			//시작할 때 모든 가격에 콤마 붙임
-	
-
 			document.getElementById("pack_price01").innerHTML = document
 					.getElementById("pack_price01").innerHTML.toString()
 					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -49,40 +47,10 @@ $(document).ready(
 					.getElementById("pack_price03_01").innerHTML.toString()
 					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			
-			var cnt01 = document.getElementById("res_count01").value;
-			var cnt02 = document.getElementById("res_count02").value;
-			var cnt03 = document.getElementById("res_count03").value;
 			
-			var pack_price01 = document.getElementById("pack_price01").innerHTML
-					.toString().replace(/[^\d]+/g, "");
-			var pack_price02 = document.getElementById("pack_price02").innerHTML
-					.toString().replace(/[^\d]+/g, "");
-			var pack_price03 = document.getElementById("pack_price03").innerHTML
-					.toString().replace(/[^\d]+/g, "");
-		
-			//정수 전환
-			cnt01 = parseInt(cnt01);
-			cnt02 = parseInt(cnt02);
-			cnt03 = parseInt(cnt03);
-		
-			pack_price01 = parseInt(pack_price01);
-			pack_price02 = parseInt(pack_price02);
-			pack_price03 = parseInt(pack_price03);
-		
-			//총 가격에 콤마 붙임
-			var totalPrice = cnt01 * pack_price01 + cnt02 * pack_price02 + cnt03
-					* pack_price03;
-			totalPrice = totalPrice.toString()
-					.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		
-			document.getElementById("res_total_price").value = totalPrice;
+		});			
 			
-			document.getElementById("count01").value=cnt01;
-			document.getElementById("count02").value=cnt02;
-			document.getElementById("count03").value=cnt03;
-			
-			
-}); //시작하면 바로 보이게 하는 슬라이드 		
+ //시작하면 바로 보이게 하는 슬라이드 		
 
 /*function calc() {
 	var cnt01 = document.getElementById("res_count01").value;
@@ -174,10 +142,6 @@ function check(){
 		return false;
 	}
 	
-	
-	
-			
-	
 }	
 
 function calc() {
@@ -213,6 +177,8 @@ function calc() {
 	document.getElementById("count01").value=cnt01;
 	document.getElementById("count02").value=cnt02;
 	document.getElementById("count03").value=cnt03;
+	
+
 }
 </script>
 
@@ -321,7 +287,8 @@ function calc() {
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 이름</td>
-					<td class="res_table_td_2">${r.mem_id}</td>
+					<td class="res_table_td_2"><input class="input_table"
+						type="text" name="birth" placeholder="이름" id="res_birth" /></td>
 					<td class="res_table_td_1" style="width: 200px;"><span
 						style="color: red;">*</span> 생년월일</td>
 					<td class="res_table_td_2"><input class="input_table"
@@ -342,7 +309,8 @@ function calc() {
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">* 휴대폰 번호</td>
-					<td class="res_table_td_2">0102343223</td>
+					<td class="res_table_td_2"><input class="input_table"
+						type="text" name="birth" id="res_birth" /></td>
 					<td class="res_table_td_1" style="width: 200px;">전화 번호</td>
 					<td class="res_table_td_2" colspan="3"><input
 						class="input_table" type="text" name="call_num"
