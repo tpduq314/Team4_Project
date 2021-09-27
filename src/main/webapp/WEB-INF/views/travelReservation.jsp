@@ -52,17 +52,23 @@ $(document).ready(
 			
  //시작하면 바로 보이게 하는 슬라이드 		
 
-/*function calc() {
+function calc() {
+	
 	var cnt01 = document.getElementById("res_count01").value;
 	var cnt02 = document.getElementById("res_count02").value;
 	var cnt03 = document.getElementById("res_count03").value;
-	var sum=cnt01+cnt02+cnt03;
+	var sum=
+		parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03);
+	
+	alert(sum);
+	
 	for(var i=1;i<sum;i++){
 		var table=document.createElement('table');
 		table.innerHTML=document.getElementById("res_table01").innerHTML;
 		document.getElementById("res_description01").appendChild(table);
 	}
-}*/
+	
+}
 //전체 약관 동의	
 //만약 모든 체크 박스가 체크되면 전체 동의도 함께 체크됨.
 function selectAll(selectAll)  {
@@ -144,7 +150,7 @@ function check(){
 	
 }	
 
-function calc() {
+/*function calc() {
 
 	var cnt01 = document.getElementById("res_count01").value;
 	var cnt02 = document.getElementById("res_count02").value;
@@ -179,7 +185,7 @@ function calc() {
 	document.getElementById("count03").value=cnt03;
 	
 
-}
+}*/
 </script>
 
 <body>
