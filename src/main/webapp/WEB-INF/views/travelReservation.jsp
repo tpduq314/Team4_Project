@@ -340,7 +340,7 @@ function calc() {
 					<td class="res_table_td_2" width="100px;"><select
 						style="width: 40px; height: 30px; font-size: 14px;"
 						id="res_count02" name="res_count02" onchange="calc();">
-							<option value="${r.res_count03}">${r.res_count03}</option>
+							<option value="${r.res_count02}">${r.res_count02}</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
