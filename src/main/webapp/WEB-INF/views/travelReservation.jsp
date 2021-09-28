@@ -52,7 +52,7 @@ $(document).ready(
 			
  //시작하면 바로 보이게 하는 슬라이드 		
 
-function calc() {
+/*function calc() {
 	
 	var cnt01 = document.getElementById("res_count01").value;
 	var cnt02 = document.getElementById("res_count02").value;
@@ -68,7 +68,7 @@ function calc() {
 		document.getElementById("res_description01").appendChild(table);
 	}
 	
-}
+}*/
 //전체 약관 동의	
 //만약 모든 체크 박스가 체크되면 전체 동의도 함께 체크됨.
 function selectAll(selectAll)  {
@@ -150,7 +150,7 @@ function check(){
 	
 }	
 
-/*function calc() {
+function calc() {
 
 	var cnt01 = document.getElementById("res_count01").value;
 	var cnt02 = document.getElementById("res_count02").value;
@@ -176,16 +176,27 @@ function check(){
 	//총 가격에 콤마 붙임
 	var totalPrice = cnt01 * pack_price01 + cnt02 * pack_price02 + cnt03
 			* pack_price03;
-	totalPrice = totalPrice.toString()
-			.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	totalPrice = totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 	document.getElementById("res_total_price").value = totalPrice;
 	document.getElementById("count01").value=cnt01;
 	document.getElementById("count02").value=cnt02;
 	document.getElementById("count03").value=cnt03;
 	
+	var sum=0;
+		
+	sum=parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03)-1;
+	
+	alert(sum);
+	
+	for(var i=1;i<sum;i++){
+		var table=document.createElement('table');
+		table.innerHTML=document.getElementById("res_table01").innerHTML;
+		document.getElementById("res_description01").appendChild(table);
+	}
+	
 
-}*/
+}
 </script>
 
 <body>

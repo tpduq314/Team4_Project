@@ -112,6 +112,7 @@ public class MemberController {
 				out.println("</script>");
 			}else {
 				session.setAttribute("id",login_id);//세션 아이디 저장
+			
 				return "redirect:/index";
 			}
 		}
