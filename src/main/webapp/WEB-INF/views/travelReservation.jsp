@@ -59,14 +59,16 @@ function calc() {
 	var cnt03 = document.getElementById("res_count03").value;
 	var sum=
 		parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03);
-	
-	alert(sum);
-	
+	var count=0;
+	/* alert(sum); */
 	for(var i=1;i<sum;i++){
 		var table=document.createElement('table');
 		table.innerHTML=document.getElementById("res_table01").innerHTML;
 		document.getElementById("res_description01").appendChild(table);
+		count++;
 	}
+	alert(count);
+	$('table').css('float','left');
 	
 }
 //전체 약관 동의	
@@ -287,7 +289,7 @@ function check(){
 			예약자 정보
 			<div
 				style="float: right; margin-top: 10px; margin-right: 10px; font-size: 12px;">
-				<span style="color: red;">*</span>는 필수 입력 항목입니다.
+				<span style="color: red; clear:both;">*</span>는 필수 입력 항목입니다.
 			</div>
 			<table class="res_table" style="height: 300px;">
 				<tr>
@@ -329,7 +331,7 @@ function check(){
 		<!-- 여행자 정보 -->
 		<div class="res_description" style="height: 100px;">
 			여행자 정보
-			<table class="res_table" style="height: 70px;">
+			<table class="res_table" style="height: 70px;" >
 				<tr>
 					<td class="res_table_td_1" style="width: 250px;">성인 (만 12세 이상)</td>
 					<td class="res_table_td_2" width="100px;"><select
@@ -367,7 +369,7 @@ function check(){
 		</div>
 
 		<!-- 인원 상세 정보 -->
-		<div id="res_description01" style="margin-top: 60px; height: 220px;">
+		<div id="res_description01" style="margin-top: 60px; height: 220px; clear:both;">
 			인원 상세 정보
 			<div
 				style="float: right; margin-top: 10px; margin-right: 10px; font-size: 12px;">
@@ -399,7 +401,7 @@ function check(){
 		</div>
 
 		<!-- 요청사항 -->
-		<div class="res_description" style="height: 240px;">
+		<div class="res_description" style="height: 240px; clear:both">
 			요청 사항
 			<textarea
 				style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
