@@ -4,6 +4,19 @@
 <head>
 <meta charset="UTF-8">
 <title> </title>
+<%
+// request 객체로부터 파라미터를 가져옴.
+String id = (String) session.getAttribute("id");
+System.out.println("id="+id);
+
+String log="";
+if(id==null){
+	log="로그인";
+}else{
+	log="로그아웃";
+}
+
+%>
 <script type="text/javascript">
 $(function(){
 		  $(".dep1 li").hover(function(){
@@ -18,6 +31,21 @@ $(function(){
 		    .find("a:first")
 		    .append("<p style='float:right;margin:-3px'>&#9656;</p>");
 		});
+		
+
+function log() {
+	var log=document.getElementById("log").value;
+
+	if(log=="로그인"){
+		window.location.href = '/Project/login';
+		
+	}else {
+		//document.getElementById("log").value="로그인";
+		<%--session.invalidate();--%>
+		window.location.href = '/Project/index';
+	}
+
+}
 </script>
 
 <style>
@@ -137,7 +165,6 @@ a:active { color:black; text-decoration: none;}
 	font-size:15px;
 }
 
-
 </style>
 </head>
 <body>
@@ -151,7 +178,7 @@ a:active { color:black; text-decoration: none;}
 				</div>
 					<div class="mem">
 						<ul class="mem_ul">
-							<li><a href="/Project/login">로그인</a></li>
+							<li ><input type="button" value="<%=log %>" onclick="log();" id="log"></li>
 							<li><a href="/Project/login_mem">회원가입</a></li>
 							<li><a href="#">고객센터</a></li>
 						</ul>
