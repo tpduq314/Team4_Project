@@ -12,5 +12,8 @@
 		values(no_seq.nextval,#{cli_name},#{cli_birth},#{cli_gender},#{cli_email},#{cli_phone01},#{cli_phone02},#{res_code})
 	</insert>
 
+	<select id="cli_cont" resultType="cli">
+		select * from cli where res_code=#{res_code}
+	</select>
 </mapper>
  

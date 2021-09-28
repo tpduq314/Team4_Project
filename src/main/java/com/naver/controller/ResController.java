@@ -58,7 +58,7 @@ public class ResController {
 	}
 	
 	@RequestMapping("/travel_reservation")
-	public String travel_reservation(@RequestParam("res_code") String res_code,@RequestParam("mem_id") String mem_id,@RequestParam("pack_code") String pack_code,Model m,@ModelAttribute ResVO r,@ModelAttribute PackVO p)throws Exception {
+	public String travel_reservation(@RequestParam("res_code") String res_code,@RequestParam("pack_code") String pack_code,Model m,@ModelAttribute ResVO r,@ModelAttribute PackVO p)throws Exception {
 		
 		r=this.resService.getResCont(res_code);
 		p=this.packService.getPackageCont(pack_code);
@@ -70,13 +70,14 @@ public class ResController {
 	}//travel_reservation
 	
 	@RequestMapping("/res_ok")
-	public String res_ok(CliVO cli,HttpSession session,@ModelAttribute ResVO r) {
+	public String res_ok(CliVO cli,HttpSession session,ResVO r) {
 		
 		String res_code=(String)session.getAttribute("res_code");
 		cli.setRes_code(res_code);
 		//System.out.println("res_code ="+cli.getRes_code());
 		
 		r.setRes_code(res_code);
+		
 		this.resService.updateRes(r);
 		this.cliService.insertCli(cli);
 		
@@ -84,8 +85,21 @@ public class ResController {
 	}
 	
 	@RequestMapping("/travel_reservation_ok")
-	public String travel_reservation_ok() {
+	public String travel_reservation_ok(HttpSession session,@ModelAttribute ResVO r,@ModelAttribute PackVO p,Model m,@ModelAttribute CliVO c) {
 
+		String res_code=(String)session.getAttribute("res_code");
+		//String mem_id=(String)session.getAttribute("id");
+		
+		r=this.resService.getResCont(res_code);
+		String pack_code=r.getPack_code();
+		//System.out.println(pack_code);
+		p=this.packService.getPackageCont(pack_code);
+		c=this.cliService.getCliCont(res_code);
+		
+		m.addAttribute("c",c);
+		m.addAttribute("r",r);
+		m.addAttribute("p",p);
+		
 		return "/travelReservationOk";
 	}
 	

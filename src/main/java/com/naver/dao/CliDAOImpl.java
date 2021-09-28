@@ -17,5 +17,10 @@ public class CliDAOImpl implements CliDAO{
 		this.sqlSession.insert("cli_in",cli);
 		
 	}
+
+	@Override
+	public CliVO getCliCont(String res_code) {
+		return this.sqlSession.selectOne("cli_cont",res_code);
+	}
 	
 }

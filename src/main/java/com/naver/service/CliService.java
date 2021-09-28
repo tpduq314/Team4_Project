@@ -6,4 +6,6 @@ public interface CliService {
 
 	void insertCli(CliVO cli);
 
+	CliVO getCliCont(String res_code);
+
 }

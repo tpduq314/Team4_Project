@@ -16,4 +16,10 @@ public class CliServiceImpl implements CliService{
 	public void insertCli(CliVO cli) {
 		this.cliDAO.insertCli(cli);
 	}
+
+	@Override
+	public CliVO getCliCont(String res_code) {
+		return this.cliDAO.getCliCont(res_code);
+		
+	}
 }

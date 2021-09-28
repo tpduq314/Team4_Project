@@ -6,4 +6,6 @@ public interface CliDAO {
 
 	void insertCli(CliVO cli);
 
+	CliVO getCliCont(String res_code);
+
 }
