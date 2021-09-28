@@ -16,6 +16,7 @@ public class ResVO {
 	private String res_hotel; //호텔
 	private String res_total_price; //총 가격
 	private String res_date; //예약 날짜
+	private String res_req; //요청 사항
 	private String pack_code; //패키지 코드
 	private String mem_id; //회원 아이디
 

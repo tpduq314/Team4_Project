@@ -11,8 +11,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.naver.service.CliService;
 import com.naver.service.PackService;
 import com.naver.service.ResService;
+
+import com.naver.vo.CliVO;
 import com.naver.vo.PackVO;
 import com.naver.vo.ResVO;
 
@@ -24,6 +27,9 @@ public class ResController {
 	
 	@Autowired
 	private PackService packService;
+	
+	@Autowired
+	private CliService cliService;
 	
 	@RequestMapping("/res")
 	public String res(ResVO res,HttpSession session) {
@@ -44,6 +50,9 @@ public class ResController {
 		//System.out.println("res_total_price ="+res.getRes_total_price());
 		
 		this.resService.insertRes(res);
+		
+		session.setAttribute("res_code",res_code);
+		
 		return "redirect:/travel_reservation?res_code="+res_code+"&mem_id="+mem_id+"&pack_code="+res.getPack_code();
 		//return null;
 	}
@@ -59,5 +68,25 @@ public class ResController {
 		
 		return "/travelReservation";
 	}//travel_reservation
+	
+	@RequestMapping("/res_ok")
+	public String res_ok(CliVO cli,HttpSession session,@ModelAttribute ResVO r) {
+		
+		String res_code=(String)session.getAttribute("res_code");
+		cli.setRes_code(res_code);
+		//System.out.println("res_code ="+cli.getRes_code());
+		
+		r.setRes_code(res_code);
+		this.resService.updateRes(r);
+		this.cliService.insertCli(cli);
+		
+		return "redirect:/travel_reservation_ok?res_code="+res_code;
+	}
+	
+	@RequestMapping("/travel_reservation_ok")
+	public String travel_reservation_ok() {
+
+		return "/travelReservationOk";
+	}
 	
 }

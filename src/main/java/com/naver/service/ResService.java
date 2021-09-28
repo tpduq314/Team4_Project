@@ -7,6 +7,8 @@ public interface ResService {
 	void insertRes(ResVO res);
 
 	ResVO getResCont(String res_code);
+
+	void updateRes(ResVO r);
 	
 
 }
