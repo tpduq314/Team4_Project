@@ -106,7 +106,7 @@
 
 		</div>
 
-		<div class="res_description" style="height: 140px; font-size: 20px;">
+	<!--  	<div class="res_description" style="height: 140px; font-size: 20px;">
 			여행자 정보 &nbsp;&nbsp; <span
 				style="font-weight: normal; font-size: 18px;">(성인 <span
 				style="color: blue;">1</span> / 아동 <span style="color: blue">0</span>
@@ -124,7 +124,7 @@
 				</tr>
 
 			</table>
-		</div>
+		</div>-->
 
 		<div class="res_description" style="height: 240px; font-size: 20px;">
 			요청 사항

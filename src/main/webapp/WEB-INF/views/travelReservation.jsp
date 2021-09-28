@@ -60,7 +60,7 @@ $(document).ready(
 	var sum=
 		parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03);
 	var count=0;
-	/* alert(sum); */
+	/* alert(sum); 
 	for(var i=1;i<sum;i++){
 		var table=document.createElement('table');
 		table.innerHTML=document.getElementById("res_table01").innerHTML;
@@ -70,7 +70,7 @@ $(document).ready(
 	alert(count);
 	$('table').css('float','left');
 	
-}
+}*/
 //전체 약관 동의	
 //만약 모든 체크 박스가 체크되면 전체 동의도 함께 체크됨.
 function selectAll(selectAll)  {
@@ -103,7 +103,7 @@ function checkSelectAll()  {
 	}
 	
 //유효성 검사	  
-function check(){
+/*function check(){
 	var re2 = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 	// 이메일이 적합한지 검사할 정규식
 	var exp = /^[0-9]+$/;
@@ -150,7 +150,7 @@ function check(){
 		return false;
 	}
 	
-}	
+}	*/
 
 function calc() {
 
@@ -185,7 +185,7 @@ function calc() {
 	document.getElementById("count02").value=cnt02;
 	document.getElementById("count03").value=cnt03;
 	
-	var sum=0;
+	/*var sum=0;
 		
 	sum=parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03)-1;
 	
@@ -195,7 +195,7 @@ function calc() {
 		var table=document.createElement('table');
 		table.innerHTML=document.getElementById("res_table01").innerHTML;
 		document.getElementById("res_description01").appendChild(table);
-	}
+	}*/
 	
 
 }
@@ -379,7 +379,7 @@ function calc() {
 			</table>
 		</div>
 
-		<!-- 인원 상세 정보 -->
+		<!-- 인원 상세 정보 
 		<div id="res_description01" style="margin-top: 60px; height: 220px; clear:both;">
 			인원 상세 정보
 			<div
@@ -409,7 +409,7 @@ function calc() {
 						style="display: inline-block;">여</td>
 				</tr>
 			</table>
-		</div>
+		</div>-->
 
 		<!-- 요청사항 -->
 		<div class="res_description" style="height: 240px; clear:both">
