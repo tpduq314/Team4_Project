@@ -70,7 +70,7 @@ $(document).ready(
 	alert(count);
 	$('table').css('float','left');
 	
-}*/
+}
 //전체 약관 동의	
 //만약 모든 체크 박스가 체크되면 전체 동의도 함께 체크됨.
 function selectAll(selectAll)  {
