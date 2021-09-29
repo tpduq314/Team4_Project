@@ -25,6 +25,13 @@ public class ResDAOImpl implements ResDAO {
 	public ResVO getResCont(String res_code) {
 		return this.sqlSession.selectOne("res_cont",res_code);
 	}
+
+
+
+	@Override
+	public void updateRes(ResVO res_code) {
+		this.sqlSession.update("res_update",res_code);
+	}
 	
 
 }

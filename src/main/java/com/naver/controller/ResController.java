@@ -1,7 +1,9 @@
 package com.naver.controller;
 
+import java.io.PrintWriter;
 import java.util.Random;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.naver.service.PackService;
 import com.naver.service.ResService;
@@ -24,6 +27,17 @@ public class ResController {
 	
 	@Autowired
 	private PackService packService;
+	
+	@RequestMapping(value="/travelReservationOk")
+	public String travelReservationOK(){
+		
+		return "/travelReservationOk";
+}
+	@RequestMapping(value="/res_Update")
+	public String res_Update(){
+		
+		return "/res_Update";
+}
 	
 	@RequestMapping("/res")
 	public String res(ResVO res,HttpSession session) {
@@ -60,4 +74,13 @@ public class ResController {
 		return "/travelReservation";
 	}//travel_reservation
 	
+	//요구사항 업데이트
+	@RequestMapping("/res_Update.ok")
+	public String resUpdate(@RequestParam(value="res_code",required=false) ResVO res_code,ResVO res,HttpServletResponse response) throws Exception {
+		
+		this.resService.updateRes(res_code);
+		
+		
+		return null;
+	}
 }

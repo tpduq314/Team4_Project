@@ -9,4 +9,5 @@ public interface ResDAO {
 
 	ResVO getResCont(String res_code);
 	
+	void updateRes(ResVO res_code);
 }

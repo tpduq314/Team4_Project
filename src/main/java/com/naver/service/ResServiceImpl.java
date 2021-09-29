@@ -22,4 +22,9 @@ public class ResServiceImpl implements ResService {
 	public ResVO getResCont(String res_code) {
 		return this.resDAO.getResCont(res_code);
 	}
+
+	@Override
+	public void updateRes(ResVO res_code) {
+		this.resDAO.updateRes(res_code);
+	}
 }

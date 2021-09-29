@@ -199,6 +199,11 @@ function calc() {
 	
 
 }
+<%
+String res_code = request.getParameter("res_code");
+
+System.out.println(res_code);
+%>
 </script>
 
 <body>
@@ -223,7 +228,8 @@ function calc() {
 			<table class="res_table">
 				<tr>
 					<td class="res_table_td_1">상품명</td>
-					<td colspan="3" class="res_table_td_2">${p.pack_name}</td>
+					
+					<td colspan="3" class="res_table_td_2">${p.pack_name}<input type="text" id=res_code name=res_code value="<%=res_code%>"></td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">여행기간</td>
@@ -245,7 +251,7 @@ function calc() {
 			</table>
 
 		</div>
-
+	<form id="update_ok" method="post" action="res_Update.ok">
 		<!-- 여행 경비 -->
 		<div class="res_description">
 			여행 경비
@@ -378,7 +384,7 @@ function calc() {
 				</tr>
 			</table>
 		</div>
-
+	
 		<!-- 인원 상세 정보 
 		<div id="res_description01" style="margin-top: 60px; height: 220px; clear:both;">
 			인원 상세 정보
@@ -414,11 +420,10 @@ function calc() {
 		<!-- 요청사항 -->
 		<div class="res_description" style="height: 240px; clear:both">
 			요청 사항
-			<textarea
+			<textarea name="res_req" id="res_req"
 				style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
 				placeholder="요청사항을 적어주세요"></textarea>
 		</div>
-
 		<!-- 약관 동의 -->
 		<div class="res_description" style="height: 450px;">
 			필수 약관 동의
@@ -530,9 +535,9 @@ function calc() {
 						<input readonly type="text" value="0" id="count03"
 						style="border: none; text-align: right; width: 10px; pointer-events: none;" />명
 					</td>
-
 				</tr>
 			</table>
+			</form>
 			<div id="tp_bottom">
 				<ul>
 					<li>-항공권 또는 항공권이 포함된 상품의 경우, 표시되는 상품요금은 세금 및 예상 유류할증료가 포함된
@@ -544,7 +549,7 @@ function calc() {
 
 		<!-- 예약 버튼 -->
 		<div id="reservation_btn">
-			<input type="button" id="r_ok" value="예약하기" onclick="check()" />
+			<input type="button" id="r_ok" value="예약하기" onclick="document.getElementById('update_ok').submit();" />
 		</div>
 	</div>
 </body>

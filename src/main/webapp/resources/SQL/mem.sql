@@ -119,11 +119,13 @@ create table res(
 	,res_hotel varchar2(50) not null --호텔
 	,res_total_price varchar2(100) not null --총 가격
 	,res_date date --예약 날짜
+	,res_req varchar2(1000)
 	,mem_id varchar2(100) not null --예약 멤버 아이디
 	,pack_code varchar2(20) not null  --패키지 코드
 	,foreign key(pack_code) references package(pack_code)
 	,foreign key(mem_id) references mem(mem_id)
 );
+
 
 select * from res;
 
@@ -131,3 +133,8 @@ drop table res;
 
 select * from package, res where package.pack_code = res.pack_code;
 select * from mem, res where mem.mem_id = res.mem_id;
+
+create table qa(
+	qa_phone
+	qa_mail_id
+);
