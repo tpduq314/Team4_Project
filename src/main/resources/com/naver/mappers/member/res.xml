@@ -15,10 +15,10 @@
      select * from res where res_code=#{res_code}
     </select>
     
-    <update id="res_update">
-    	update res
-    	set res_count01 = #{res_count01}, res_count02 = #{res_count02}, res_count03 = #{res_count03}, res_req = #{res_req,jdbcType=VARCHAR} 
-    	where res_code = #{res_code}
+    <update id="res_update" parameterType="res">
+     update res set res_count01=#{res_count01},res_count02=#{res_count02},res_count03=#{res_count03},
+     res_req=#{res_req},res_total_price=#{res_total_price}
+     where res_code=#{res_code}
     </update>
 </mapper>
  

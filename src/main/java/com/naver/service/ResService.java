@@ -1,7 +1,5 @@
 package com.naver.service;
 
-
-
 import com.naver.vo.ResVO;
 
 public interface ResService {
@@ -10,6 +8,8 @@ public interface ResService {
 
 	ResVO getResCont(String res_code);
 
-	void updateRes(ResVO res_code);
+	void updateRes(ResVO r);
+	
 
 }
+

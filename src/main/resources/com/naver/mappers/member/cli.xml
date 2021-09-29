@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Cli">
+
+	<insert id="cli_in">
+		insert into cli
+		(cli_no,cli_name,cli_birth,cli_gender,cli_email,cli_phone01,cli_phone02,res_code)
+		values(no_seq.nextval,#{cli_name},#{cli_birth},#{cli_gender},#{cli_email},#{cli_phone01},#{cli_phone02},#{res_code})
+	</insert>
+
+	<select id="cli_cont" resultType="cli">
+		select * from cli where res_code=#{res_code}
+	</select>
+</mapper>
+ 

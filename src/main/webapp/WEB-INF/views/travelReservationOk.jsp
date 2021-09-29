@@ -31,12 +31,12 @@
 			<p class="travel_reservation_ok_p" style="margin-top: 20px;">웹
 				투어를 이용해주셔서 감사합니다.</p>
 			<p class="travel_reservation_ok_p">
-				<span style="color: #6E85B2; font-size: 18px;">홍길동 </span>님의 예약이
+				<span style="color: #6E85B2; font-size: 18px;">${id} </span>님의 예약이
 				완료되었습니다.
 			</p>
 			<div
 				style="border-radius: 7px; background-color: #6E85B2; font-size: 14px; height: 30px; width: 200px; margin-top: 10px; margin-left: auto; margin-right: auto; line-height: 30px;">
-				예약 번호는 <span style="color: white;">283794</span> 입니다.
+				예약 번호는 <span style="color: white;">${res_code}</span> 입니다.
 			</div>
 		</div>
 
@@ -50,27 +50,24 @@
 			<table class="res_table">
 				<tr>
 					<td class="res_table_td_1">상품명</td>
-					<td colspan="3" class="res_table_td_2">[다시, 여행] 다낭#하루는 자유로운
-						패키지#빈펄 리버프론트 5일</td>
+					<td colspan="3" class="res_table_td_2">${p.pack_name}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">여행기간</td>
 					<td class="res_table_td_2">3박 4일</td>
 					<td class="res_table_td_1"
 						style="width: 200px; border-left: 2px solid #EAEAEA;">이용교통</td>
-					<td class="res_table_td_2">대한항공</td>
+					<td class="res_table_td_2">${r.res_airport}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1">출발일</td>
-					<td colspan="3" class="res_table_td_2">2021년 10월 01일 (금)
-						07:00-VJ879</td>
+					<td colspan="3" class="res_table_td_2">${r.res_start_date}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1"
 						style="border-bottom: 1.5px solid black;">도착일</td>
 					<td colspan="3" class="res_table_td_2"
-						style="border-bottom: 1.5px solid black;">2021년 10월 05일 (화)
-						06:00-VJ878</td>
+						style="border-bottom: 1.5px solid black;">${r.res_end_date}</td>
 				</tr>
 			</table>
 
@@ -86,21 +83,21 @@
 			<table class="res_table" style="height: 300px;">
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">이름</td>
-					<td class="res_table_td_2">홍길동</td>
+					<td class="res_table_td_2">${c.cli_name}</td>
 					<td class="res_table_td_1" style="width: 200px;">생년월일</td>
-					<td class="res_table_td_2">19990723</td>
+					<td class="res_table_td_2">${c.cli_birth}</td>
 					<td class="res_table_td_1" style="width: 200px;">성별</td>
-					<td class="res_table_td_2">남성</td>
+					<td class="res_table_td_2">${c.cli_gender}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">이메일</td>
-					<td colspan="5" class="res_table_td_2">hong@naver.com</td>
+					<td colspan="5" class="res_table_td_2">${c.cli_email}</td>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">휴대폰 번호</td>
-					<td class="res_table_td_2">0102343223</td>
+					<td class="res_table_td_2">${c.cli_phone01}</td>
 					<td class="res_table_td_1" style="width: 200px;">전화 번호</td>
-					<td class="res_table_td_2" colspan="3">031928390</td>
+					<td class="res_table_td_2" colspan="3">${c.cli_phone02}</td>
 				</tr>
 			</table>
 
@@ -128,8 +125,9 @@
 
 		<div class="res_description" style="height: 240px; font-size: 20px;">
 			요청 사항
-			<div
-				style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"></div>
+			<textarea
+					style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
+					placeholder="요청사항을 적어주세요" name="res_req" id="res_req" readonly="readonly" >${r.res_req}</textarea>
 
 		</div>
 
@@ -145,28 +143,28 @@
 				</tr>
 				<tr>
 					<td class="tp_table_td">성인</td>
-					<td style="text-align: right;" class="tp_table_td">789,000원</td>
+					<td style="text-align: right;" class="tp_table_td">${p.pack_price01}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						1명</td>
+						${r.res_count02}명</td>
 					<td rowspan="3" class="tp_table_td" style="text-align: center;">쿠폰
 						할인</td>
 					<td rowspan="3" class="tp_table_td"
 						style="border-right: 1.5px solid #EAEAEA;">-원</td>
 					<td rowspan="3"
-						style="color: red; font-size: 16px; text-align: center; font-weight: bold;">789,000원</td>
+						style="color: red; font-size: 16px; text-align: center; font-weight: bold;">${r.res_total_price}원</td>
 				</tr>
 				<tr>
 					<td class="tp_table_td">아동</td>
-					<td style="text-align: right;" class="tp_table_td">789,000원</td>
+					<td style="text-align: right;" class="tp_table_td">${p.pack_price02}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						0명</td>
+						${r.res_count02}명</td>
 
 				</tr>
 				<tr>
 					<td class="tp_table_td">유아</td>
-					<td class="tp_table_td" style="text-align: right;">150,0000원</td>
+					<td class="tp_table_td" style="text-align: right;">${p.pack_price03}원</td>
 					<td class="tp_table_td" style="border-right: 1.5px solid #EAEAEA;">x
-						0명</td>
+						${r.res_count03}명</td>
 
 				</tr>
 			</table>

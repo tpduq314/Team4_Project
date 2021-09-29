@@ -119,7 +119,7 @@ create table res(
 	,res_hotel varchar2(50) not null --호텔
 	,res_total_price varchar2(100) not null --총 가격
 	,res_date date --예약 날짜
-	,res_req varchar2(1000)
+	,res_req varchar2(500)  --요청사항
 	,mem_id varchar2(100) not null --예약 멤버 아이디
 	,pack_code varchar2(20) not null  --패키지 코드
 	,foreign key(pack_code) references package(pack_code)
@@ -134,7 +134,24 @@ drop table res;
 select * from package, res where package.pack_code = res.pack_code;
 select * from mem, res where mem.mem_id = res.mem_id;
 
-create table qa(
-	qa_phone
-	qa_mail_id
+create table cli(
+	cli_no number(38) primary key --예약자 번호
+	,cli_name varchar2(50) not null --이름
+	,cli_birth varchar2(50) not null --생년월일
+	,cli_gender varchar2(50) not null --성별
+	,cli_email varchar2(100) not null --이메일
+	,cli_phone01 varchar2(50) not null --핸드폰 번호
+	,cli_phone02 varchar2(50) --집 번호
+	,res_code varchar2(50) not null --예약 번호
+	,foreign key(res_code) references res(res_code)
 );
+
+create sequence no_seq
+start with 1
+increment by 1
+nocache;
+
+select * from cli;
+
+
+drop table cli;

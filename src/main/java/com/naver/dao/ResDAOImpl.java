@@ -29,8 +29,9 @@ public class ResDAOImpl implements ResDAO {
 
 
 	@Override
-	public void updateRes(ResVO res_code) {
-		this.sqlSession.update("res_update",res_code);
+	public void updateRes(ResVO r) {
+		this.sqlSession.update("res_update", r);
+		
 	}
 	
 

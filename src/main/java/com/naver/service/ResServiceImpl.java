@@ -24,7 +24,8 @@ public class ResServiceImpl implements ResService {
 	}
 
 	@Override
-	public void updateRes(ResVO res_code) {
-		this.resDAO.updateRes(res_code);
+	public void updateRes(ResVO r) {
+		this.resDAO.updateRes(r);
+		
 	}
 }
