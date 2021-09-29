@@ -165,18 +165,22 @@ create table qa(
 	,qa_cont varchar2(1000) not null --문의 사항
 	,qa_date date --문의 날짜
 	,res_code varchar2(50) not null--예약 번호
+	,mem_id varchar2(100) not null
 	,foreign key(res_code) references res(res_code)
+	,foreign key(mem_id) references mem(mem_id)
 );
 
 drop table qa;
+
 drop sequence seq_qano;
+
 create sequence seq_qano
 start with 1
 increment by 1
 nocache;
 
 insert into qa 
-	(qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, qa_date) values 
-	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','4090',sysdate );
+	(qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, mem_id, qa_date) values 
+	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','4090','aaaa',sysdate );
 
 select * from qa;

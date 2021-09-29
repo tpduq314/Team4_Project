@@ -11,5 +11,6 @@ public class QaVO {
 	private String qa_title; //문의 제목
 	private String qa_cont; //문의 내용
 	private String res_code; //예약번호
+	private String mem_id; //회원 아이디
 	private String qa_date; //문의 시간
 }

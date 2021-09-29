@@ -38,20 +38,17 @@ public class MemberController {
 		return "/index";
 	}
 
-	@RequestMapping(value="/mypage")
-	public String mypage(HttpSession session,HttpServletResponse response) throws Exception{
-
-		//response.setContentType("text/html;charset=UTF-8");
-		//PrintWriter out=response.getWriter();
-		String login_id=(String)session.getAttribute("id");
-		
-		if(login_id == null) {
-		
-			return "redirect:/login";
-		}else {
-		return "/myPage";
-		}
-	}
+	/*
+	 * @RequestMapping(value="/mypage") public String mypage(HttpSession
+	 * session,HttpServletResponse response) throws Exception{
+	 * 
+	 * //response.setContentType("text/html;charset=UTF-8"); //PrintWriter
+	 * out=response.getWriter(); String login_id=(String)session.getAttribute("id");
+	 * 
+	 * if(login_id == null) {
+	 * 
+	 * return "redirect:/login"; }else { return "/myPage"; } }
+	 */
 
 	@RequestMapping(value="/customer_service")
 	public String customer_service(HttpSession session,HttpServletResponse response) throws Exception {

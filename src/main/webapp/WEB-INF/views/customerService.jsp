@@ -56,7 +56,7 @@
 			<span style="color: red;">*</span>는 필수 정보입니다.
 		</p> -->
 
-		<table
+		<table  
 			style="border-top: 2px solid black; margin-left: 250px; margin-top: 90px; font-size: 15px;">
 			<tr>
 				<td class="cs_tb_1"><span style="color: red;">* </span>휴대폰 번호</td>

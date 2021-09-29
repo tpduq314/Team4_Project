@@ -37,7 +37,7 @@
 		<table class="res_table"
 			style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5;">
 			<tr>
-				<td class="tb_chk_res">예약 번호</td>
+				<td class="tb_chk_res" id="res_code">${q.res_code}</td>
 				<td class="tb_chk_res">예약 일자</td>
 				<td class="tb_chk_res">상품명</td>
 				<td class="tb_chk_res">출발일</td>

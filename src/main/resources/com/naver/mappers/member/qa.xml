@@ -6,9 +6,16 @@
 
  <mapper namespace="Qa">
  
- 	<insert id="qa_in">
-	insert into qa (qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, qa_date) 
-	values (seq_qano.nextval, #{qa_phone}, #{mail_id}, #{qa_title}, #{qa_cont}, #{res_code},sysdate)
+	<insert id="qa_in">
+	insert into qa (qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, mem_id, qa_date) 
+	values (seq_qano.nextval, #{qa_phone}, #{mail_id}, #{qa_title}, #{qa_cont}, #{res_code},#{mem_id},sysdate)
 	</insert>
 	
+	<!-- <select id="res_code" resultType="res">
+		select * from qa where res_code = #{res_code}
+	</select> -->
+	
+	<select id="qlist">
+		select * from qa where mem_id=#{mem_id}
+	</select>
  </mapper>
