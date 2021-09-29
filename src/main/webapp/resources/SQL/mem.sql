@@ -154,4 +154,29 @@ nocache;
 select * from cli;
 
 
+
 drop table cli;
+
+create table qa(
+	qa_no number(38) primary key--문의자 번호
+	,qa_phone varchar2(20) not null--핸드폰번호
+	,mail_id varchar2(100) not null--메일 아이디
+	,qa_title varchar2(50) not null--문의내용 제목
+	,qa_cont varchar2(1000) not null --문의 사항
+	,qa_date date --문의 날짜
+	,res_code varchar2(50) not null--예약 번호
+	,foreign key(res_code) references res(res_code)
+);
+
+drop table qa;
+drop sequence seq_qano;
+create sequence seq_qano
+start with 1
+increment by 1
+nocache;
+
+insert into qa 
+	(qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, qa_date) values 
+	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','4090',sysdate );
+
+select * from qa;
