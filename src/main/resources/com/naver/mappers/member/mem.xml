@@ -22,5 +22,13 @@
     select * from mem where mem_id=#{login_id}
     </select>
     
+    <select id="get_mem" resultType="mem">
+    select * from mem where mem_id=#{id}
+    </select>
+    <!-- 정보수정 완료 -->
+    <update id="mem_edit_ok">
+    	update mem set mem_pwd=#{mem_pwd}, mem_phone01=#{mem_phone01}, mem_phone02=#{mem_phone02},
+    	mem_phone03=#{mem_phone03}, mail_id=#{mail_id}, mail_domain=#{mail_domain} where mem_id=#{mem_id}
+    </update>
   </mapper>
  

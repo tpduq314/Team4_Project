@@ -28,4 +28,14 @@ public class MemDAOImpl implements MemDAO {
 		return this.sqlSession.selectOne("login_ck",login_id);
 	}
 
+	@Override
+	public void editMem(MemVO m) {
+		this.sqlSession.update("mem_edit_ok",m);
+	}
+
+	@Override
+	public MemVO getMem(String id) {
+		return this.sqlSession.selectOne("get_mem",id);
+	}
+
 }

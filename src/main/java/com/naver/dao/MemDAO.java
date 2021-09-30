@@ -10,4 +10,8 @@ public interface MemDAO {
 
 	MemVO loginCheck(String login_id);
 
+	void editMem(MemVO m);
+
+	MemVO getMem(String id);
+
 }

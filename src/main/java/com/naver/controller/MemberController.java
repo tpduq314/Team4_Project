@@ -1,8 +1,6 @@
 package com.naver.controller;
 
-import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -10,14 +8,12 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.servlet.ModelAndView;
 
 import com.naver.service.MemService;
 import com.naver.vo.MemVO;
-import com.naver.vo.PackVO;
 
 import pwdconv.PwdChange;
 
@@ -37,6 +33,7 @@ public class MemberController {
 
 		return "/index";
 	}
+	
 
 	/*
 	 * @RequestMapping(value="/mypage") public String mypage(HttpSession
@@ -134,6 +131,78 @@ public class MemberController {
 
 		return "redirect:/login";//완료 시 login으로 보냄
 	}	
-
-
+	
+	//회원정보 수정폼
+	@RequestMapping("/editPersonalInfo")
+	public ModelAndView editPsonalInfo(HttpServletResponse response,HttpSession session)throws Exception{
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out=response.getWriter();
+		
+		String id=(String)session.getAttribute("id");
+		
+		if(id == null) {
+			out.println("<script>");
+			out.println("alert('다시 로그인 하세요!');");
+			out.println("location='login';");
+			out.println("</script>");
+		}else {
+			String[] mem_phone01= {};
+			String[] mem_phone02= {};
+			String[] mem_phone03= {};
+			String[] mail_id= {};
+			String[] mail_domain= {};
+			MemVO mem=this.memService.getMem(id);
+			
+			ModelAndView em=new ModelAndView("/editPersonalInfo");
+			em.addObject("mem_phone01",mem_phone01);
+			em.addObject("mem_phone02",mem_phone02);
+			em.addObject("mem_phone03",mem_phone03);
+			em.addObject("mail_id",mail_id);
+			em.addObject("mail_domain",mail_domain);
+			em.addObject("m",mem);
+			return em;
+		}
+		return null;
+	}
+	@RequestMapping("mem_edit_ok")
+	public String mem_edit_ok(MemVO mem, HttpServletResponse response, HttpSession session) throws Exception{
+		response.setContentType("text/html;charset=UTF-8");
+        PrintWriter out=response.getWriter();
+        
+        String id=(String)session.getAttribute("id");
+    	if(id == null) {
+			out.println("<script>");
+			out.println("alert('다시 로그인 하세요!');");
+			out.println("location='login';");
+			out.println("</script>");
+		}else {
+			mem.setMem_id(id);
+			mem.setMem_pwd(PwdChange.getPassWordToXEMD5String(mem.getMem_pwd()));
+			mem.setMem_phone01(mem.getMem_phone01());
+			mem.setMem_phone02(mem.getMem_phone02());
+			mem.setMem_phone03(mem.getMem_phone03());
+			mem.setMail_id(mem.getMail_id());
+			mem.setMail_domain(mem.getMail_domain());
+			this.memService.editMem(mem);
+			
+			out.println("<script>");
+            out.println("alert('정보 수정했습니다!');");
+            out.println("location='editPersonalInfo';");
+            out.println("</script>");
+		}
+        return null;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

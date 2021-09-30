@@ -40,23 +40,32 @@
 			<table class="res_table"
 				style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5;">
 				<tr>
-					<td class="tb_chk_res" id="res_code">예약코드</td>
+					<td class="tb_chk_res">예약코드</td>
 					<td class="tb_chk_res">예약 일자</td>
 					<td class="tb_chk_res">상품명</td>
 					<td class="tb_chk_res">출발일</td>
 					<td class="tb_chk_res">진행상황</td>
 					<td class="tb_chk_res">문의신청</td>
-
 				</tr>
-
-				<tr>
-					<td colspan="6" style="text-align: center; font-size: 16px;">해당
-						예약 내역이 없습니다</td>
-				</tr>
-
-
+				<c:if test="${empty qlist}">
+					<tr>
+						<td colspan="6" style="text-align: center; font-size: 16px;">해당
+							예약 내역이 없습니다</td>
+					</tr>
+				</c:if>
+				<c:if test="${!empty qlist}">
+					<c:forEach var="q" items="${qlist}">
+						<tr>
+							<td>${q.res_code}</td>
+							<td>예약 일자</td>
+							<td>상품명</td>
+							<td>출발일</td>
+							<td>진행상황</td>
+							<td>문의신청</td>
+						</tr>
+					</c:forEach>
+				</c:if>
 			</table>
-
 		</div>
 
 		<div class="res_description">

@@ -31,4 +31,15 @@ public class MemServiceImpl implements MemService {
 		return this.memDAO.loginCheck(login_id);
 	}
 
+	@Override
+	public void editMem(MemVO m) {
+		this.memDAO.editMem(m);
+		
+	}
+
+	@Override
+	public MemVO getMem(String id) {
+		return this.memDAO.getMem(id);
+	}
+
 }

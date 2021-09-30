@@ -23,7 +23,7 @@ System.out.println(date);
 		</div>
 	</div>
 
-	<section class="list">
+<%-- 	<section class="list">
 		<div class="container">
 			<div class="list_left">
 				<form method="post">
@@ -34,7 +34,7 @@ System.out.println(date);
 			</div>
 		</div>
 	</section>
-
+ --%>
 	<section class="serv_list">
 		<div class="bList_count">글개수:${totalCount}</div>
 		<div class="container">
