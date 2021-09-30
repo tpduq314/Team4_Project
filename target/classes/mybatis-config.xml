@@ -16,8 +16,11 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<typeAlias type="com.naver.vo.LandVO" alias="land" />
 
 		<typeAlias type="com.naver.vo.ResVO" alias="res" />
-		
+
 		<typeAlias type="com.naver.vo.CliVO" alias="cli" />
-		
+
+		<typeAlias type="com.naver.vo.QaVO" alias="qa" />
+
+
 	</typeAliases>
 </configuration>   

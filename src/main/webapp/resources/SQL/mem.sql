@@ -160,7 +160,7 @@ drop table cli;
 create table qa(
 	qa_no number(38) primary key--문의자 번호
 	,qa_phone varchar2(20) not null--핸드폰번호
-	,mail_id varchar2(100) not null--메일 아이디
+	,qa_mail_id varchar2(100) not null--메일 아이디
 	,qa_title varchar2(50) not null--문의내용 제목
 	,qa_cont varchar2(1000) not null --문의 사항
 	,qa_date date --문의 날짜

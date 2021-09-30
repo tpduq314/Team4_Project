@@ -65,7 +65,7 @@
 			</tr>
 			<tr>
 				<td class="cs_tb_1"><span style="color: red;">* </span>이메일</td>
-				<td class="cs_tb_2"><input name="mail_id" id="mail_id" class="cs_tb_2_input" type="text"
+				<td class="cs_tb_2"><input name="qa_mail_id" id="qa_mail_id" class="cs_tb_2_input" type="text"
 					placeholder="이메일 아이디" /></td>
 			</tr>
 			<tr>

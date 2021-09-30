@@ -4,18 +4,20 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
- <mapper namespace="Qa">
- 
+<mapper namespace="Qa">
+
 	<insert id="qa_in">
-	insert into qa (qa_no, qa_phone, mail_id, qa_title, qa_cont, res_code, mem_id, qa_date) 
-	values (seq_qano.nextval, #{qa_phone}, #{mail_id}, #{qa_title}, #{qa_cont}, #{res_code},#{mem_id},sysdate)
+		insert into qa (qa_no, qa_phone, qa_mail_id, qa_title, qa_cont, res_code,
+		mem_id, qa_date)
+		values (seq_qano.nextval, #{qa_phone}, #{qa_mail_id}, #{qa_title}, #{qa_cont},
+		#{res_code},#{mem_id},sysdate)
 	</insert>
-	
-	<!-- <select id="res_code" resultType="res">
-		select * from qa where res_code = #{res_code}
-	</select> -->
-	
-	<select id="qlist">
-		select * from qa where mem_id=#{mem_id}
+
+	<!-- <select id="res_code" resultType="res"> select * from qa where res_code 
+		= #{res_code} </select> -->
+
+	<select id="qlist" resultType="qa">
+		select * from qa where
+		mem_id=#{mem_id}
 	</select>
- </mapper>
+</mapper>
