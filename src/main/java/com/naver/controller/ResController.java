@@ -1,7 +1,10 @@
 package com.naver.controller;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Random;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,13 +13,16 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.naver.service.CliService;
 import com.naver.service.PackService;
+import com.naver.service.QaService;
 import com.naver.service.ResService;
 
 import com.naver.vo.CliVO;
 import com.naver.vo.PackVO;
+import com.naver.vo.QaVO;
 import com.naver.vo.ResVO;
 
 @Controller
@@ -30,6 +36,9 @@ public class ResController {
 	
 	@Autowired
 	private CliService cliService;
+	
+	@Autowired
+	private QaService qaService;
 	
 	@RequestMapping("/res")
 	public String res(ResVO res,HttpSession session) {
@@ -103,4 +112,33 @@ public class ResController {
 		return "/travelReservationOk";
 	}
 	
+	@RequestMapping("/customer_service_ok")
+	public String customer_service_ok(@ModelAttribute QaVO q, HttpServletResponse response, HttpSession session) throws IOException {
+
+		String mem_id=(String)session.getAttribute("id");
+
+		q.setMem_id(mem_id);
+
+		this.qaService.insertQa(q);
+
+
+		return "redirect:/mypage";
+	}
+	
+	@RequestMapping("/mypage") 
+	public ModelAndView  mypage(HttpSession session,@ModelAttribute QaVO q,@ModelAttribute ResVO r) {
+
+		String mem_id=(String)session.getAttribute("id");
+
+		q.setMem_id(mem_id);
+		List<QaVO> qlist=this.qaService.getQaList(q);
+
+		ModelAndView listQ=new ModelAndView();
+
+		listQ.addObject("qlist",qlist);
+
+		listQ.setViewName("/myPage");
+
+		return listQ;
+	}
 }
