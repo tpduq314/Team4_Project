@@ -222,16 +222,13 @@
 					<table id="table_schedule">
 						<tr>
 							<td rowspan="3" class="sc_cate" style="padding-bottom: 30px;">일정</td>
-							<td class="sc_opt" height="20px" style="padding-top: 10px;">4박
-								5일</td>
+							<td class="sc_opt" height="20px" style="padding-top: 10px;">${p.pack_duration}</td>
 						</tr>
 						<tr>
-							<td class="sc_opt" height="20px">출발 : 2021.09.18(토) 10:50
-								2021.09.18(토) 16:00 KE9643총 06시간 10분 소요</td>
+							<td class="sc_opt" height="20px">출발 : ${p.pack_start_date} </td>
 						</tr>
 						<tr>
-							<td class="sc_opt" height="20px">도착 : 2021.09.22(수) 10:30
-								2021.09.22(수) 17:55 KE9648총 06시간 25분 소요</td>
+							<td class="sc_opt" height="20px">도착 : ${p.pack_end_date}</td>
 						</tr>
 						<tr>
 							<td class="sc_cate">여행 도시</td>
@@ -448,17 +445,17 @@
 						<tr>
 							<td class="td_date">출발</td>
 							<td><input id="res_start_date" name="res_start_date"
-								value="2021.08.04 (수)" class="td_date_des" readonly="readonly">
+								value="${p.pack_start_date}" class="td_date_des" readonly="readonly">
 							</td>
 
 						</tr>
 						<tr>
 							<td class="td_date">도착</td>
 							<td><input id="res_end_date" name="res_end_date"
-								value="2021.08.08 (수)" class="td_date_des" readonly="readonly"></td>
+								value="${p.pack_end_date}" class="td_date_des" readonly="readonly"></td>
 						</tr>
 					</table>
-					<input type="button" id="change_date" value="출발일 변경" />
+					<!--  input type="button" id="change_date" value="출발일 변경" />-->
 
 				</div>
 				<div class="rf">

@@ -30,13 +30,17 @@ create table package(
 	,pack_price01 varchar2(20) not null -- 어른 상품 가격
 	,pack_price02 varchar2(20) not null -- 유아 상품 가격
 	,pack_price03 varchar2(20) not null -- 소아 상품 가격
-	,pack_date varchar2(20) not null --출국 날짜 
+	,pack_start_date varchar2(20) not null --출국 날짜 
+	,pack_end_date varchar2(20) not null --입국 날짜
+	,pack_duration varchar2(50) not null --패키지 기간
 	,pack_detail varchar2(200) not null --포함 내역
 	,pack_none_detail varchar2(200) not null --불포함 내역
 );
 
-insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_date,pack_detail,pack_none_detail) 
-values('a123','캐나다 여행','캐나다 여행은 즐거워','북미','캐나다','https://dimgcdn.ybtour.co.kr/TN/b3/b3cd7d1308f5fc087516412dfe0df4db.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/07/078addb0ffdd6d740e54ecac1beaa005.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/00/006c65726324b7f7d6526a1fede8328e.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/fd/fd2c513e1cbc0d17c023f090353eea72.tn.410x280.jpg','2299000','1853120','445880','2021.09.10','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
+select * from PACKAGE;
+
+insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_start_date,pack_end_date,pack_duration,pack_detail,pack_none_detail) 
+values('a128','캐나다 여행','캐나다 여행은 즐거워','북미','캐나다','https://dimgcdn.ybtour.co.kr/TN/b3/b3cd7d1308f5fc087516412dfe0df4db.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/07/078addb0ffdd6d740e54ecac1beaa005.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/00/006c65726324b7f7d6526a1fede8328e.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/fd/fd2c513e1cbc0d17c023f090353eea72.tn.410x280.jpg','2299000','1853120','445880','2021.09.10','2021.09.10','2박 3일','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
 
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_date,pack_detail,pack_none_detail) 
 values('a124','미국 여행','미국 여행은 즐거워','북미','미국','https://dimgcdn.ybtour.co.kr/TN/45/45f58df044e5b03b24ac55a7f243091a.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/7c/7ce43195fa12fcd224701606cedc466f.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/00/006c65726324b7f7d6526a1fede8328e.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/fd/fd2c513e1cbc0d17c023f090353eea72.tn.410x280.jpg','2299000','1853120','445880','2021.09.10','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
@@ -53,7 +57,6 @@ values('a127','일본 여행','일본 여행은 즐거워','일본','오사카',
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_date,pack_detail,pack_none_detail) 
 values('a128','호주 여행','호주 여행은 즐거워','오세아니아','호주','https://dimgcdn.ybtour.co.kr/TN/3d/3d9b547f2557c4a9913680377ebed006.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/07/078addb0ffdd6d740e54ecac1beaa005.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/00/006c65726324b7f7d6526a1fede8328e.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/fd/fd2c513e1cbc0d17c023f090353eea72.tn.410x280.jpg','2299000','1853120','445880','2021.09.10','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
 
-
 insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
 values('a129','프랑스 여행','파리 도심 투어','프랑스','파리','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
 
@@ -65,6 +68,7 @@ values('a131','프랑스 여행','와인 투어','프랑스','와인농장','htt
 
 insert into package(pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price,pack_date) 
 values('a132','프랑스 여행','해안 투어','프랑스','노르망디','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1mE31A55zaWmWJ8354D-wGvJw_eYAVyI_g&usqp=CAU','7777','7777','7777','10000','20210324');
+
 drop table package;
 drop table landmark;
 drop table hotel;

@@ -47,19 +47,19 @@
 					<td class="tb_chk_res">진행상황</td>
 					<td class="tb_chk_res">문의신청</td>
 				</tr>
-				<c:if test="${empty qlist}">
+				<c:if test="${empty rlist}">
 					<tr>
 						<td colspan="6" style="text-align: center; font-size: 16px;">해당
 							예약 내역이 없습니다</td>
 					</tr>
 				</c:if>
-				<c:if test="${!empty qlist}">
-					<c:forEach var="q" items="${qlist}">
+				<c:if test="${!empty rlist}">
+					<c:forEach var="r" items="${rlist}">
 						<tr>
-							<td>${q.res_code}</td>
-							<td>예약 일자</td>
-							<td>상품명</td>
-							<td>출발일</td>
+							<td>${r.res_code}</td>
+							<td>${r.res_date}</td>
+							<td>${r.pack_code}</td>
+							<td>${r.res_start_date}</td>
 							<td>진행상황</td>
 							<td>문의신청</td>
 						</tr>

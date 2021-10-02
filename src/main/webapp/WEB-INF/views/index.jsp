@@ -25,6 +25,7 @@
 		});
 		$(function() {
 			$("#date3").datepicker({
+				dateFormat: 'yy.mm.dd',
 				onSelect : function(dateText, inst) {
 					console.log(dateText);
 				}
@@ -127,7 +128,7 @@
 								<div class="item2">
 									<div class="in2">
 										<span class="cal_title">출발 예정일</span> <input type="text"
-											class="cal_cont" name="date" id="date3" size="12" /> <input
+											class="cal_cont" name="pack_start_date" id="date3" size="12" /> <input
 											type="button" class="cal_button" value="달력" 
 											 onclick="$('#date3').datepicker('show');" />
 									</div>

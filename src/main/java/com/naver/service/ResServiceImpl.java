@@ -1,5 +1,7 @@
 package com.naver.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,5 +29,10 @@ public class ResServiceImpl implements ResService {
 	public void updateRes(ResVO r) {
 		this.resDAO.updateRes(r);
 		
+	}
+
+	@Override
+	public List<ResVO> getResList(ResVO r) {
+		return this.resDAO.getRestList(r);
 	}
 }

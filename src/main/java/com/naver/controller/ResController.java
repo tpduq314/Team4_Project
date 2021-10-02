@@ -121,7 +121,6 @@ public class ResController {
 
 		this.qaService.insertQa(q);
 
-
 		return "redirect:/mypage";
 	}
 	
@@ -133,12 +132,16 @@ public class ResController {
 		q.setMem_id(mem_id);
 		List<QaVO> qlist=this.qaService.getQaList(q);
 
-		ModelAndView listQ=new ModelAndView();
+		r.setMem_id(mem_id);
+		List<ResVO> rlist=this.resService.getResList(r);
+		
+		ModelAndView listM=new ModelAndView();
 
-		listQ.addObject("qlist",qlist);
+		listM.addObject("qlist",qlist);
+		listM.addObject("rlist",rlist);
 
-		listQ.setViewName("/myPage");
+		listM.setViewName("/myPage");
 
-		return listQ;
+		return listM;
 	}
 }

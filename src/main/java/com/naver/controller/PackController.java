@@ -1,6 +1,5 @@
 package com.naver.controller;
 
-import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -41,9 +40,9 @@ public class PackController {
 		ModelAndView listM=new ModelAndView();
 		int totalCount=this.packService.getListCount(p);
 
-		listM.addObject("totalCount",totalCount);
-
 		List<PackVO> plist=this.packService.getPackageList(p);
+		
+		listM.addObject("totalCount",totalCount);
 		listM.addObject("plist",plist);
 		listM.setViewName("/list");
 		return listM;
