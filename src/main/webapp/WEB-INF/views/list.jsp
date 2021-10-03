@@ -64,7 +64,7 @@ System.out.println(date);
 				</div>
 				</c:forEach>
 			</c:if>
-			
+	
 			</div>
 		</div>
 	</section>

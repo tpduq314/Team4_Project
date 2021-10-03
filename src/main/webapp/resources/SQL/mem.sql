@@ -181,6 +181,6 @@ nocache;
 
 insert into qa 
 	(qa_no, qa_phone, qa_mail_id, qa_title, qa_cont, res_code, mem_id, qa_date) values 
-	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','4090','aaaa',sysdate );
+	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','1576','aaaa',sysdate );
 
 select * from qa;

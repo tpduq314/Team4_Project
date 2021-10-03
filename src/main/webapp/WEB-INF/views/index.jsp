@@ -139,6 +139,34 @@
 							</div>
 						</div>
 					</div>
+					<div class="tab_content">
+
+					<!-- 버튼요소 -->
+							<input type="radio" name="tabmenu" id="tab01" checked>
+								<label for="tab01">컨텐츠탭버튼01</label>
+							<input type="radio" name="tabmenu" id="tab02">
+								<label for="tab02">컨텐츠탭버튼02</label>
+							<input type="radio" name="tabmenu" id="tab03">
+								<label for="tab03">컨텐츠탭버튼03</label>
+
+					<!-- 컨텐츠 요소 -->
+						<div class="conbox con1">컨텐츠탭 내용01</div>
+						<div class="conbox con2">컨텐츠탭 내용02</div>
+						<div class="conbox con3">컨텐츠탭 내용03</div>
+
+					</div>
+					<div class="img_box">
+					<section class="img_wrapper">
+						<h1>코로나 안전 여행지</h1>
+						<figure>
+							<img src="./resources/image/index_city.jpg" alt="">
+							<figcaption>
+								<h2 class="title">여행지 이름</h2>
+								<p class="con">여행지 내용</p>
+							</figcaption>
+						</figure>
+					</section>
+					</div>
 				</form>
 			</div>
 

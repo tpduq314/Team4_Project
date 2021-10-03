@@ -132,8 +132,9 @@
 /*검색 부분*/
 .middle{
 	width:100%;
-	height:1600px;
-}
+	height:2700px;
+}/*이거 높이로 중간부분 높이 조정*/
+
 .search_area{
 	position:absolute;
  	width:1200px; 
@@ -253,6 +254,97 @@ input[type=text]{
     width:60px;
     line-height: 35px;
 }
+/*중단 메뉴버튼부분*/
+.tab_content {
+	text-align:center;font-size:0;
+	position:relative;
+	top:1025px;
+	margin:75px 75px 75px 75px;
+}
+input[type="radio"] {
+	display:none;
+} /* input을 안보이게 처리 */
+input[type="radio"] + label {
+	display:inline-block;padding:20px;background:#f5f5f5;color:#999;font-size:14px;cursor:pointer;
+} /* 버튼 공통 속성 */
+input[type="radio"]:checked + label {
+	background:#999;color:#000;
+} /* 선택된 버튼속성 */
+
+.conbox {
+	height:600px;
+	background:#999;
+	margin:0 20px;
+	display:none;
+	text-align:left;
+	font-size:12px;
+	padding:20px;
+	box-sizing:border-box;
+} /* 컨텐츠박스 공통 속성 */
+input[id="tab01"]:checked ~ .con1 {
+	display:block;
+} /* 인풋에 체크가 해당 요소보이게 설정 */
+input[id="tab02"]:checked ~ .con2 {
+	display:block;
+}
+input[id="tab03"]:checked ~ .con3 {
+	display:block;
+}
+
+/*하단 호버 이미지부분*/
+.img_box{
+	position:relative;
+	top:1000px;
+	margin:90px 90px 90px 90px;
+}
+.img_wrapper>h1{
+	font-size:30px;
+	text-align:center;
+	margin-bottom:30px;
+}
+figure{
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+figure::before{
+	content:"";
+	background:rgb(44,62,80, .3);
+	position:absolute;
+	z-index:2;
+	transition:all .7s ease-out;
+}
+figure img{
+	width:100%;
+	transform:scale(1);
+	transition:all .7s ease-out;
+	display:block;
+}
+figure figcaption{
+	position:absolute;
+	bottom:0;
+	z-index:2;
+	padding:30px;
+	text-align:left;
+}
+figure .title{
+	fot-size:26px;
+	color:#fff;
+	transform:translateY(20px);
+	transition:all .7s ease-out;
+}
+figure .con{
+	font-size:20px;
+	color:#fff;
+	transform:translateY(20px);
+	opacity:0;
+	transition:all .7s ease-out;
+}
+figure::before {opacity:0;}
+figure:hover img{transform:scale(1.1);}
+figure:hover .title{transform:translateY(0);}
+figure:hover .con{transform:translateY(0); opacity:1;}
+
 .footer_box{
 	position:relative;
 	width:100%;
