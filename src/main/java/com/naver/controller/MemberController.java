@@ -34,6 +34,12 @@ public class MemberController {
 		return "/index";
 	}
 	
+	@RequestMapping(value="/logout")
+	public String logout() {
+
+		return "/logout";
+	}
+	
 
 	/*
 	 * @RequestMapping(value="/mypage") public String mypage(HttpSession

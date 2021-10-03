@@ -243,7 +243,7 @@ function calc() {
 					</tr>
 					<tr>
 						<td class="res_table_td_1">여행기간</td>
-						<td class="res_table_td_2">3박 4일</td>
+						<td class="res_table_td_2">${p.pack_duration}</td>
 						<td class="res_table_td_1"
 							style="width: 200px; border-left: 2px solid #EAEAEA;">이용교통</td>
 						<td class="res_table_td_2">${r.res_airport}</td>

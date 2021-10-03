@@ -19,7 +19,10 @@ public class PackVO {
 	private String pack_price01;//어른 상품 가격
 	private String pack_price02;//소아 상품 가격
 	private String pack_price03;//유아 상품 가격
-	private String pack_date;//출국 날짜
+	//private String pack_date;//출국 날짜
+	private String pack_start_date;//출국 날짜
+	private String pack_end_date;//입국 날짜
+	private String pack_duration;//기간
 	private String pack_detail;//포함 내역
 	private String pack_none_detail;//불포함 내역
 

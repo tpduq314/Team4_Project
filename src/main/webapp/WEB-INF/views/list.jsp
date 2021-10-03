@@ -11,7 +11,7 @@
 <%
 // request 객체로부터 파라미터를 가져옴.
 String pack_sub_cate = request.getParameter("pack_sub_cate");
-String date = request.getParameter("date");
+String date = request.getParameter("pack_start_date");
 
 System.out.println(pack_sub_cate);
 System.out.println(date);
