@@ -143,8 +143,12 @@
 					<div class="jeju_box">
 						<div class="jeju_section">
 							<div class="jeju_img">
+<<<<<<< HEAD
 								<input type="image" src="./resources/image/jeju_1100.jpg"
 									class="j_img">
+=======
+								<img src="./resources/image/jeju_1100.jpg" class="j_img">
+>>>>>>> branch 'master' of https://github.com/tpduq314/Team4_Project.git
 							</div>
 							<div class="jeju_cont">
 								<h4>대한민국의 가장 높은곳에서 즐기는 눈꽃여행</h4>
@@ -153,14 +157,98 @@
 								<p>눈덮힌 한라산 1100 도로도 분명 좋아하실꺼에요.</p>
 								<!-- <input class="jeju_li" type="text" placeholder="#이국적 #드라이브 #설경 #제주도 #1100고지" onclick="location='list?main_category=국내&pack_sub_cate=제주도';"> -->
 								<div class="jeju_mimg">
+<<<<<<< HEAD
 									<input type="image" src="./resources/image/jeju_1101.jpg"
 										class="j_imgr">
 									<p>
 										[특가상품] 제주도 2/3일 <br>항공비 포함 169,000
 									</p>
+=======
+									<img src="./resources/image/jeju_1101.jpg" class="j_imgr">	
+									<p>[특가상품] 제주도 2/3일 <br>항공비 포함 169,000</p>
+>>>>>>> branch 'master' of https://github.com/tpduq314/Team4_Project.git
 								</div>
 							</div>
 						</div>
+					</div>
+					<div style="position:relative; top:1200px; width:100%;height:450px; background-color:white;">
+						<h2 style="position:absolute; top:50px; left:270px; font-color:black;" >내나라 구석구석</h2>
+							<div style="position:absolute; top:170px; left:270px; width:1500px; height:400px;margin-top:0px">
+								<ul style="list-style:none; float:left;">
+									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
+									width: 190px; height:190px; position: relative; margin-left:30px;">
+										<a href="#">
+											<span class="simg">
+												<img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/05/14/10000/9b785089-e508-47d4-9b1f-adeb8605b305.jpg"
+												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
+											<p style="margin-top:10px;font-size:17px; font-weight:600;">강릉</p>
+											<p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">놀킷 먹킷 넘치는 핫한 강릉
+											<br>
+											가족도 청춘도 환영합니다
+											</p>
+											</span>
+										</a>
+									</li>
+									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
+									width: 190px; height:190px; position: relative; margin-left:30px;">
+										<a href="#">
+											<span class="simg">
+												<img src="https://image.hanatour.com/usr/cms/resize/250_0/2020/12/02/20000/e5e869d0-0683-4ded-9825-ad9cfece75ea.jpg"
+												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
+											<p style="margin-top:10px;font-size:17px; font-weight:600;">여수</p>
+											<p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">너와 함께 걷고싶은 여수는
+											<br>
+											낮에도 빛나고 있어요
+											</p>
+											</span>
+										</a>
+									</li>
+									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
+									width: 320px; height:320px; position: relative; margin-left:30px;">
+										<a href="#">
+											<span class="simg">
+												<img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/12/02/80000/5b695f92-eb04-4d44-b349-5abbe00fce4a.bmp"
+												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 320px; height:320px;">
+											<p style="margin-top:10px;font-size:26px; font-weight:600;">부산</p>
+											<p style="margin-top:10px;font-size: 14px; color: #666; line-height: 24px;">낭만적인 해변열차 타고
+											<br>
+											부산 한 바퀴!
+											</p>
+											<span class="value" style= "width: 50px; height: 50px; border-radius: 50%; text-align: center; line-height: 48px; 
+											color: #fff; background-color: #e5236d; font-size: 12px; position: absolute; top: 21px; right: 33px;">추천</span>
+											</span>
+										</a>
+									</li>
+									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
+									width: 190px; height:190px; position: relative; margin-left:30px;">
+										<a href="#">
+											<span class="simg">
+												<img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/04/28/10000/254938f6-677b-4d6b-bc0f-7e2f875037f5.jpg"
+												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
+											<p style="margin-top:10px;font-size:17px; font-weight:600;">제주</p>
+											<p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">꽃향기 가득한 제주
+											<br>
+											놀멍쉬멍, 혼저옵서예
+											</p>
+											</span>
+										</a>
+									</li>
+									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
+									width: 190px; height:190px; position: relative; margin-left:30px;">
+										<a href="#">
+											<span class="simg">
+												<img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/03/31/10000/ccf682c9-96ac-45f9-96de-15848181e0d9.jpg"
+												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
+											<p style="margin-top:10px;font-size:17px; font-weight:600;">경주</p>
+											<p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">발길 닿는 곳마다 유적지!
+											<br>
+											경주는 지금 가면 딱 좋아요
+											</p>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 					</div>
 					<!-- 호버 이미지 -->
 					<!-- <div class="img_box">
@@ -177,7 +265,7 @@
 					</div> -->
 					<!-- 인생은 한번쯤 -->
 					<div
-						style="position: relative; top: 1300px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
+						style="position: relative; top: 1450px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
 
 						<h2
 							style="position: absolute; top: 120px; left: 270px; color: white">인생에
