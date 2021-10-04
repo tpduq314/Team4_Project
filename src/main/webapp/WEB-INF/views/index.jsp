@@ -25,7 +25,7 @@
 		});
 		$(function() {
 			$("#date3").datepicker({
-				dateFormat: 'yy.mm.dd',
+				dateFormat : 'yy.mm.dd',
 				onSelect : function(dateText, inst) {
 					console.log(dateText);
 				}
@@ -128,13 +128,13 @@
 								<div class="item2">
 									<div class="in2">
 										<span class="cal_title">출발 예정일</span> <input type="text"
-											class="cal_cont" name="pack_start_date" id="date3" size="12" /> <input
-											type="button" class="cal_button" value="" 
-											 onclick="$('#date3').datepicker('show');" />
+											class="cal_cont" name="pack_start_date" id="date3" size="12" />
+										<input type="button" class="cal_button" value=""
+											onclick="$('#date3').datepicker('show');" />
 									</div>
 								</div>
 								<div class="item_bottom_cont">
-									<button type="submit" class="btn_search" >검색하기</button>
+									<button type="submit" class="btn_search">검색하기</button>
 								</div>
 								<div class="search_box_bottom"></div>
 							</div>
@@ -143,7 +143,8 @@
 					<div class="jeju_box">
 						<div class="jeju_section">
 							<div class="jeju_img">
-								<input type="image" src="./resources/image/jeju_1100.jpg" class="j_img">
+								<input type="image" src="./resources/image/jeju_1100.jpg"
+									class="j_img">
 							</div>
 							<div class="jeju_cont">
 								<h4>대한민국의 가장 높은곳에서 즐기는 눈꽃여행</h4>
@@ -152,8 +153,11 @@
 								<p>눈덮힌 한라산 1100 도로도 분명 좋아하실꺼에요.</p>
 								<!-- <input class="jeju_li" type="text" placeholder="#이국적 #드라이브 #설경 #제주도 #1100고지" onclick="location='list?main_category=국내&pack_sub_cate=제주도';"> -->
 								<div class="jeju_mimg">
-									<input type="image" src="./resources/image/jeju_1101.jpg" class="j_imgr">	
-									<p>[특가상품] 제주도 2/3일 <br>항공비 포함 169,000</p>
+									<input type="image" src="./resources/image/jeju_1101.jpg"
+										class="j_imgr">
+									<p>
+										[특가상품] 제주도 2/3일 <br>항공비 포함 169,000
+									</p>
 								</div>
 							</div>
 						</div>
@@ -171,7 +175,7 @@
 						</figure>
 					</section>
 					</div> -->
-				<!-- 인생은 한번쯤 -->
+					<!-- 인생은 한번쯤 -->
 					<div
 						style="position: relative; top: 1300px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
 
@@ -185,7 +189,8 @@
 								<!--  style="position:relative; top: 50px; left: 30px;" width="360px" height="210px;"-->
 								<h5
 									style="color: black; position: relative; top: 30px; left: 30px;">동영상</h5>
-								<iframe style="position:relative; top: 50px; left: 30px;" width="360px" height="210px;"
+								<iframe style="position: relative; top: 50px; left: 30px;"
+									width="360px" height="210px;"
 									src="https://www.youtube.com/embed/_qHjLngt7OI?controls=0"
 									title="YouTube video player" frameborder="0"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -196,8 +201,7 @@
 								<p
 									style="color: gray; position: relative; top: 100px; left: 30px; font-size: 14px; font-weight: 600;">
 									열망의 목적지 그랜드캐년에서의 기차탑승<br>모뉴먼트 밸리를 지나 헐리우드의 도시 LA까지!<br>미서부
-									5대 캐년 탐험 시작 <br>
-									<br>[베스트셀러] 미서부 5대 캐년 10일>
+									5대 캐년 탐험 시작 <br> <br>[베스트셀러] 미서부 5대 캐년 10일>
 								</p>
 							</div>
 							<div
@@ -211,8 +215,7 @@
 								<p
 									style="color: white; position: relative; top: 290px; left: 30px; font-size: 14px; font-weight: 600;">
 									요즘 여행러들이 즐기는 뉴욕 여행의 즐길거리<br>뉴요커처럼 즐겨보는 뉴욕여행<br>이거
-									해봤다면 뉴욕 제대로 즐겼다고 할수있지~<br>
-									<br>[한도시 깊게보기] 뉴욕 6일>
+									해봤다면 뉴욕 제대로 즐겼다고 할수있지~<br> <br>[한도시 깊게보기] 뉴욕 6일>
 								</p>
 							</div>
 							<div
@@ -231,6 +234,7 @@
 								</p>
 							</div>
 						</div>
+					</div>
 				</form>
 			</div>
 
