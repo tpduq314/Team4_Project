@@ -11,7 +11,9 @@
 <body>
 
 	<div id="travel_reservation_ok">
-
+		<div class="header">
+				<jsp:include page="header2.jsp" />
+		</div>
 		<!-- 상단 카테고리 -->
 		<div id="res_top">
 			<div id="reservation">
@@ -183,6 +185,11 @@
 			: &nbsp;&nbsp;동북아사업부팀 &nbsp;&nbsp;&nbsp;&nbsp;대표번호 :
 			&nbsp;&nbsp;031928338&nbsp;&nbsp;&nbsp;&nbsp;이메일 :
 			&nbsp;&nbsp;dfjdf@gmail.com</div>
+	</div>
+	<div class="footer_box">
+		<div id="footer">
+			<jsp:include page="footer.jsp" />
+		</div>
 	</div>
 
 

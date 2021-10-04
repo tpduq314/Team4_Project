@@ -129,7 +129,7 @@
 									<div class="in2">
 										<span class="cal_title">출발 예정일</span> <input type="text"
 											class="cal_cont" name="pack_start_date" id="date3" size="12" /> <input
-											type="button" class="cal_button" value="달력" 
+											type="button" class="cal_button" value="" 
 											 onclick="$('#date3').datepicker('show');" />
 									</div>
 								</div>
@@ -140,22 +140,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab_content">
-
-					<!-- 버튼요소 -->
-							<input type="radio" name="tabmenu" id="tab01" checked>
-								<label for="tab01">컨텐츠탭버튼01</label>
-							<input type="radio" name="tabmenu" id="tab02">
-								<label for="tab02">컨텐츠탭버튼02</label>
-							<input type="radio" name="tabmenu" id="tab03">
-								<label for="tab03">컨텐츠탭버튼03</label>
-
-					<!-- 컨텐츠 요소 -->
-						<div class="conbox con1">컨텐츠탭 내용01</div>
-						<div class="conbox con2">컨텐츠탭 내용02</div>
-						<div class="conbox con3">컨텐츠탭 내용03</div>
-
+					<div class="jeju_box">
+						<div class="jeju_section">
+							<div class="jeju_cont">
+								
+							</div>
+						</div>
 					</div>
+					<!-- 호버 이미지 -->
 					<div class="img_box">
 					<section class="img_wrapper">
 						<h1>코로나 안전 여행지</h1>

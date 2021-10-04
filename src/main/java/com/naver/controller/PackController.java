@@ -32,11 +32,17 @@ public class PackController {
 
 	@Autowired
 	private LandService landService;
-
+	
+	@RequestMapping("/card")
+	public String card() {
+		return "card";
+	}
+	
 	//패키지 여행 리스트
 	@RequestMapping("/list")
 	public ModelAndView list(@RequestParam("pack_sub_cate") String pack_sub_cate,HttpServletResponse response,HttpSession session,HttpServletRequest request,@ModelAttribute PackVO p)throws Exception {
-
+		
+		String login_id=(String)session.getAttribute("id");
 		ModelAndView listM=new ModelAndView();
 		int totalCount=this.packService.getListCount(p);
 
@@ -45,10 +51,14 @@ public class PackController {
 		listM.addObject("totalCount",totalCount);
 		listM.addObject("plist",plist);
 		listM.setViewName("/list");
+		
+		if(login_id == null) {
+			return listM;
+		}
 		return listM;
 
 	}
-
+	
 	//지역 검색
 	@RequestMapping("/search_city")
 	public String search_city() {

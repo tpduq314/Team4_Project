@@ -64,6 +64,7 @@ SimpleDateFormat sf = new SimpleDateFormat("yyyy.MM.dd");
 .logo_bar {
 	height: 50px;
 	float: left;
+	margin-left:20px;
 }
 
 .mem {

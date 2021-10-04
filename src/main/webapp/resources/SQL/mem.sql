@@ -10,6 +10,7 @@ create table mem(
   ,mail_domain varchar2(100) --메일 도메인
   ,mem_date date --가입날짜
 );
+drop table mem;
 
 insert into mem (mem_id,mem_pwd,mem_name,mem_addr,mem_phone01,mem_phone02,mem_phone03,
 mail_id,mail_domain,mem_date) values('aaaaa','77777','홍길동','서울시 동작구 노량진동 00빌딩','010','7777',
@@ -81,7 +82,6 @@ create table landmark(
 insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l1','루스키섬','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크A 설명','a128');
 insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l2','원마운트','https://www.onemount.co.kr/web/images/clip/offi_1_1_img01.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크B 설명','a128');
 
-
 select *from landmark;
 
 create table res(
@@ -122,6 +122,7 @@ create table cli(
 	,foreign key(res_code) references res(res_code)
 );
 
+drop sequence no_seq;
 create sequence no_seq
 start with 1
 increment by 1
@@ -155,7 +156,7 @@ nocache;
 
 insert into qa 
 	(qa_no, qa_phone, qa_mail_id, qa_title, qa_cont, res_code, mem_id, qa_date) values 
-	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','1576','aaaa',sysdate );
+	(seq_qano.NEXTVAL, '010-0100-1111', 'tpduq','제목','시퀀스 테스트','9746','aaaa',sysdate );
 
 select * from qa;
 
