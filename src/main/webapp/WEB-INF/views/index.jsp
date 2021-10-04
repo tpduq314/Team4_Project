@@ -25,7 +25,7 @@
 		});
 		$(function() {
 			$("#date3").datepicker({
-				dateFormat: 'yy.mm.dd',
+				dateFormat : 'yy.mm.dd',
 				onSelect : function(dateText, inst) {
 					console.log(dateText);
 				}
@@ -128,13 +128,13 @@
 								<div class="item2">
 									<div class="in2">
 										<span class="cal_title">출발 예정일</span> <input type="text"
-											class="cal_cont" name="pack_start_date" id="date3" size="12" /> <input
-											type="button" class="cal_button" value="" 
-											 onclick="$('#date3').datepicker('show');" />
+											class="cal_cont" name="pack_start_date" id="date3" size="12" />
+										<input type="button" class="cal_button" value=""
+											onclick="$('#date3').datepicker('show');" />
 									</div>
 								</div>
 								<div class="item_bottom_cont">
-									<button type="submit" class="btn_search" >검색하기</button>
+									<button type="submit" class="btn_search">검색하기</button>
 								</div>
 								<div class="search_box_bottom"></div>
 							</div>
@@ -142,30 +142,93 @@
 					</div>
 					<div class="jeju_box">
 						<div class="jeju_section">
-							<div class="jeju_cont">
-								
+							<div class="jeju_cont"></div>
+						</div>
+					</div>
+
+					<!-- 호버 이미지 -->
+					<div class="img_box">
+						<section class="img_wrapper">
+							<h1>코로나 안전 여행지</h1>
+							<figure>
+								<img src="./resources/image/index_city.jpg" alt="">
+								<figcaption>
+									<h2 class="title">여행지 이름</h2>
+									<p class="con">여행지 내용</p>
+								</figcaption>
+							</figure>
+						</section>
+					</div>
+
+					<!-- 인생은 한번쯤 -->
+					<div
+						style="position: relative; top: 2300px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
+
+						<h2
+							style="position: absolute; top: 120px; left: 270px; color: white">인생에
+							한번쯤!</h2>
+						<div
+							style="position: absolute; top: 170px; left: 270px; width: 70%; height: 500px;">
+							<div
+								style="float: left; background-color: white; width: 37%; height: 500px;">
+								<!--  style="position:relative; top: 50px; left: 30px;" width="360px" height="210px;"-->
+								<h5
+									style="color: black; position: relative; top: 30px; left: 30px;">동영상</h5>
+								<iframe style="position:relative; top: 50px; left: 30px;" width="360px" height="210px;"
+									src="https://www.youtube.com/embed/_qHjLngt7OI?controls=0"
+									title="YouTube video player" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+								<h3
+									style="color: black; position: relative; top: 80px; left: 30px;">
+									버킷리스트 인생여행, 미서부</h3>
+								<p
+									style="color: gray; position: relative; top: 100px; left: 30px; font-size: 14px; font-weight: 600;">
+									열망의 목적지 그랜드캐년에서의 기차탑승<br>모뉴먼트 밸리를 지나 헐리우드의 도시 LA까지!<br>미서부
+									5대 캐년 탐험 시작 <br>
+									<br>[베스트셀러] 미서부 5대 캐년 10일>
+								</p>
+							</div>
+							<div
+								style="float: left; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2021/04/20/10000/1cde3643-0462-4da2-b01d-1f53e111fcf8.jpg); width: 37%; height: 500px;">
+								<h5
+									style="color: white; position: relative; top: 30px; left: 30px;">Get
+									About</h5>
+								<h3
+									style="color: white; position: relative; top: 270px; left: 30px;">
+									뉴욕에서 꼭 해봐야하는 11가지</h3>
+								<p
+									style="color: white; position: relative; top: 290px; left: 30px; font-size: 14px; font-weight: 600;">
+									요즘 여행러들이 즐기는 뉴욕 여행의 즐길거리<br>뉴요커처럼 즐겨보는 뉴욕여행<br>이거
+									해봤다면 뉴욕 제대로 즐겼다고 할수있지~<br>
+									<br>[한도시 깊게보기] 뉴욕 6일>
+								</p>
+							</div>
+							<div
+								style="float: left; background-color: white; width: 26%; height: 500px;">
+								<h5
+									style="color: black; position: relative; top: 30px; left: 30px;">여행정보</h5>
+								<div
+									style="background: black; position: relative; top: 50px; left: 50px; width: 200px; height: 200px; border-radius: 400px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/05/11/10000/1e664552-13a2-4834-a8cf-c890051016af.jpg);"></div>
+								<h3
+									style="color: black; position: relative; top: 80px; left: 30px;">
+									캐나다, 오로라 여행</h3>
+								<p
+									style="color: gray; position: relative; top: 100px; left: 30px; font-size: 14px; font-weight: 600;">
+									쉽게 허락되지 않는 오로라 관찰<br>캐나다 옐로나이프에서<br>오로라 만나는 3가지 방법<br>
+									<br>미주 버킷여행 자세히 보기>
+								</p>
 							</div>
 						</div>
 					</div>
-					<!-- 호버 이미지 -->
-					<div class="img_box">
-					<section class="img_wrapper">
-						<h1>코로나 안전 여행지</h1>
-						<figure>
-							<img src="./resources/image/index_city.jpg" alt="">
-							<figcaption>
-								<h2 class="title">여행지 이름</h2>
-								<p class="con">여행지 내용</p>
-							</figcaption>
-						</figure>
-					</section>
-					</div>
+
+
 				</form>
 			</div>
 
-			<!--   wrap -->
 		</div>
 	</div>
+	<!--   wrap -->
 	<div class="footer_box">
 		<div id="footer">
 			<jsp:include page="footer.jsp" />
