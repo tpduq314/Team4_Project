@@ -142,8 +142,19 @@
 					</div>
 					<div class="jeju_box">
 						<div class="jeju_section">
+							<div class="jeju_img">
+								<input type="image" src="./resources/image/jeju_1100.jpg" class="j_img">
+							</div>
 							<div class="jeju_cont">
-								
+								<h4>대한민국의 가장 높은곳에서 즐기는 눈꽃여행</h4>
+								<h2>겨울, 제주에 대하여</h2>
+								<p>제주 하면 파란색이 떠오르신다면</p>
+								<p>눈덮힌 한라산 1100 도로도 분명 좋아하실꺼에요.</p>
+								<!-- <input class="jeju_li" type="text" placeholder="#이국적 #드라이브 #설경 #제주도 #1100고지" onclick="location='list?main_category=국내&pack_sub_cate=제주도';"> -->
+								<div class="jeju_mimg">
+									<input type="image" src="./resources/image/jeju_1101.jpg" class="j_imgr">	
+									<p>[특가상품] 제주도 2/3일 <br>항공비 포함 169,000</p>
+								</div>
 							</div>
 						</div>
 					</div>

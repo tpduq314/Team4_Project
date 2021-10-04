@@ -266,18 +266,49 @@
 .jeju_section{
 	position:relative;
 	width:100%;
-	background-color:#998465;
-	top:1100px;
+	background-color:#dcd5b4;
+	top:1150px;
 	height:750px;
-	opacity:0.6;
 }
-.jeju_cont{
+.jeju_img{
 	position:relative;
-	height:550px;
-	margin:0px 200px 0px 200px;
+	height:450px;
+	margin:0px 100px 0px 100px;
+	padding:150px 0px 100px;
+	width:45%;
+	float:left;
+}
+.j_img{
+	height:100%;
 	width:100%;
 }
 
+.jeju_cont{
+	position:relative;
+	top:130px;
+	float:left;
+}
+.jeju_cont > h4{
+	margin-bottom:20px;
+}
+.jeju_cont > h2{
+	font-size:30px;
+	margin-bottom:90px;
+}
+.jeju_cont > p{
+	margin-bottom:5px;
+}
+.jeju_mimg{
+	margin-top:70px;
+	width:250px;
+	height:150px;
+	float:left;
+}
+.j_imgr{
+	position:relative;
+	width:100%;
+	height:100%;
+}
 /*하단 호버 이미지부분*/
 .img_box{
 	position:relative;
