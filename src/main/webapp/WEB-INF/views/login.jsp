@@ -91,12 +91,7 @@ D 0%, #B721FF 100%);
 
 
 <body>
-	<div id="header_box" style="clear:both; position:relative; width:100%; height:120px; 
-	top:23px; background-color:white; padding-left:250px; padding-right:250px;">
-		<div id="header">
-			<jsp:include page="header.jsp"/>
-		</div>
-	</div>
+
 	<form method="post" action="mem_login_ok" onsubmit="return login_check();">
 		<div class="Login_Form">
 			<h1>LOGIN</h1>

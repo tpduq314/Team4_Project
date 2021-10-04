@@ -11,7 +11,6 @@
 <SCRIPT>
 	function selectnow(city) {
 
-	
 		opener.document.getElementById("pack_sub_cate").value = city;
 		parent.window.close();
 		/* 	
@@ -30,82 +29,90 @@
 
 
 			<tr>
-				<td class="country">유럽</td>
+				<td class="country">괌/사이판</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
 
-						<li onclick="selectnow('서유럽');" >&nbsp;서유럽&nbsp;</li>
-						<li onclick="selectnow('파리');" >&nbsp;파리&nbsp;</li>
-						<li onclick="selectnow('로마');" >&nbsp;로마&nbsp;</li>
-						<li onclick="selectnow('베니스');" >&nbsp;베니스&nbsp;</li>
-						<li onclick="selectnow('루체른');" >&nbsp;루체른&nbsp;</li>
-						<li onclick="selectnow('동유럽/발칸');" >&nbsp;동유럽/발칸&nbsp;</li>
-						<li onclick="selectnow('바르셀로나');" >&nbsp;바르셀로나&nbsp;</li>
-						<li onclick="selectnow('리스본');" >&nbsp;리스본&nbsp;</li>
-						<li onclick="selectnow('부다페스트');" >&nbsp;부다페스트&nbsp;</li>
-						<li onclick="selectnow('마드리드');" >&nbsp;마드리드&nbsp;</li>
+						<li onclick="selectnow('괌');">&nbsp;괌&nbsp;</li>
+						<li onclick="selectnow('사이판');">&nbsp;사이판&nbsp;</li>
+						<li onclick="selectnow('팔라우');">&nbsp;팔라우&nbsp;</li>
+
+					</ul></td>
+			</tr>
+			<tr>
+				<td class="country">하와이/미국/캐나다</td>
+				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
+						<li onclick="selectnow('하와이');">&nbsp;하와이&nbsp;</li>
+						<li onclick="selectnow('미동부');">&nbsp;미동부&nbsp;</li>
+						<li onclick="selectnow('중남미');">&nbsp;중남미&nbsp;</li>
+						<li onclick="selectnow('미서부');">&nbsp;미서부&nbsp;</li>
+						<li onclick="selectnow('캐나다');">&nbsp;캐나다&nbsp;</li>
+					</ul></td>
+			</tr>
+			<tr>
+				<td class="country">유럽</td>
+				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
+						<li onclick="selectnow('서유럽');">&nbsp;서유럽&nbsp;</li>
+						<li onclick="selectnow('동유럽');">&nbsp;동유럽&nbsp;</li>
+						<li onclick="selectnow('그리스');">&nbsp;그리스&nbsp;</li>
+						<li onclick="selectnow('스페인');">&nbsp;스페인&nbsp;</li>
+						<li onclick="selectnow('독일');">&nbsp;독일&nbsp;</li>
+						<li onclick="selectnow('영국');">&nbsp;서유럽&nbsp;</li>
+						<li onclick="selectnow('모로코');">&nbsp;동유럽&nbsp;</li>
+						<li onclick="selectnow('발칸');">&nbsp;그리스&nbsp;</li>
 					</ul></td>
 			</tr>
 			<tr>
 				<td class="country">동남아</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
 						<li onclick="selectnow('방콕');">&nbsp;방콕&nbsp;</li>
+						<li onclick="selectnow('베트남');">&nbsp;베트남&nbsp;</li>
+						<li onclick="selectnow('치앙마이');">&nbsp;치앙마이&nbsp;</li>
 						<li onclick="selectnow('파타야');">&nbsp;파타야&nbsp;</li>
-						<li onclick="selectnow('푸켓');">&nbsp;푸켓&nbsp;</li>
-						<li onclick="selectnow('싱가포르');">&nbsp;싱가포르&nbsp;</li>
+						<li onclick="selectnow('세부');">&nbsp;세부&nbsp;</li>
 						<li onclick="selectnow('코타키나발루');">&nbsp;코타키나발루&nbsp;</li>
-						<li onclick="selectnow('쿠알라룸푸르');">&nbsp;쿠알라룸푸르&nbsp;</li>
-						<li onclick="selectnow('발리');">&nbsp;발리&nbsp;</li>
 						<li onclick="selectnow('보라카이');">&nbsp;보라카이&nbsp;</li>
-						<li onclick="selectnow('팔라완');">&nbsp;팔라완&nbsp;</li>
-						<li onclick="selectnow('라오스');">&nbsp;라오스&nbsp;</li>
 					</ul></td>
 			</tr>
 			<tr>
-				<td class="country">일본</td>
-				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-						<li onclick="selectnow('오사카');">&nbsp;오사카&nbsp;</li>
-						<li onclick="selectnow('동경');">&nbsp;동경&nbsp;</li>
-						<li onclick="selectnow('후쿠오카');">&nbsp;후쿠오카&nbsp;</li>
-						<li onclick="selectnow('삿포로');">&nbsp;삿포로&nbsp;</li>
-						<li onclick="selectnow('오키나와');">&nbsp;오키나와&nbsp;</li>
-					</ul></td>
-			</tr>
-			<tr>
-				<td class="country">홍콩/대만</td>
+				<td class="country">홍콩/마카오/대만</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
 						<li onclick="selectnow('홍콩');">&nbsp;홍콩&nbsp;</li>
 						<li onclick="selectnow('마카오');">&nbsp;마카오&nbsp;</li>
-						<li onclick="selectnow('가오슝');">&nbsp;가오슝&nbsp;</li>
-						<li onclick="selectnow('타이페이');">&nbsp;타이베이&nbsp;</li>
+						<li onclick="selectnow('대만');">&nbsp;대만&nbsp;</li>
+						<li onclick="selectnow('심천');">&nbsp;심천&nbsp;</li>
+
 					</ul></td>
 			</tr>
 			<tr>
-				<td class="country">미주</td>
+				<td class="country">중앙아시아/몽골</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-						<li onclick="selectnow('미서부');">&nbsp;미서부&nbsp;</li>
-						<li onclick="selectnow('로스엔젤레스');">&nbsp;로스앤젤레스&nbsp;</li>
-						<li onclick="selectnow('샌프란시스코');">&nbsp;샌프란시스코&nbsp;</li>
-						<li onclick="selectnow('미동부');">&nbsp;미동부&nbsp;</li>
-						<li onclick="selectnow('뉴욕');">&nbsp;뉴욕&nbsp;</li>
-						<li onclick="selectnow('워싱턴');">&nbsp;워싱턴&nbsp;</li>
-						<li onclick="selectnow('하와이');">&nbsp;하와이&nbsp;</li>
-						<li onclick="selectnow('밴쿠버');">&nbsp;밴쿠버&nbsp;</li>
-						<li onclick="selectnow('중남미');">&nbsp;중남미&nbsp;</li>
+						<li onclick="selectnow('제주');">&nbsp;중앙아시아&nbsp;</li>
+						<li onclick="selectnow('백령도');">&nbsp;몽골&nbsp;</li>
+
+
+					</ul></td>
+			</tr>
+			<tr>
+				<td class="country">중국</td>
+				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
+						<li onclick="selectnow('북경');">&nbsp;북경&nbsp;</li>
+						<li onclick="selectnow('상해');">&nbsp;상해&nbsp;</li>
+						<li onclick="selectnow('하이난');">&nbsp;하이난&nbsp;</li>
+						<li onclick="selectnow('청도');">&nbsp;청도&nbsp;</li>
+
 					</ul></td>
 			</tr>
 			<tr>
 				<td class="country">국내</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-						<li onclick="selectnow('제주');">&nbsp;제주&nbsp;</li>
-						<li onclick="selectnow('백령도');">&nbsp;백령도&nbsp;</li>
-						<li onclick="selectnow('홍도');">&nbsp;홍도&nbsp;</li>
-						<li onclick="selectnow('흑산도');">&nbsp;흑산도&nbsp;</li>
-						<li onclick="selectnow('울릉도');">&nbsp;울릉도&nbsp;</li>
-						<li onclick="selectnow('여수');">&nbsp;여수&nbsp;</li>
-
+						<li onclick="selectnow('강원');">&nbsp;강원&nbsp;</li>
+						<li onclick="selectnow('충북');">&nbsp;충북&nbsp;</li>
+						<li onclick="selectnow('제주도');">&nbsp;제주도&nbsp;</li>
+						<li onclick="selectnow('경북');">&nbsp;경북&nbsp;</li>
+						<li onclick="selectnow('전북');">&nbsp;전북&nbsp;</li>
+						<li onclick="selectnow('대전');">&nbsp;대전&nbsp;</li>
 					</ul></td>
 			</tr>
-
 		</table>
 	</div>
 </body>
