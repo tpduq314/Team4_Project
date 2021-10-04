@@ -221,6 +221,9 @@ function calc() {
 
 	<!-- 예약 폼 -->
 	<div id="travel_reservation">
+		<div class="header">
+				<jsp:include page="header2.jsp" />
+		</div>
 		<form name="cli" method="post" action="res_ok" onsubmit="return check();">
 			<!-- 카테고리, 이름-->
 			<div id="res_top">
@@ -569,4 +572,10 @@ function calc() {
 			</div>
 		</form>
 	</div>
+	<div class="footer_box">
+		<div id="footer">
+			<jsp:include page="footer.jsp" />
+		</div>
+	</div>
+	
 </body>
