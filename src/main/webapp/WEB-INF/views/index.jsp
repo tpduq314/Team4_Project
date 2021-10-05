@@ -25,7 +25,7 @@
 		});
 		$(function() {
 			$("#date3").datepicker({
-				dateFormat: 'yy.mm.dd',
+				dateFormat : 'yy.mm.dd',
 				onSelect : function(dateText, inst) {
 					console.log(dateText);
 				}
@@ -128,13 +128,13 @@
 								<div class="item2">
 									<div class="in2">
 										<span class="cal_title">출발 예정일</span> <input type="text"
-											class="cal_cont" name="pack_start_date" id="date3" size="12" /> <input
-											type="button" class="cal_button" value="" 
+											class="cal_cont" name="pack_start_date" id="date3" size="12" />
+											<input type="button" class="cal_button" value=""
 											 onclick="$('#date3').datepicker('show');" />
 									</div>
 								</div>
 								<div class="item_bottom_cont">
-									<button type="submit" class="btn_search" >검색하기</button>
+									<button type="submit" class="btn_search">검색하기</button>
 								</div>
 								<div class="search_box_bottom"></div>
 							</div>
@@ -280,8 +280,7 @@
 								<p
 									style="color: gray; position: relative; top: 100px; left: 30px; font-size: 14px; font-weight: 600;">
 									열망의 목적지 그랜드캐년에서의 기차탑승<br>모뉴먼트 밸리를 지나 헐리우드의 도시 LA까지!<br>미서부
-									5대 캐년 탐험 시작 <br>
-									<br>[베스트셀러] 미서부 5대 캐년 10일>
+									5대 캐년 탐험 시작 <br> <br>[베스트셀러] 미서부 5대 캐년 10일>
 								</p>
 							</div>
 							<div
@@ -295,8 +294,7 @@
 								<p
 									style="color: white; position: relative; top: 290px; left: 30px; font-size: 14px; font-weight: 600;">
 									요즘 여행러들이 즐기는 뉴욕 여행의 즐길거리<br>뉴요커처럼 즐겨보는 뉴욕여행<br>이거
-									해봤다면 뉴욕 제대로 즐겼다고 할수있지~<br>
-									<br>[한도시 깊게보기] 뉴욕 6일>
+									해봤다면 뉴욕 제대로 즐겼다고 할수있지~<br> <br>[한도시 깊게보기] 뉴욕 6일>
 								</p>
 							</div>
 							<div
@@ -315,6 +313,7 @@
 								</p>
 							</div>
 						</div>
+					</div>
 				</form>
 			</div>
 
