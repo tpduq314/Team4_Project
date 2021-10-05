@@ -34,9 +34,7 @@
 
 		<div class="res_description" style="height: 380px; margin-top: 30px;">
 			예약 내역
-			<div
-				style="width: 100px; height: 25px; border: 1px solid gray; text-align: center; float: right; font-size: 14px; margin-right: 15px; line-height: 25px; color: white; background-color: #4C4C4C; font-weight: bold;">
-				내 예약 찾기</div>
+		
 			<table class="res_table"
 				style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5;">
 				<tr>
@@ -44,8 +42,8 @@
 					<td class="tb_chk_res">예약 일자</td>
 					<td class="tb_chk_res">상품명</td>
 					<td class="tb_chk_res">출발일</td>
+					<td class="tb_chk_res">도착일</td>
 					<td class="tb_chk_res">진행상황</td>
-					<td class="tb_chk_res">문의신청</td>
 				</tr>
 				<c:if test="${empty rlist}">
 					<tr>
@@ -55,13 +53,13 @@
 				</c:if>
 				<c:if test="${!empty rlist}">
 					<c:forEach var="r" items="${rlist}">
-						<tr>
+						<tr style="height: 30px;">
 							<td>${r.res_code}</td>
 							<td>${r.res_date}</td>
 							<td>${r.pack_code}</td>
 							<td>${r.res_start_date}</td>
-							<td>진행상황</td>
-							<td>문의신청</td>
+							<td>${r.res_end_date}</td>
+							<td></td>
 						</tr>
 					</c:forEach>
 				</c:if>

@@ -1,5 +1,6 @@
 package com.naver.controller;
 
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -32,33 +33,33 @@ public class PackController {
 
 	@Autowired
 	private LandService landService;
-	
+
 	@RequestMapping("/card")
 	public String card() {
 		return "card";
 	}
-	
+
 	//패키지 여행 리스트
 	@RequestMapping("/list")
 	public ModelAndView list(@RequestParam("pack_sub_cate") String pack_sub_cate,HttpServletResponse response,HttpSession session,HttpServletRequest request,@ModelAttribute PackVO p)throws Exception {
-		
+
 		String login_id=(String)session.getAttribute("id");
 		ModelAndView listM=new ModelAndView();
 		int totalCount=this.packService.getListCount(p);
 
 		List<PackVO> plist=this.packService.getPackageList(p);
-		
+
 		listM.addObject("totalCount",totalCount);
 		listM.addObject("plist",plist);
 		listM.setViewName("/list");
-		
+
 		if(login_id == null) {
 			return listM;
 		}
 		return listM;
 
 	}
-	
+
 	//지역 검색
 	@RequestMapping("/search_city")
 	public String search_city() {
@@ -70,16 +71,28 @@ public class PackController {
 	public String travel_description(@RequestParam("pack_code") String pack_code,HttpServletRequest request,HttpSession session,HttpServletResponse response,
 			Model m,@ModelAttribute PackVO p,@ModelAttribute HotelVO h,@ModelAttribute LandVO l)throws Exception {
 
-		p=this.packService.getPackageCont(pack_code);
-		List<HotelVO> hlist=this.hotelService.getHotelList(h,pack_code);
-		List<LandVO> llist=this.landService.getLandList(l,pack_code);
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out=response.getWriter();
+		
+		String id=(String)session.getAttribute("id");
+		
+		if(id == null) {
+			out.println("<script>");
+			out.println("alert('로그인 하세요!');");
+			out.println("location='login';");
+			out.println("</script>");
+			return null;
+		}else {
 
-		m.addAttribute("p",p);
-		m.addAttribute("hlist",hlist);
-		m.addAttribute("llist",llist);
+			p=this.packService.getPackageCont(pack_code);
+			List<HotelVO> hlist=this.hotelService.getHotelList(h,pack_code);
+			List<LandVO> llist=this.landService.getLandList(l,pack_code);
 
+			m.addAttribute("p",p);
+			m.addAttribute("hlist",hlist);
+			m.addAttribute("llist",llist);
 
-		return "/travelDescription";
-
+			return "/travelDescription";
+		}
 	}
 }

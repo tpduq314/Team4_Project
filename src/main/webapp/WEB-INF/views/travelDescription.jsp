@@ -119,6 +119,19 @@
 		}
 	}
 
+	function check(){
+		var cnt01 = document.getElementById("res_count01").value;
+		var cnt02 = document.getElementById("res_count02").value;
+		var cnt03 = document.getElementById("res_count03").value;
+		var sum=parseInt(cnt01)+parseInt(cnt02)+parseInt(cnt03);
+		
+		if(sum==0){
+			alert("인원을 선택해주세요");
+			return false;
+		}
+		
+	}
+	
 	function calc() {
 
 		var cnt01 = document.getElementById("res_count01").value;
@@ -158,7 +171,7 @@
 		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 
-		<form name="res" method="post" action="res">
+		<form name="res" method="post" action="res" onsubmit="return check();">
 			<div id="des_top">
 				<div id="category">
 					<h1 id="txt_category">홈>해외패키지>${p.pack_main_cate}>${p.pack_sub_cate}</h1>
