@@ -30,10 +30,10 @@
 
 
 		<div class="res_description"
-			style="background-color: #D5D5D5; text-align: center; height: 400px;">
-			<img src="./resources/image/logo.jpg" width=150px height=150px
+			style="background-color: white; text-align: center; height: 400px;">
+			<img src="./resources/image/logo.PNG" width=150px height=150px
 				style="margin-top: 50px;">
-			<p class="travel_reservation_ok_p" style="margin-top: 20px;">웹
+			<p class="travel_reservation_ok_p" style="margin-top: 20px;">트립
 				투어를 이용해주셔서 감사합니다.</p>
 			<p class="travel_reservation_ok_p">
 				<span style="color: #6E85B2; font-size: 18px;">${id} </span>님의 예약이
@@ -91,8 +91,8 @@
 					<td class="res_table_td_2">${c.cli_name}</td>
 					<td class="res_table_td_1" style="width: 200px;">생년월일</td>
 					<td class="res_table_td_2">${c.cli_birth}</td>
-					<td class="res_table_td_1" style="width: 200px;">성별</td>
-					<td class="res_table_td_2">${c.cli_gender}</td>
+<%-- 					<td class="res_table_td_1" style="width: 200px;">성별</td>
+					<td class="res_table_td_2">${c.cli_gender}</td> --%>
 				</tr>
 				<tr>
 					<td class="res_table_td_1" style="width: 200px;">이메일</td>
@@ -130,8 +130,8 @@
 
 		<div class="res_description" style="height: 240px; font-size: 20px;">
 			요청 사항
-			<textarea
-					style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
+			<br><textarea
+					style="border: 1px solid gray; height: 180px; width: 1400px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
 					placeholder="요청사항을 적어주세요" name="res_req" id="res_req" readonly="readonly" >${r.res_req}</textarea>
 
 		</div>

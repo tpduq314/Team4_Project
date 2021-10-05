@@ -318,7 +318,7 @@ function calc() {
 			<div class="res_description">
 				예약자 정보
 				<div
-					style="float: right; margin-top: 10px; margin-right: 10px; font-size: 12px;">
+					style="float: right; margin-top: 10px; margin-right: 0px; font-size: 12px;">
 					<span style="color: red; clear: both;">*</span>는 필수 입력 항목입니다.
 				</div>
 				<table class="res_table" style="height: 300px;">
@@ -332,12 +332,12 @@ function calc() {
 						<td class="res_table_td_2"><input class="input_table"
 							type="text" name="cli_birth" placeholder="예)20180101"
 							id="cli_birth" /></td>
-						<td class="res_table_td_1" style="width: 150px;"><span
+						<!-- <td class="res_table_td_1" style="width: 150px;"><span
 							style="color: red;">*</span> 성별</td>
 						<td class="res_table_td_2" width="200px;"><input type="radio"
 							name="cli_gender" id="cli_gender" value="남자" style="display: inline-block;" checked="checked">남 
 							<input type="radio" name="gender" value="여자" id="cli_gender" name="cli_gender"
-							style="display: inline-block;">여</td>
+							style="display: inline-block;">여</td> -->
 					</tr>
 					<tr>
 						<td class="res_table_td_1" style="width: 200px;"><span
@@ -436,13 +436,13 @@ function calc() {
 			<!-- 요청사항 -->
 			<div class="res_description" style="height: 240px; clear: both">
 				요청 사항
-				<textarea
-					style="border: 1px solid gray; height: 180px; width: 1360px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
+				<br><textarea
+					style="border: 1px solid gray; height: 180px; width: 1400px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
 					placeholder="요청사항을 적어주세요" name="res_req" id="res_req" ></textarea>
 			</div>
 
 			<!-- 약관 동의 -->
-			<div class="res_description" style="height: 450px;">
+			<div class="res_description02" style="height: 450px;">
 				필수 약관 동의
 				<div id="service_agreement">
 					<div style="font-size: 20px;">
@@ -460,7 +460,7 @@ function calc() {
 						for="tab04">개인저보 제 3자 제공</label>
 
 					<div class="conbox con1">
-						<p>
+						<p class="conbox_con1">
 							당사는 개인정보보호법을 준수하며 서비스 수행의 목적에 한하여 최소한의 고유식별정보를 수집, 이용하며 기준은 아래와
 							같습니다. <br>1. 고유식별정보 수집/이용 목적: 항공사 마일리지 적립 및 사용, 해외여행 상품예약시
 							출국가능 여부파악 및 여행자 본인식별, <br>2. 수집하는 고유식별정보의 항목: 여권번호 (여권만료일) <br>3.

@@ -222,10 +222,11 @@ a:active {
 
 	<!-- 로그인 회원가입 고객센터 -->
 	<div id="member">
-		<div style="width:100px; height:100px;"class="logo_bar">
+		<div style="width:100px; height:100px; margin-top:10px;"class="logo_bar">
 			<div class="logo">
-				<img src="./resources/image/logo.PNG"
-				style="width:100%; height:100%;"><a href="#"></a>
+				<img onclick="javascript:location.href='/Project/index';"
+				src="./resources/image/logo2.PNG"
+				style="width:100%; height:100%;">
 			</div>
 		</div>
 		<div class="mem">
