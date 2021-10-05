@@ -8,12 +8,14 @@
 <script src="./resources/js/jquery.js"></script>
 </head>
 <script>
-$(document).ready(
+/*$(document).ready(
 		function() {
+		
 			document.getElementById("pack_price01").innerHTML = document
 			.getElementById("pack_price01").innerHTML.toString()
 			.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-		});
+		
+		});*/
 			
 </script>
 <%
