@@ -284,6 +284,12 @@ values('EKP3039','발칸+동유럽 10일','3대도시 자유시간','유럽','�
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_start_date,pack_end_date,pack_duration,pack_detail,pack_none_detail) 
 values('ATG1118','아유타야 3색 108홀','골프 투어','동남아','방콕','https://dimgcdn.ybtour.co.kr/TN/fd/fd120b59e4438d06d2d303e64e8fdf77.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/83/83da84e8528b673b0ecbccb1efb72e87.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/26/26057eef12c218af678f4ef8e7ca1e3c.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/38/381a090ba0cbe6977694962d5e922b5e.tn.410x280.jpg','779000','779000','150000','2021.10.10','2021.10.15','4박 5일','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
 
+--insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+--('h64','크리스탈 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2005/06/14/30000/6de4740c-f3c3-4fdd-b001-1a598369bcdb.jpg','체크인 2PM / 체크아웃 12N','RUGENPARKSTRASSE 13 CH-3800 INTERLAKEN','41-33-822-6233','41-33-822-6233','http://www.crystal-hotel.ch','EKP3039');
+
+--insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+--('h65','이비스 파리 알레지아','https://image.hanatour.com/usr/cms/resize/400_0/2006/01/17/10000/b135d06f-bb0f-4412-bc59-b269dc07d6c8.jpg','체크인 12:00 PM / 체크아웃 12:00 PM','49 Rue Des Plantes','33-1-53-90-40-00','33-1-53-90-40-00','http://www.accorhotels.com/gb/hotel-0959-ibis-paris-alesia-montparnasse-14th/index.shtml','EKP3039');
+
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_start_date,pack_end_date,pack_duration,pack_detail,pack_none_detail) 
 values('ATP1134','레이트체크아웃 노보텔스위트','자유 1.5일+관광 1.5일','동남아','방콕','https://dimgcdn.ybtour.co.kr/TN/41/4165ace1067e790981dfa49a54322931.tn.410x280.PNG','https://dimgcdn.ybtour.co.kr/TN/6c/6c2274d89dd5e53cee8616b9b59d33b3.tn.410x280.PNG','https://dimgcdn.ybtour.co.kr/TN/4a/4a4a57147fb1c95d136930d968ef86b8.tn.410x280.PNG','https://dimgcdn.ybtour.co.kr/TN/e5/e5049b1a1baf9116b5c1f7315b272127.tn.410x280.PNG','639000','639000','150000','2021.10.10','2021.10.15','4박 5일','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
 
@@ -384,3 +390,174 @@ values('CEP1002','청도/맥주박물관 3일','특급호텔','중국','청도',
 
 insert into package (pack_code,pack_name,pack_desc,pack_main_cate,pack_sub_cate,pack_pic01,pack_pic02,pack_pic03,pack_pic04,pack_price01,pack_price02,pack_price03,pack_start_date,pack_end_date,pack_duration,pack_detail,pack_none_detail) 
 values('CEP1014','청도/소어산/피차이위엔 3일','VIP리무진','중국','청도','https://dimgcdn.ybtour.co.kr/TN/c9/c9b353a77f63a268a3cba2736b37922f.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/45/455c8e5e16a1a6050d4069512a7787cd.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/39/394916fa65adb35663a2cf498d0afe28.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/21/21fa5d4a1d05bc928ce0c99dd7f37e7a.tn.410x280.png','609000','609000','150000','2021.10.10','2021.10.15','4박 5일','교통 : 왕복항공권, 전용차량비용 · 숙박 : 일정내 숙박비','기사/가이드 경비 : 1인당 전일정 USD $40 · ESTA 승인비용 : USD $14  (여행사 대행시 1인 30,000)');
+
+--예시
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h1','호텔A','사진','호텔 A 설명','주소','번호','팩스','홈페이지','코드');
+
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) 
+values('l1','이름','사진1','사진2','사진3','랜드마크A 설명','a128');
+
+--괌
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h4','두짓타니 괌 리조트','https://image.hanatour.com/usr/cms/resize/400_0/2015/12/16/10000/b4a92928-0e39-457b-a083-b10959caa200.jpg','[객실타입]
+총 419개의 고급스러운 객실과 스위트 & 빌라를 보유하고 있습니다.
+','1227 Pale San Vitores Road','1-671-648-8000','1-671-648-8000','http://www.dusit.com/dusitthani/guamresort/default-en.html','PGP7013');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h5','힐튼 괌 리조트 & 스파','https://image.hanatour.com/usr/cms/resize/400_0/2011/05/27/10000/c30316df-3d9e-4e05-9cd5-9fbe2e28b248.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','202 Hilton Road Tumon Bay','1-671-6461835','1-671-6461835','	http://www.hilton-guam.co.kr/','PGP7013');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h6','롯데 호텔 괌','https://image.hanatour.com/usr/cms/resize/400_0/2014/11/05/10000/06ac107e-3849-45ac-880c-da573b028137.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','185 Gun Beach Road','1-671-6466811','1-671-6466811','http://www.lottehotel.com/guam','PGH3028');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h7','하얏트 리젠시 괌','https://image.hanatour.com/usr/cms/resize/400_0/2010/06/15/10000/aa8e98c0-cb59-44ae-bc86-da6ece2a77dc.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','1155 Pale San Vitores Road','1-671-6471234','1-671-6471234','	http://www.guam.regency.hyatt.com/hyatt/hotels/','PGH3028');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h8','더 츠바키 타워','https://image.hanatour.com/usr/cms/resize/400_0/2020/02/04/10000/d8252fe1-99b2-40c1-8ccb-1ab33d4b50a5.jpg','체크인 3PM / 체크아웃 12N','241 Gun Beach Road, Tumon, Guam 96913','1-671-989-2646','1-671-989-2646','http://thetsubakitower.co.kr/','PGP1009');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h9','온워드 비치 리조트','https://image.hanatour.com/usr/cms/resize/400_0/2016/12/30/10000/8d028e09-00fb-42c7-974d-54d6b385c078.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','445 Governor Carlos G Camacho Road','16-71-6477777','16-71-6477777','http://www.onwardguam.com/hotel/en/','PGP1009');
+
+--사이판
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h10','하얏트 리젠시 사이판','https://image.hanatour.com/usr/cms/resize/400_0/2017/01/08/10000/6a9b9f30-138f-4c8e-9333-6a0332073e5e.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','P.O.Box 5087, Capital Hill Rural Branch, Saipan','1-670-234-1234','1-670-234-1234','http://saipan.regency.hyatt.com/hyatt/hotels/','PSP3050');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h11','아쿠아 리조트 클럽 사이판','https://image.hanatour.com/usr/cms/resize/400_0/2010/06/30/10000/cacf32f7-ea19-4494-ae93-bcb466323f4d.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','PO Box 500009, Achugao, Saipan','1-670-322-1234','1-670-322-1234','http://www.aquaresortsaipan.com/','PSP3050');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h12','센추리 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2020/05/10/160000/1245643c-458e-47f3-b94e-13ea7a718e9c.jpg','체크인 2:00 PM, 체크아웃 12:00 PM','Chalan Pale Arnold Garapan','1-670-233-1420','1-670-233-1420','-','PSP4011');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h13','찰란 카노아 비치 클럽','https://image.hanatour.com/usr/cms/resize/400_0/2012/03/08/10000/09208bf8-6cc1-4877-9fb0-d680383314bd.jpg','-','P.O. Box 500356, 96950, Mariana Islands','1-670-234-7829','1-670-234-6534','-','PSP4011');
+
+--팔라우
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h14','퍼시픽 리조트','https://dimgcdn.ybtour.co.kr/TN/19/19a24f203d5fca6ae4912f05e7fd72c7.tn.410x280.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','PO Box 500009, Achugao','1-670-322-1234','1-670-322-1234','http://www.aquaresortsaipan.com/','PPP1002');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h15','괌 플라자 리조트 & 스파','https://image.hanatour.com/usr/cms/resize/400_0/2020/05/12/170000/981a5ba5-3868-4bbc-b238-c36a9ca62778.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','1328 Pale San Vitores Road Tumon','1-671-646-7803','1-671-646-7803','http://www.aquaresortsaipan.com/','PPP1007');
+
+--하와이
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h16','하얏트 리젠시 와이키키 비치 리조트 & 스파','https://image.hanatour.com/usr/cms/resize/400_0/2016/12/30/10000/2ab2db08-a75a-4b8e-b1a4-01938626a7e2.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','2424 Kalakaua Ave','1-808-923-1234','1-808-923-1234','http://waikiki.hyatt.com/hyatt/hotels/index.jsp','NHP1101');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h17','힐튼 하와이안 빌리지 와이키키 비치 리조트','https://image.hanatour.com/usr/cms/resize/400_0/2011/11/24/10000/775b1f9f-67b2-4c6e-8efa-84d7ceb8769e.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','2005 Kalia Rd','1-808-949-4321','1-808-949-4321','http://www.hiltonhawaiianvillage.com/','NHP1101');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h18','와이키키 비치 메리어트 리조트 & 스파','https://image.hanatour.com/usr/cms/resize/400_0/2014/02/18/10000/444f0382-8019-4615-9495-688cbc428196.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','2552 Kalakaua Ave','1-808-922-6611','1-808-922-6611','http://www.marriott.com/hotels/travel/hnlmc-waikiki-beach-marriott-resort-and-spa/','NHP1094');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h19','하얏트 플레이스 와이키키 비치','https://image.hanatour.com/usr/cms/resize/400_0/2008/10/24/10000/46f08000-d981-4307-aad7-d4a197850881.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','175 Paoakalani Ave','1-808-922-3861','1-808-922-3861','http://www.hyattplacewaikikibeach.com/','NHP1094');
+
+--미동부
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h20','코트야드 팔시파니 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2007/05/16/10000/1b3e5d11-8e34-4bb3-8fdc-536928cd07c2.jpg','체크인 3P / 체크아웃 12N','3769 HIGHWAY 46 EAST, PARSIPPANY, NEW JERSEY 07054','1-973-394-0303','1-973-394-0303','http://marriott.com/hotels/travel/ewrps-courtyard-parsippany/','NEP1005');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h21','보스톤 메리어트 피바디','https://image.hanatour.com/usr/cms/resize/400_0/2014/01/07/10000/8c34a71f-bbbf-4659-81fe-71f407fb12aa.jpg','체크인 4:00 PM / 체크아웃 12:00 PM','8A Centennial Drive Peabody Massachusetts 01960 USA','1-978-977-9700','1-978-977-9700','http://www.marriott.com/hotels/travel/bospb-boston-marriott-peabody/','NEP1005');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h22','힐튼 토론토 에어포트 호텔 & 스위트','https://image.hanatour.com/usr/cms/resize/400_0/2013/10/10/10000/941db8ad-af7e-467b-a86a-42e9c2677c4b.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','5875 Airport Road','1-905-677-9900','1-905-677-9900','http://www.toronto.apt.hilton.com','NEP1015');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h23','크라운 플라자 해리스버그-허시','https://image.hanatour.com/usr/cms/resize/400_0/2011/02/25/10000/0f63141d-13c6-4416-826c-f35d8e2a6e27.jpg','체크인 4:00 PM / 체크아웃 11:00 AM','23 South Second Street, Harrisburg, Pennsylvania, 17101, United States','1-717-234-5021','1-717-234-5021','https://www.ihg.com/crowneplaza/hotels/us/en/harrisburg/mdtdt/hoteldetail','NEP1015');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h24','크라운 플라자 필라델피아 체리힐','https://image.hanatour.com/usr/cms/resize/400_0/2012/12/18/10000/2fddc30b-5382-4bc3-9a69-18bd33d5b0d8.jpg','체크인 4:00 PM / 체크아웃 11:00 AM','2349 W. Marlton Pike Cherry Hill , New Jersey 08002','1-856-665-6666','1-856-665-6666','http://www.ichotelsgroup.com/crowneplaza/hotels/us/en/cherry-hill/cpcrw/hoteldetail','NEP1024');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h25','코트야드 팔시파니 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2007/05/16/10000/1b3e5d11-8e34-4bb3-8fdc-536928cd07c2.jpg','체크인 3P / 체크아웃 12N','3769 HIGHWAY 46 EAST, PARSIPPANY, NEW JERSEY 07054','1-973-394-0303','1-973-394-0303','http://marriott.com/hotels/travel/ewrps-courtyard-parsippany/','NEP1024');
+
+--중남미
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h26','오뗄 르 콩코르드 퀘벡','https://image.hanatour.com/usr/cms/resize/400_0/2005/06/14/50000/bb91ba08-88ac-41c3-9c08-a9961561cf0b.jpg','체크인 4:00 PM / 체크아웃 12:00 PM','1225 Cours du General de Montcalm','1-418-647-2222','1-418-647-2222','-','SMH5011');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h27','퀄리티 호텔 센트레 드 콩그레스','https://image.hanatour.com/usr/cms/resize/400_0/2010/09/29/10000/a3366960-1e29-41aa-a09b-cda228cf61f2.jpg','-','725 Seminaire Blvd North Saint-Jean-sur-Richelieu(Quebec), Canada J3B 8H1','1-450-348-7376','1-450-348-7376','http://www.gouverneur.com/fiche.php?lang=en&hotel_id=11','SMH5011');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h28','하얏트 시바 칸쿤 - 올 인클루시브','https://image.hanatour.com/usr/cms/resize/400_0/2015/10/16/10000/b1f5e695-b20c-4e71-a6e2-89880db141f6.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','Blvd. Kukulcan, Manzana 51, Lote 7','52-998-8487000','52-998-8487000','http://www.cancun.ziva.hyatt.com/en/hotel/home.html','SMF1012');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h29','시크릿츠 더 바인 칸쿤','https://image.hanatour.com/usr/cms/resize/400_0/2012/12/04/10000/22802bbb-8514-4729-ae78-862608b52c57.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','Blvd. Kukulcan km. 14.5 Retorno Del Rey Lot 38 38-b, Zona Hotelera','52-998-8489400','52-998-8489400','http://www.secretsresorts.com/thevine/index.asp','SMF1012');
+
+--미서부
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h30','리브 아쿠아 비치 리조트 칸쿤','https://image.hanatour.com/usr/cms/resize/400_0/2012/05/15/10000/7a5957d9-3140-4576-a5dd-5142bb350099.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','BOULEVARD KUKULCAN KM 12.5 CANCUN C.P. 77500 MEXICO','52-99-88817600','52-99-88817600','http://www.feel-aqua.com.','NCP5202');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h31','HOTEL XCARET MEXICO','https://image.hanatour.com/usr/cms/resize/400_0/2018/01/05/10000/a25dab22-b505-48c1-acf6-29387372780f.jpg','-','Puerto Juarez Kilometro 282, Solidaridad','52-1800-009-7567','52-1800-009-7567','	http://www.hotelxcaret.com/en/','NCP5202');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h32','플라밍고 라스베이거스','https://image.hanatour.com/usr/cms/resize/400_0/2015/11/06/10000/bb463488-07c9-402e-acb8-bb56c6cc85ad.jpg','체크인 4:00 PM / 체크아웃 11:00 AM','3555 Las Vegas Blvd S','	1-702-733-3111','1-702-733-3111','http://flamingolasvegas.com','NWP1025');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h33','홀리데이 인 산호세','https://image.hanatour.com/usr/cms/resize/400_0/2016/07/12/10000/2e1eec32-4c0f-43a9-adca-27c15a5dc24a.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','1350 N 1st Street San Jose California 95112 United States','1-408-453-6200','1-408-453-6200','	http://www.ihg.com/holidayinn/hotels/gb/en/san-jose/sjccc/hoteldetail','NWP1025');
+
+--캐나다
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h34','엑스칼리버 호텔 ','https://image.hanatour.com/usr/cms/resize/400_0/2017/01/07/10000/8ee41a55-9099-472a-9fb2-6ef3cc6c5932.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','3850 Las Vegas Blvd S','1-702-597-7777','1-702-597-7777','http://www.excalibur.com/','NCP1126');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h35','룩소르 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2016/08/18/10000/1e1e7371-3f76-4ca3-bd18-4536fe6f92d3.jpg','체크인 3 PM / 체크아웃 11AM','3900 S. Las Vegas Blvd','1-702-262-4000','1-702-262-4000','http://www.luxor.com','NCP1126');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h36','QUALITY INN KANAB ','https://image.hanatour.com/usr/cms/resize/400_0/2010/08/04/10000/b6d321df-1e26-40b2-983b-d68ad074b444.jpg','체크인 4PM / 체크아웃 11AM','815 EAST HIGHWAY 89 KANAB UT 84741','435-644-8888','435-644-8888','http://www.comfortinn.com/hotel-kanab-utah-UT109','NCP1110');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h37','플래닛 할리우드 리조트','https://image.hanatour.com/usr/cms/resize/400_0/2016/08/05/10000/01ae3692-a02d-4bf9-9a42-9edd47d9ae43.jpg','체크인 4:00 PM / 체크아웃 11:00 AM','3667 Las Vegas Blvd S','1-702-785-5555','1-702-785-5555','http://planethollywoodresort.com','NCP1110');
+
+--서유럽
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h38','홀리데이 인 익스프레스 취리히 에어포트','https://image.hanatour.com/usr/cms/resize/400_0/2012/02/08/10000/dbd5d6b6-2545-428c-a23e-7d4cd53f3886.jpg','	체크인 2:00 PM / 체크아웃 12:00 PM','Hofwisenstrasse 30','41-44-8093400','41-44-8093400','http://www.holidayinn.com','EWP2079');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h39','The Hey Hotel','https://image.hanatour.com/usr/cms/resize/400_0/2015/06/29/10000/3c97ea7e-68ce-428d-a8a4-ada73c3475ea.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','Hoheweg 7','41-33-827-8787','41-33-827-8787','https://www.theheyhotel.ch/','EWP2079');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h40','HOTEL CENTRAL BRIG','https://image.hanatour.com/usr/cms/resize/400_0/2009/12/22/10000/42b3ec52-1168-453d-8c48-1dbecbdb7de7.jpg','체크인 2PM / 체크아웃 11AM','GLISERALLEE 50, 3900 BRIG-VALAIS','41-0-27-923-5020','41-0-27-923-5020','http://www.hotel-central.ch/e/indexe.html','EWP1027');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h41','호텔 로트하우스 루체른','https://image.hanatour.com/usr/cms/resize/400_0/2007/08/02/10000/17a75740-14b7-4de3-ace4-8f1f8dc3a920.jpg','체크인 3:00 PM / 체크아웃 11:00 AM','Klosterstrasse 4','41-41-2484848','41-41-2484848','http://www.rothaus.ch/','EWP1027');
+
+--동유럽
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h42','홀리데이 인 베를린 에어포트','https://image.hanatour.com/usr/cms/resize/400_0/2006/06/22/10000/6d4dfce2-d1a9-4973-8181-cd84c55cdc67.jpg','체크인 2:00 PM / 체크아웃 12:00 PM','HANS-GRADE-ALLEE 5, 12529 BERLIN-SCHOENEFELD GERMANY','49-306-34010','49-306-34010','http://www.holidayinn-berlin.de','EEP1264');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h43','노보텔 베를린 미테','https://image.hanatour.com/usr/cms/resize/400_0/2006/06/23/10000/a775d56a-2174-40ce-8851-e9e20b59b681.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','FISCHERINSEL 12 BERLIN 10178 GERMANY','9-30-206740','9-30-206740','http://www.novotel.com','EEP1264');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h44','COURTYARD BY MARRIOTT DRESDEN','https://image.hanatour.com/usr/cms/resize/400_0/2019/11/06/10000/680b9d78-aa77-46d1-ac86-fcc04018ddb2.jpg','-','Stauffenbergallee 25A, 01099 Dresden','49-351-81510','49-351-81510','https://www.marriott.de/hotels/travel/drscy-courtyard-dresden/','EEP1154');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h45','노보텔 뮌헨 메세','https://image.hanatour.com/usr/cms/resize/400_0/2006/06/22/10000/31d87dcd-d4e2-4870-9cbe-2455a2ebf60d.jpg','체크인 24 Hours / 체크아웃 12:00 PM','Willy-Brandt-Platz 1, 81829 MUENCHEN RIEM, GERMANY','49-89-994000','49-89-994000','	http://www.accorhotels.com/gb/hotel-5563-novotel-muenchen-messe/index.shtml','EEP1154');
+
+--그리스
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h46','머큐어 가르미슈 파르텐키르헨','https://image.hanatour.com/usr/cms/resize/400_0/2009/04/15/10000/ae2710bf-c809-4831-bac4-c6d38efc0c87.jpg','체크인 2PM / 체크아웃 12N','Daimlerstrasse 1, Herrenberg 71083 Stuttgart','49 7032 271 0','49 7032 271 0','http://www.ramada.com/herrenberg','ETP2096');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h47','H+ STUTTGART HERRENBERG','https://image.hanatour.com/usr/cms/resize/400_0/2020/03/28/830000/3ac96b94-fef8-47cf-bf6f-429a97aeb6d1.jpg','체크인 3:00 PM / 체크아웃 12:00 PM','Mittenwalder Strasse 2','49-8-821-75-60','49-8-821-75-60','-','ETP2096');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h48','아르데아티나 파크 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2013/09/11/10000/6046219a-a048-4b43-8f0c-f2f40254e272.jpg','체크인 1:00 PM / 체크아웃 11:00 AM','Via Vittore Ghiliani, 145','39-06-710641','39-06-710641','http://www.ardeatinaparkhotel.it/','EMH1000');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h49','프림 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2007/06/01/10000/ff79b27d-8a72-4bf2-a61e-b381ee790167.jpg','체크인 2P / 체크아웃 12N','VIA MARTINI DI CEFALONIA, 13 - 31046 OEDRZO (TV)','39-422-713-699','39-422-713-699','http://www.primhotel.it','EMH1000');
+
+--스페인
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h50','크리스탈 호텔','https://image.hanatour.com/usr/cms/resize/400_0/2005/06/14/30000/6de4740c-f3c3-4fdd-b001-1a598369bcdb.jpg','체크인 2PM / 체크아웃 12N','RUGENPARKSTRASSE 13 CH-3800 INTERLAKEN','41-33-822-6233','41-33-822-6233','http://www.crystal-hotel.ch','EMP5043');
+
+insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
+('h51','이비스 파리 알레지아','https://image.hanatour.com/usr/cms/resize/400_0/2006/01/17/10000/b135d06f-bb0f-4412-bc59-b269dc07d6c8.jpg','체크인 12:00 PM / 체크아웃 12:00 PM','49 Rue Des Plantes','33-1-53-90-40-00','33-1-53-90-40-00','http://www.accorhotels.com/gb/hotel-0959-ibis-paris-alesia-montparnasse-14th/index.shtml','EMP5043');
+
+
+
+
+
+
