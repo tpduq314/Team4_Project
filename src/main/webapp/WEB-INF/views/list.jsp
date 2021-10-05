@@ -26,12 +26,6 @@ System.out.println(pack_sub_cate);
 System.out.println(date);
 %>
 <body>
-	<div class="top">
-		<div id="header">
-			<jsp:include page="header2.jsp" />
-		</div>
-	</div>
-
 <%-- 	<section class="list">
 		<div class="container">
 			<div class="list_left">
@@ -44,6 +38,10 @@ System.out.println(date);
 		</div>
 	</section>--%>
 	<div class="wrap">
+		<div style="margin-top:10px;margin-left:95px;margin-right:95px;"id="header">
+			<jsp:include page="header2.jsp" />
+		</div>
+		
 			<div class="section">
 				<input type="radio" name="slide" id="slide01" checked> <input
 					type="radio" name="slide" id="slide02"> <input type="radio"
@@ -78,7 +76,7 @@ System.out.println(date);
 					<div class="res_area">
 						<fieldset style="border:0px">
 							<div class="user_name"><a href="/Project/login">로그인 후 이용해주세요!</a></div>
-							<div class="res_name">${p.pack_name} 카테고리를 선택하셨어요!</div>
+							<div class="res_name">${p.pack_sub_cate} 카테고리를 선택하셨어요!</div>
 							<div class="res_start">출발일은 ${p.pack_start_date }입니다.</div>
 						</fieldset>
 					</div>
@@ -89,7 +87,7 @@ System.out.println(date);
 					<div class="res_area">
 						<fieldset style="border:0px">
 							<div class="user_name">${id}님 안녕하세요!</div>
-							<div class="res_name">${p.pack_name} 카테고리를 선택하셨어요!</div>
+							<div class="res_name">${p.pack_sub_cate} 카테고리를 선택하셨어요!</div>
 							<div class="res_start">출발일은 ${p.pack_start_date }입니다.</div>
 						</fieldset>
 					</div>
@@ -107,10 +105,9 @@ System.out.println(date);
 				</div>
 			</c:forEach>
 		</c:if> --%>
-		</div>
 	<section class="serv_list">
-		<div class="bList_count" style="margin-left:400px; margin-bottom:20px;">검색 결과:${totalCount}</div>
 		<div class="container">
+		<div class="bList_count" style="margin-bottom:20px;">관련 패키지 : (${totalCount})</div>
 			<div class="title">
 					<h1>${p.pack_sub_cate }</h1>
 			</div>
@@ -142,6 +139,7 @@ System.out.println(date);
 			</div>
 		</div>
 	</section>
+	</div>
 	<div class="footer_box">
 		<div id="footer">
 			<jsp:include page="footer.jsp" />

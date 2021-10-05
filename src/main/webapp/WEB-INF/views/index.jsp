@@ -144,7 +144,7 @@
                   <div class="jeju_section">
                      <div class="jeju_img">
                         <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=제주도&pack_start_date=?';"
-                        src="./resources/image/jeju_1100.jpg" class="j_img">
+                        src="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMjVfMTc2/MDAxNDg1MzA3MTA0NTM5.mEgI4lcZoyX5QiasSo7YzZTdyrF8QHtmd5XwMtQsT5Ig.v7gcD0wWtvkQhzQH4s9M9NPABAy4QxPELTEuGcBGplMg.JPEG.sujong4885/FH0A3900.jpg?type=w800" class="j_img">
                      </div>
                      <div class="jeju_cont">
                         <h4>대한민국의 가장 높은곳에서 즐기는 눈꽃여행</h4>
@@ -156,13 +156,13 @@
                            <p style="text-align:center;float:right;font-size: 15px;font-weight: 600;">[특가상품] 제주도 2/3일 <br>
                            <p style="margin-right:13px;float:right;font-size: 14px;color: #666;margin-top:5px;">수도권 셔틀,항공비 포함</p>            
                            <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=제주도&pack_start_date=?';" 
-                           src="./resources/image/jeju_1101.jpg" class="j_imgr">   
+                           src="http://vrthumb.clipartkorea.co.kr/2018/06/19/cm26013952.jpg" class="j_imgr">   
                            <p class="jimg_p">219000원~</p>
                         </div>
                      </div>
                   </div>
                </div>
-               <div style="position:relative; top:1200px; width:100%;height:450px; background-color:white;">
+               <div style="position:relative; top:950px; width:100%;height:450px; background-color:white;">
                   <h2 style="position:absolute; top:50px; left:270px; font-color:black;" >내나라 구석구석</h2>
                      <div style="position:absolute; top:170px; left:250px; height:400px;margin-top:0px">
                         <ul style="list-style:none; float:left;">
@@ -185,7 +185,8 @@
                            width: 190px; height:190px; position: relative; margin-left:30px;">
                               <a href="#">
                                  <span class="simg">
-                                    <img src="https://image.hanatour.com/usr/cms/resize/250_0/2020/12/02/20000/e5e869d0-0683-4ded-9825-ad9cfece75ea.jpg"
+                                    <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=여수&pack_start_date=?';"
+                                    src="https://image.hanatour.com/usr/cms/resize/250_0/2020/12/02/20000/e5e869d0-0683-4ded-9825-ad9cfece75ea.jpg"
                                     style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
                                  <p style="margin-top:10px;font-size:17px; font-weight:600;">여수</p>
                                  <p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">너와 함께 걷고싶은 여수는
@@ -199,7 +200,8 @@
                            width: 320px; height:320px; position: relative; margin-left:30px;">
                               <a href="#">
                                  <span class="simg">
-                                    <img src="https://image.hanatour.com/usr/cms/resize/400_0/2020/12/02/80000/5b695f92-eb04-4d44-b349-5abbe00fce4a.bmp"
+                                    <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=부산&pack_start_date=?';"
+                                    src="https://image.hanatour.com/usr/cms/resize/400_0/2020/12/02/80000/5b695f92-eb04-4d44-b349-5abbe00fce4a.bmp"
                                     style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 320px; height:320px;">
                                  <p style="margin-top:10px;font-size:26px; font-weight:600;">부산</p>
                                  <p style="margin-top:10px;font-size: 14px; color: #666; line-height: 24px;">낭만적인 해변열차 타고
@@ -215,7 +217,8 @@
                            width: 190px; height:190px; position: relative; margin-left:30px;">
                               <a href="#">
                                  <span class="simg">
-                                    <img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/04/28/10000/254938f6-677b-4d6b-bc0f-7e2f875037f5.jpg"
+                                    <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=제주&pack_start_date=?';"
+                                    src="https://image.hanatour.com/usr/cms/resize/250_0/2021/04/28/10000/254938f6-677b-4d6b-bc0f-7e2f875037f5.jpg"
                                     style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
                                  <p style="margin-top:10px;font-size:17px; font-weight:600;">제주</p>
                                  <p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">꽃향기 가득한 제주
@@ -229,7 +232,8 @@
                            width: 190px; height:190px; position: relative; margin-left:30px;">
                               <a href="#">
                                  <span class="simg">
-                                    <img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/03/31/10000/ccf682c9-96ac-45f9-96de-15848181e0d9.jpg"
+                                    <img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=경주&pack_start_date=?';"
+                                    src="https://image.hanatour.com/usr/cms/resize/250_0/2021/03/31/10000/ccf682c9-96ac-45f9-96de-15848181e0d9.jpg"
                                     style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
                                  <p style="margin-top:10px;font-size:17px; font-weight:600;">경주</p>
                                  <p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">발길 닿는 곳마다 유적지!
@@ -257,7 +261,7 @@
                </div> -->
             <!-- 인생은 한번쯤 -->
                <div
-                  style="position: relative; top: 1450px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
+                  style="position: relative; top: 1225px; width: 100%; height: 750px; background-size: 100% 100%; background-image: url(https://image.hanatour.com/usr/cms/resize/800_0/2016/09/23/10000/2859c53d-ed13-4c89-80a1-a9999571db72.jpg);">
 
                   <h2
                      style="position: absolute; top: 120px; left: 270px; color: white">인생에
