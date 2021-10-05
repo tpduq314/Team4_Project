@@ -86,8 +86,8 @@
 			<tr>
 				<td class="country">중앙아시아/몽골</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-						<li onclick="selectnow('제주');">&nbsp;중앙아시아&nbsp;</li>
-						<li onclick="selectnow('백령도');">&nbsp;몽골&nbsp;</li>
+						<li onclick="selectnow('중앙아시아');">&nbsp;중앙아시아&nbsp;</li>
+						<li onclick="selectnow('몽골');">&nbsp;몽골&nbsp;</li>
 
 
 					</ul></td>
@@ -105,12 +105,11 @@
 			<tr>
 				<td class="country">국내</td>
 				<td style="padding-left: 10px; border-bottom: 1.5px solid #CFCFCF;"><ul>
-						<li onclick="selectnow('강원');">&nbsp;강원&nbsp;</li>
-						<li onclick="selectnow('충북');">&nbsp;충북&nbsp;</li>
+						<li onclick="selectnow('강릉');">&nbsp;강릉&nbsp;</li>
+						<li onclick="selectnow('여수');">&nbsp;여수&nbsp;</li>
 						<li onclick="selectnow('제주도');">&nbsp;제주도&nbsp;</li>
-						<li onclick="selectnow('경북');">&nbsp;경북&nbsp;</li>
-						<li onclick="selectnow('전북');">&nbsp;전북&nbsp;</li>
-						<li onclick="selectnow('대전');">&nbsp;대전&nbsp;</li>
+						<li onclick="selectnow('부산');">&nbsp;부산&nbsp;</li>
+						<li onclick="selectnow('경주');">&nbsp;경주&nbsp;</li>
 					</ul></td>
 			</tr>
 		</table>

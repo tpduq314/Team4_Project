@@ -6,6 +6,9 @@
 <title></title>
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/travelReservation.css" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-latest.js"></script>
+	
 </head>
 
 <body>

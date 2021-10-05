@@ -222,10 +222,11 @@ a:active {
 
 	<!-- 로그인 회원가입 고객센터 -->
 	<div id="member">
-		<div class="logo_bar">
-			<h2 class="logo">
-				<a href="#">logo</a>
-			</h2>
+		<div style="width:100px; height:100px;"class="logo_bar">
+			<div class="logo">
+				<img src="./resources/image/logo.PNG"
+				style="width:100%; height:100%;"><a href="#"></a>
+			</div>
 		</div>
 		<div class="mem">
 			<ul class="mem_ul">
@@ -348,17 +349,15 @@ a:active {
 			<li><a href="#">국내</a>
 				<ul>
 					<li><a
-						href="/Project/list?main_category=국내&pack_sub_cate=강원&pack_start_date=<%=sf.format(nowTime)%>">강원</a></li>
+						href="/Project/list?main_category=국내&pack_sub_cate=강릉&pack_start_date=<%=sf.format(nowTime)%>">강릉</a></li>
 					<li><a
-						href="/Project/list?main_category=국내&pack_sub_cate=충북&pack_start_date=<%=sf.format(nowTime)%>">충북</a></li>
+						href="/Project/list?main_category=국내&pack_sub_cate=여수&pack_start_date=<%=sf.format(nowTime)%>">여수</a></li>
 					<li><a
 						href="/Project/list?main_category=국내&pack_sub_cate=제주도&pack_start_date=<%=sf.format(nowTime)%>">제주도</a></li>
 					<li><a
-						href="/Project/list?main_category=국내&pack_sub_cate=경북&pack_start_date=<%=sf.format(nowTime)%>">경북</a></li>
+						href="/Project/list?main_category=국내&pack_sub_cate=부산&pack_start_date=<%=sf.format(nowTime)%>">부산</a></li>
 					<li><a
-						href="/Project/list?main_category=국내&pack_sub_cate=전북&pack_start_date=<%=sf.format(nowTime)%>">전북</a></li>
-					<li><a
-						href="/Project/list?main_category=국내&pack_sub_cate=대전&pack_start_date=<%=sf.format(nowTime)%>">대전</a></li>
+						href="/Project/list?main_category=국내&pack_sub_cate=경주&pack_start_date=<%=sf.format(nowTime)%>">경주</a></li>
 
 				</ul></li>
 		</ul>
