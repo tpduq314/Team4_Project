@@ -34,7 +34,7 @@
 			<img src="./resources/image/logo.PNG" width=150px height=150px
 				style="margin-top: 50px;">
 			<p class="travel_reservation_ok_p" style="margin-top: 20px;">트립
-				투어를 이용해주셔서 감사합니다.</p>
+				타임를 이용해주셔서 감사합니다.</p>
 			<p class="travel_reservation_ok_p">
 				<span style="color: #6E85B2; font-size: 18px;">${id} </span>님의 예약이
 				완료되었습니다.
@@ -46,7 +46,7 @@
 		</div>
 
 		<div class="res_description"
-			style="background-color: white; height: 30px; border-bottom: 3px solid #BDBDBD; font-size: 24px;">
+			style="background-color: white; height: 40px; border-bottom: 3px solid #BDBDBD; font-size: 24px;">
 			예약 사항</div>
 
 		<div class="res_description"
@@ -79,7 +79,7 @@
 		</div>
 
 		<div class="res_description"
-			style="font-size: 20px; margin-top: 50px;">
+			style="font-size: 20px; margin-top: 70px;">
 			예약자 정보
 			<div
 				style="float: right; margin-top: 10px; margin-right: 10px; font-size: 12px;">
@@ -131,7 +131,7 @@
 		<div class="res_description" style="height: 240px; font-size: 20px;">
 			요청 사항
 			<br><textarea
-					style="border: 1px solid gray; height: 180px; width: 1400px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
+					style="border: 1px solid gray; height: 180px; width: 1370px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
 					placeholder="요청사항을 적어주세요" name="res_req" id="res_req" readonly="readonly" >${r.res_req}</textarea>
 
 		</div>

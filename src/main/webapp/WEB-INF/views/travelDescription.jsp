@@ -537,7 +537,7 @@
 				</div>
 				<div class="rf" style="border-bottom: solid 3px;">
 					<table
-						style="width: 300px; height: 50px; margin-top: 0px; margin-left: 10px;">
+						style="width: 300px; height: 50px; margin-top: 0px; margin-left: 70px;">
 						<tr>
 							<td style="font-size: 16px;">총 금액</td>
 							<td><input readonly type="text" id="res_total_price"

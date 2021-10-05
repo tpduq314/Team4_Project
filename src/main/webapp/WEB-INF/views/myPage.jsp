@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div id="res_top"
-			style="border: none; height: 200px; background-color: #6E85B2;">
+			style="border: none; height: 200px; background-color: #6E85B2; margin-top: 30px;">
 			<div id="category">
 				<h1 id="txt_category" style="padding-right: 20px;">홈 > 마이페이지</h1>
 			</div>
@@ -32,12 +32,12 @@
 			</div>
 		</div>
 
-		<div class="res_description" style="height: 380px; margin-top: 30px;">
+		<div class="res_description" style="height: 380px; margin-top: 30px; font-size: 18px; font-weight: 500px; width: 1400px;">
 			예약 내역
 		
 			<table class="res_table"
-				style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5;">
-				<tr>
+				style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5;width: 1700px;overflow:auto">
+				<tr style="height: 30px;">
 					<td class="tb_chk_res">예약코드</td>
 					<td class="tb_chk_res">예약 일자</td>
 					<td class="tb_chk_res">상품명</td>
@@ -54,12 +54,12 @@
 				<c:if test="${!empty rlist}">
 					<c:forEach var="r" items="${rlist}">
 						<tr style="height: 30px;">
-							<td>${r.res_code}</td>
-							<td>${r.res_date}</td>
-							<td>${r.pack_code}</td>
-							<td>${r.res_start_date}</td>
-							<td>${r.res_end_date}</td>
-							<td></td>
+							<td style="padding-left: 10px;">${r.res_code}</td>
+							<td style="padding-left: 10px;">${r.res_date}</td>
+							<td style="padding-left: 10px;">${r.pack_code}</td>
+							<td style="padding-left: 10px; ">${r.res_start_date}</td>
+							<td style="padding-left: 10px; ">${r.res_end_date}</td>
+							<td style="padding-left: 10px;"></td>
 						</tr>
 					</c:forEach>
 				</c:if>
@@ -67,10 +67,10 @@
 		</div>
 
 		<div class="res_description">
-			<div id="ask_res">
+			<div id="ask_res" style="font-size: 18px; font-weight: 500px;">
 				나의 문의 내역
 				<table class="res_table"
-					style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5; width: 100%;">
+					style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5; width: 100%;overflow:auto">
 					<tr>
 						<td class="tb_ask_res">문의 내용</td>
 						<td class="tb_ask_res">작성일</td>
@@ -94,21 +94,21 @@
 					</c:if>
 				</table>
 			</div>
-			<div id="ask_ser">
+			<div id="ask_ser" style="font-size: 18px; font-weight: 500px;">
 				서비스 바로가기
 				<table class="res_table"
 					style="border-top: 2px solid #D5D5D5; border-bottom: 2px solid #D5D5D5; width: 100%;">
 					<tr align="center">
 						<td class="ask_ser_td"
 							style="border-left: 2px solid #EAEAEA; border-right: 2px solid #EAEAEA; padding-top: 10px;"><img
-							src="./resources/image/home.jpg" width="90%;" height="90%"></td>
+							src="./resources/image/home.jpg" width="70%;" height="70%"></td>
 						<td class="ask_ser_td"
 							style="border-right: 2px solid #EAEAEA; padding-top: 10px;"><img
-							src="./resources/image/coupon.png" width="55%;" height="55%"></td>
+							src="./resources/image/coupon.png" width="40%;" height="40%"></td>
 						<td class="ask_ser_td"
 							style="border-right: 2px solid #EAEAEA; padding-top: 10px;"><img
-							src="./resources/image/shoppingCart.png" width="70%;"
-							height="70%"></td>
+							src="./resources/image/shoppingCart.png" width="50%;"
+							height="50%"></td>
 
 					</tr>
 					<tr align="center">

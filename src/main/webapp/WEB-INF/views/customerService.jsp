@@ -79,7 +79,7 @@ function check(){
 		</p> -->
 
 			<table
-				style="border-top: 2px solid black; margin-left: 250px; margin-top: 90px; font-size: 15px;">
+				style="border-top: 2px solid black; margin-left: 250px; margin-top: 90px; font-size: 15px; ">
 				<tr>
 					<td class="cs_tb_1"><span style="color: red;">* </span>휴대폰 번호</td>
 					<td class="cs_tb_2"><input name="qa_phone" id="qa_phone"

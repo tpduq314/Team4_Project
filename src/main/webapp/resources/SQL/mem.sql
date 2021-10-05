@@ -102,6 +102,7 @@ create table res(
 	,foreign key(mem_id) references mem(mem_id)
 );
 
+delete from res where res_code = 686;
 
 select * from res;
 

@@ -437,7 +437,7 @@ function calc() {
 			<div class="res_description" style="height: 240px; clear: both">
 				요청 사항
 				<br><textarea
-					style="border: 1px solid gray; height: 180px; width: 1400px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
+					style="border: 1px solid gray; height: 180px; width: 1370px; margin-top: 20px; font-size: 14px; padding-top: 10px; padding-left: 10px;"
 					placeholder="요청사항을 적어주세요" name="res_req" id="res_req" ></textarea>
 			</div>
 

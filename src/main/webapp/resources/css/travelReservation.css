@@ -80,8 +80,8 @@
 	height: 350px;
 	margin-top: 40px;
 	font-size: 22px;
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 150px;
+	margin-right: 150px;
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: left;
@@ -169,7 +169,7 @@ input[type="radio"]:checked+label {
 
 .conbox {
 	height: 100px;
-	width: 1400px;
+	width: 1290px;
 	background-color: #F6F6F6;
 	padding: 20px;
 	display: none;
@@ -178,7 +178,7 @@ input[type="radio"]:checked+label {
 	font-size: 15px;
 	font-weight: 500;
 	position:relative;
-	left:60px;
+	left:0px;
 }
 input[id="tab01"]:checked ~.con1 {
 	display: block;
@@ -213,11 +213,10 @@ input[id="tab04"]:checked ~.con4 {
 
 #total_price {
 	height: 350px;
-	width: 1365px;
+	width: 1380px;
 	border: 2px solid #E4E4E4;
 	margin-top: 40px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-left: 150px;
 }
 
 #tp_table {

@@ -221,7 +221,7 @@ a:active {
 <body>
 
 	<!-- 로그인 회원가입 고객센터 -->
-	<div id="member">
+	<div id="member" >
 		<div style="width:100px; height:100px;"class="logo_bar">
 			<div class="logo">
 				<img onclick="javascript:location.href='/Project/index';"
