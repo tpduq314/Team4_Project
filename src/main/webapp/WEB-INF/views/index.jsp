@@ -88,9 +88,9 @@
 
             <div class="slidewrap">
                <ul class="slidelist">
-                  <li><a> <img src="./resources/image/m4.jpg"></a></li>
-                  <li><a> <img src="./resources/image/m5.jpg"></a></li>
-                  <li><a> <img src="./resources/image/m6.jpg"></a></li>
+                  <li><a> <img src="https://image.hanatour.com/usr/manual/md/2020/02/PL00095101/bnr_pc_sm.jpg"></a></li>
+                  <li><a> <img src="https://image.hanatour.com/usr/manual/md/2021/09/PL00112801/bnr_pc_sm.jpg"></a></li>
+                  <li><a> <img src="https://image.hanatour.com/usr/manual/md/2021/08/PL00112764/bnr_pc_sm.jpg"></a></li>
 
                   <div class="slide-control">
                      <div class="control01">

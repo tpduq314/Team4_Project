@@ -7,7 +7,15 @@
 <link rel="stylesheet" href="./resources/css/list.css?">
 <script src="./resources/js/jquery.js"></script>
 </head>
-
+<script>
+$(document).ready(
+		function() {
+			document.getElementById("pack_price01").innerHTML = document
+			.getElementById("pack_price01").innerHTML.toString()
+			.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		});
+			
+</script>
 <%
 // request 객체로부터 파라미터를 가져옴.
 String pack_sub_cate = request.getParameter("pack_sub_cate");
@@ -43,9 +51,9 @@ System.out.println(date);
 
 				<div class="slidewrap">
 					<ul class="slidelist">
-						<li><a> <img src="./resources/image/m4.jpg"></a></li>
-						<li><a> <img src="./resources/image/m5.jpg"></a></li>
-						<li><a> <img src="./resources/image/m6.jpg"></a></li>
+						<li><a> <img src="./resources/image/tai.jpg"></a></li>
+						<li><a> <img src="./resources/image/hawai.jpg"></a></li>
+						<li><a> <img src="./resources/image/sws.jpg"></a></li>
 
 						<div class="slide-control">
 							<div class="control01">
@@ -101,14 +109,10 @@ System.out.println(date);
 		</c:if> --%>
 		</div>
 	<section class="serv_list">
-		<div class="bList_count">글개수:${totalCount}</div>
+		<div class="bList_count" style="margin-left:400px; margin-bottom:20px;">검색 결과:${totalCount}</div>
 		<div class="container">
 			<div class="title">
-			<c:if test="${!empty plist}">
-				<c:forEach var="p" items="${plist}">
 					<h1>${p.pack_sub_cate }</h1>
-				</c:forEach>
-			</c:if>
 			</div>
 
 			<div class="box_list">
@@ -128,9 +132,7 @@ System.out.println(date);
 					<div class="text">
 						<h2>${p.pack_name}</h2>
 						<p>${p.pack_desc}</p>
-						<p>어른:${p.pack_price01 }</p>
-						<p>유아:${p.pack_price02 }</p>
-						<p>소아:${p.pack_price03 }</p>						
+						<p class="a_price" id="pack_price01">성인:${p.pack_price01 }원~</p>						
 						<button onclick="location='travel_description?main_category=${p.pack_main_cate}&sub_category=${p.pack_sub_cate}&pack_code=${p.pack_code}';">예약하기</button>
 					</div>
 				</div>

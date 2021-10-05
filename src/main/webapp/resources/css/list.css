@@ -210,8 +210,13 @@
     font-size: 14px;
     opacity: .8;
 }
-
+.a_price{
+	margin-top:20px;
+	font-size:14px;
+	font-weight:600;
+}
 .serv_list .container .box_list .box .text button{
+	margin-top:20px;
     background: black;
     color:white;
     border:2px solid white; 
