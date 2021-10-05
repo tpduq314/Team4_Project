@@ -102,10 +102,9 @@ SimpleDateFormat sf = new SimpleDateFormat("yyyy.MM.dd");
 
 .mem_private .reservation {
 	position: relative;
-	top: -41px;
-	left: 45px;
+	top: -39px;
+	left: 48px;
 }
-
 .mem_private>li>a {
 	font-size: 12px;
 	letter-spacing: -.3px;
@@ -240,10 +239,10 @@ a:active {
 		<div class="mem_sub">
 			<ul class="mem_private">
 				<li class="mymenu"><img src="./resources/image/mymenu.png"
-					align="top"> <br> <a href="/Project/customer_service">마이메뉴</a></li>
+					align="top"> <br> <a href="/Project/customer_service">문의하기</a></li>
 				<li class="reservation"><img
 					src="./resources/image/reservation.png"> <br> <a
-					href="/Project/mypage">예약내역</a></li>
+					href="/Project/mypage">마이페이지</a></li>
 			</ul>
 		</div>
 	</div>

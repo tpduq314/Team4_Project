@@ -122,7 +122,7 @@
 											name="pack_sub_cate" type="text" class="search_city"
 											placeholder="여행지를 입력해 주세요.">
 										<button type="button" class="btn_city"
-											onclick="search_city();">지역검색</button>
+											onclick="search_city();">지역검색</button>	
 									</div>
 								</div>
 								<div class="item2">
@@ -143,7 +143,8 @@
 					<div class="jeju_box">
 						<div class="jeju_section">
 							<div class="jeju_img">
-								<img src="./resources/image/jeju_1100.jpg" class="j_img">
+								<img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=제주도&pack_start_date=?';"
+								src="./resources/image/jeju_1100.jpg" class="j_img">
 							</div>
 							<div class="jeju_cont">
 								<h4>대한민국의 가장 높은곳에서 즐기는 눈꽃여행</h4>
@@ -152,21 +153,25 @@
 								<p>눈덮힌 한라산 1100 도로도 분명 좋아하실꺼에요.</p>
 								<!-- <input class="jeju_li" type="text" placeholder="#이국적 #드라이브 #설경 #제주도 #1100고지" onclick="location='list?main_category=국내&pack_sub_cate=제주도';"> -->
 								<div class="jeju_mimg">
-									<img src="./resources/image/jeju_1101.jpg" class="j_imgr">	
-									<p>[특가상품] 제주도 2/3일 <br>항공비 포함 169,000</p>
+									<p style="text-align:center;float:right;font-size: 15px;font-weight: 600;">[특가상품] 제주도 2/3일 <br>
+									<p style="margin-right:13px;float:right;font-size: 14px;color: #666;margin-top:5px;">수도권 셔틀,항공비 포함</p>				
+									<img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=제주도&pack_start_date=?';" 
+									src="./resources/image/jeju_1101.jpg" class="j_imgr">	
+									<p class="jimg_p">219000원~</p>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div style="position:relative; top:1200px; width:100%;height:450px; background-color:white;">
 						<h2 style="position:absolute; top:50px; left:270px; font-color:black;" >내나라 구석구석</h2>
-							<div style="position:absolute; top:170px; left:270px; width:1500px; height:400px;margin-top:0px">
+							<div style="position:absolute; top:170px; left:250px; height:400px;margin-top:0px">
 								<ul style="list-style:none; float:left;">
 									<li style="list-style:none; text-align: center; vertical-align: middle; display:inline-block;
 									width: 190px; height:190px; position: relative; margin-left:30px;">
 										<a href="#">
 											<span class="simg">
-												<img src="https://image.hanatour.com/usr/cms/resize/250_0/2021/05/14/10000/9b785089-e508-47d4-9b1f-adeb8605b305.jpg"
+												<img onclick="javascript:location.href='/Project/list?main_category=국내&pack_sub_cate=강릉&pack_start_date=?';"
+												src="https://image.hanatour.com/usr/cms/resize/250_0/2021/05/14/10000/9b785089-e508-47d4-9b1f-adeb8605b305.jpg"
 												style="border-radius:50%; max-width:100%; max-height:100%; display:block; vertical-align:top; width: 190px; height:190px;">
 											<p style="margin-top:10px;font-size:17px; font-weight:600;">강릉</p>
 											<p style="margin-top:10px;font-size: 13px; color: #666; line-height: 18px;">놀킷 먹킷 넘치는 핫한 강릉

@@ -64,7 +64,31 @@ System.out.println(date);
 				</div>
 			</div>
 			</ul>
-		<c:if test="${!empty plist }">
+		<c:choose>
+			<c:when test="${empty id && !empty plist}">
+				<c:forEach var="p" items="${plist }">
+					<div class="res_area">
+						<fieldset style="border:0px">
+							<div class="user_name"><a href="/Project/login">로그인 후 이용해주세요!</a></div>
+							<div class="res_name">${p.pack_name} 카테고리를 선택하셨어요!</div>
+							<div class="res_start">출발일은 ${p.pack_start_date }입니다.</div>
+						</fieldset>
+					</div>
+				</c:forEach>
+			</c:when>
+			<c:otherwise>
+				<c:forEach var="p" items="${plist }">
+					<div class="res_area">
+						<fieldset style="border:0px">
+							<div class="user_name">${id}님 안녕하세요!</div>
+							<div class="res_name">${p.pack_name} 카테고리를 선택하셨어요!</div>
+							<div class="res_start">출발일은 ${p.pack_start_date }입니다.</div>
+						</fieldset>
+					</div>
+				</c:forEach>
+			</c:otherwise>
+		</c:choose>
+	<%-- 	<c:if test="${!empty plist }">
 			<c:forEach var="p" items="${plist }">
 				<div class="res_area">
 					<fieldset style="border:0px">
@@ -74,7 +98,7 @@ System.out.println(date);
 					</fieldset>
 				</div>
 			</c:forEach>
-		</c:if>
+		</c:if> --%>
 		</div>
 	<section class="serv_list">
 		<div class="bList_count">글개수:${totalCount}</div>
