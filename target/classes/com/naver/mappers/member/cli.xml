@@ -8,8 +8,8 @@
 
 	<insert id="cli_in">
 		insert into cli
-		(cli_no,cli_name,cli_birth,cli_gender,cli_email,cli_phone01,cli_phone02,res_code)
-		values(no_seq.nextval,#{cli_name},#{cli_birth},#{cli_gender},#{cli_email},#{cli_phone01},#{cli_phone02},#{res_code})
+		(cli_no,cli_name,cli_birth,cli_email,cli_phone01,cli_phone02,res_code)
+		values(no_seq.nextval,#{cli_name},#{cli_birth},#{cli_email},#{cli_phone01},#{cli_phone02},#{res_code})
 	</insert>
 
 	<select id="cli_cont" resultType="cli">

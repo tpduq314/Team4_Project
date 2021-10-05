@@ -114,7 +114,7 @@ create table cli(
 	cli_no number(38) primary key --예약자 번호
 	,cli_name varchar2(50) not null --이름
 	,cli_birth varchar2(50) not null --생년월일
-	,cli_gender varchar2(50) not null --성별
+	--,cli_gender varchar2(50) not null --성별
 	,cli_email varchar2(100) not null --이메일
 	,cli_phone01 varchar2(50) not null --핸드폰 번호
 	,cli_phone02 varchar2(50) --집 번호
