@@ -111,7 +111,7 @@ System.out.println(date);
 		<div class="container">
 		<div class="bList_count" style="margin-bottom:20px;">관련 패키지 : (${totalCount})</div>
 			<div class="title">
-					<h1>${p.pack_sub_cate }</h1>
+					<h1><%=pack_sub_cate %></h1>
 			</div>
 
 			<div class="box_list">
