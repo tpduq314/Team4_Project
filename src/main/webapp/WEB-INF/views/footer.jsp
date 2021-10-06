@@ -5,7 +5,7 @@
 <style>
 #footer {
 	width: 100%;
-	height: 300px;
+	height: 190px;
 	font-size: 18px;
 	margin-left: auto;
 	margin-right: auto;
@@ -16,7 +16,7 @@
 
 #footer_left {
 	width: 250px;
-	height: 200px;
+	height: 190px;
 	font-size: 18px;
 	float: left;
 	margin-top: 60px;

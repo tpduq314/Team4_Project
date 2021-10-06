@@ -171,7 +171,7 @@
 		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->
 
-		<form name="res" method="post" action="res" onsubmit="return check();">
+		<form class="res" name="res" method="post" action="res" onsubmit="return check();">
 			<div id="des_top">
 				<div id="category">
 					<h1 id="txt_category">홈>해외패키지>${p.pack_main_cate}>${p.pack_sub_cate}</h1>
@@ -450,7 +450,6 @@
 
 
 			<!-- 예약 폼 -->
-
 			<div id="reservation_form">
 				<div class="rf" style="margin-top: 40px;">
 					1. 출발-도착 일자

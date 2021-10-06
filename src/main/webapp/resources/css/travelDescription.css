@@ -9,7 +9,9 @@
 	height: 4700px;
 	background-color: white;
 }
-
+.res{
+	height:4700px;
+}
 #des_top {
 	height: 25px;
 	border-color: black;
@@ -354,7 +356,7 @@
 }
 
 #reservation_form {
-	position: sticky;
+	position:sticky;
 	top: 10px;
 	width: 28%;
 	height: 850px;
