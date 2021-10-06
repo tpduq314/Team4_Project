@@ -6,6 +6,10 @@
 	line-height: 1.2em;
 	color: #333; #333 16진수 색상코드는 #333333을 줄여서 표현
 } */
+*{
+	padding:0px;
+	margin:0px;
+}
 #txt_category {
 	font-size: 12px;
 	text-align: right;
@@ -44,10 +48,11 @@
 	border-color: #BDBDBD;
 	border-style: solid;
 	border-width: 0px 0px 6px 0px;
+	margin-top:-10px;
 }
 
 #my_page {
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 95px;
 	margin-left: 95px;
 	height: 1100px;

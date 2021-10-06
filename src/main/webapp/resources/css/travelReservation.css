@@ -1,7 +1,10 @@
 @charset "UTF-8";
-
+*{
+	margin:0px;
+	padding:0px;
+}
 #travel_reservation {
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 95px;
 	margin-left: 95px;
 	margin-bottom: 50px;
@@ -10,14 +13,14 @@
 }
 
 #res_top {
-	height: 80px;
+	height: 25px;
 	border-color: #BDBDBD;
 	border-style: solid;
 	border-width: 0px 0px 6px 0px;
 }
 
 #reservation {
-	height: 50px;
+	height: 0px;
 	width: 800px;
 	position: relative;
 	top: 20px;
@@ -25,9 +28,9 @@
 }
 
 #txt_reservation {
-	font-size: 30px;
+	font-size: 25px;
 	position: relative;
-	top: 17px;
+	top: -35px;
 	left: 10px;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -269,7 +272,7 @@ input[id="tab04"]:checked ~.con4 {
 }
 
 #travel_reservation_ok {
-	margin-top: 20px;
+	margin-top: 15px;
 	margin-right: 95px;
 	margin-left: 95px;
 	margin-bottom: 50px;

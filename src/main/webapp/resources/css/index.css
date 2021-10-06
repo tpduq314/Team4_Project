@@ -19,8 +19,8 @@
 	list-style:none;
 	position:absolute;
 	height:40px;
-	width:1200px;
-	left:260px;
+	width:800px;
+	left:270px;
 	top:100px;
 	color: black;
 	
@@ -267,7 +267,7 @@
 .jeju_section{
 	position:relative;
 	width:100%;
-	background-color:#cfe8fc;
+	background-color:#87cefa;
 	top:800px;
 	height:600px;
 }
@@ -390,7 +390,7 @@ figure:hover .con{transform:translateY(0); opacity:1;}
 	height:400px;
 }
 .header{
-	margin-top:10px;
+	margin-top:15px;
 	margin-left:95px;
 	margin-right:95px;
 }

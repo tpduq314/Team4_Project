@@ -94,19 +94,19 @@ function check(){
 					<td class="cs_tb_1"><span style="color: red;"></span>예약 번호</td>
 					<td class="cs_tb_2"><input name="res_code" id="res_code"
 						class="cs_tb_2_input" type="text" placeholder="예약번호를 입력하세요"
-						style="width: 700px;" /></td>
+						style="width: 1020px;" /></td>
 				</tr>
 				<tr>
 					<td class="cs_tb_1"><span style="color: red;">* </span>제목</td>
 					<td class="cs_tb_2"><input name="qa_title" id="qa_title"
 						class="cs_tb_2_input" type="text" placeholder="제목을 입력하세요"
-						style="width: 700px; height: 40px;" /></td>
+						style="width: 1020px; height: 40px;" /></td>
 				</tr>
 				<tr>
 					<td class="cs_tb_1"><span style="color: red;">* </span>내용</td>
 					<td class="cs_tb_2"><input name="qa_cont" id="qa_cont"
 						class="cs_tb_2_input" type="text" placeholder="내용을 입력하세요"
-						style="width: 700px; height: 500px;" /></td>
+						style="width: 1020px; height: 500px;" /></td>
 				</tr>
 			</table>
 			<p
@@ -114,7 +114,7 @@ function check(){
 				여권번호 등 개인정보는 작성에 유의하시기 바랍니다.</p>
 
 			<button type="submit"
-				style="width: 150px; height: 60px; margin-top: 30px; margin-left: 630px; font-size: 16px; font-weight: bold; border: none; background-color: gray; color: white;">문의하기</button>
+				style="width: 150px; height: 60px; margin-top: 30px; margin-left: 800px; font-size: 16px; font-weight: bold; border: none; background-color: gray; color: white;">문의하기</button>
 		</div>
 	</form>
 

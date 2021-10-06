@@ -14,14 +14,13 @@
 <body>
 
 	<div id="my_page">
-		<div id="header_box"
-			style="clear: both; position: relative; width: 100%; height: 160px; top: 0; background-color: white;">
+		<div id="header_box"">
 			<div id="header">
 				<jsp:include page="header2.jsp" />
 			</div>
 		</div>
 		<div id="res_top"
-			style="border: none; height: 200px; background-color: #6E85B2; margin-top: 30px;">
+			style="border: none; height: 200px; background-color: #6E85B2;">
 			<div id="category">
 				<h1 id="txt_category" style="padding-right: 20px;">홈 > 마이페이지</h1>
 			</div>

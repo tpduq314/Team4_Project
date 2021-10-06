@@ -40,7 +40,7 @@ System.out.println(date);
 		</div>
 	</section>--%>
 	<div class="wrap">
-		<div style="margin-top:10px;margin-left:95px;margin-right:95px;"id="header">
+		<div style="margin-top:15px;margin-left:95px;margin-right:95px;"id="header">
 			<jsp:include page="header2.jsp" />
 		</div>
 		

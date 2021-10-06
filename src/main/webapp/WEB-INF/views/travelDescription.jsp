@@ -166,7 +166,7 @@
 </script>
 <body>
 	<div id="travel_description">
-		<div id="header">
+		<div id="header" style="margin-top:15px;">
 			<jsp:include page="header2.jsp" />
 		</div>
 		<!-- 여행지 이름, 상품코드, 카테고리 부분 -->

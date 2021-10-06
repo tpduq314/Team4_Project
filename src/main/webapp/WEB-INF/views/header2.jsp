@@ -153,10 +153,12 @@ a:active {
 	list-style: none;
 	position: absolute;
 	height: 40px;
-	width: 1200px;
-	left: 160px;
+	width: 1050px;
+	left: 270px;
 	top: 100px;
 	color: black;
+	margin-left:150px;
+	padding:0px 0px 0px 0px;
 }
 
 .dep1 li {
@@ -222,7 +224,7 @@ a:active {
 
 	<!-- 로그인 회원가입 고객센터 -->
 	<div id="member" >
-		<div style="width:100px; height:100px;"class="logo_bar">
+		<div style="width:135px; height:135px;"class="logo_bar">
 			<div class="logo">
 				<img onclick="javascript:location.href='/Project/index';"
 				src="./resources/image/logo.PNG"
