@@ -71,13 +71,15 @@ insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel
 create table landmark(
 	land_code varchar2(50) primary key
 	,land_name varchar2(100) not null --여행지 이름
-	,land_pic01 varchar2(100) not null --여행지 사진
-	,land_pic02 varchar2(100) not null
-	,land_pic03 varchar2(100) not null
+	,land_pic01 varchar2(300) not null --여행지 사진
+	,land_pic02 varchar2(300) not null
+	,land_pic03 varchar2(300) not null
 	,land_desc varchar2(300) not null --여행지 상세내용
 	,land_pack_code varchar2(20) not null
 	,foreign key(land_pack_code) references package(pack_code)
 );
+
+drop table landmark;
 
 insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l1','루스키섬','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크A 설명','a128');
 insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) values('l2','원마운트','https://www.onemount.co.kr/web/images/clip/offi_1_1_img01.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','https://dimgcdn.ybtour.co.kr/TN/a5/a59d7b6644d852bdc6ca20cc7df15de0.tn.410x280.jpg','랜드마크B 설명','a128');
@@ -398,6 +400,15 @@ insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel
 
 insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) 
 values('l1','이름','사진1','사진2','사진3','랜드마크A 설명','a128');
+
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) 
+values('l5','비치 인 쉬림프','https://image.hanatour.com/usr/cms/resize/400_0/2019/01/23/10000/411d4e55-f28d-45e1-b691-44bc371f3b4d.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2021/06/03/10000/60213870-e8a0-4c81-8c9d-3d1809b5798e.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2021/06/03/10000/ab67196c-4549-4475-a52c-692ad6a87af2.jpg','새우 요리가 메인인 괌 유명 맛집. 2호점의 경우, 한국인이 많이 찾는 PIC 리조트 바로 앞에 위치하고 있으며 같은 상가 내에 한인 슈퍼가 있어 다른 곳에 비해 한국인의 방문이 매우 높은 편입니다. ','PGP7013');
+
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) 
+values('l6','사랑의 절벽','https://image.hanatour.com/usr/cms/resize/400_0/2011/06/21/10000/01e66ddc-480c-43a1-b861-e7714ce1b55d.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2011/06/21/10000/c27f2261-f5e8-4d20-9ae6-e91bf5549c05.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2011/06/21/10000/c55d9f6e-b590-46ba-8505-e1132a0c766b.jpg','투몬의 북쪽 건 비치에 자리하고 있는 사랑의 절벽에 오르면 괌 중부의 해변은 물론 언덕과 숲의 아름다운 절경을 감상할 수 있습니다.','PGP7013');
+
+insert into landmark(land_code,land_name,land_pic01,land_pic02,land_pic03,land_desc,land_pack_code) 
+values('l7','아가나 대성당','https://image.hanatour.com/usr/cms/resize/400_0/2016/11/01/10000/3d14d8bc-aa3e-4688-a381-eae4568ba7d9.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2016/11/01/10000/7b6f99eb-56a2-4fae-b26e-bd76c83c9c72.jpg','https://image.hanatour.com/usr/cms/resize/400_0/2021/05/31/10000/843fae5b-8ea7-4286-82b7-26bd86c9aeec.JPG','아가나 대성당은 정치, 문화, 경제의 중심지인 아가나 지역에 속해 있습니다. 성모 마리아 성당(Dulce Nombre de Maria Basilica)이라고도 하며 1669년 Padresan Vitores 수비대가 건조한 괌의 첫번째 성당지에 자리잡고 있습니다.','PGP7013');
 
 --괌
 insert into hotel(hotel_code,hotel_name,hotel_pic,hotel_desc,hotel_address,hotel_phone,hotel_fax,hotel_homepage,hotel_pack_code) values 
